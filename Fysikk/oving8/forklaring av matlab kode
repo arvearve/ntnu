@@ -1,0 +1,37 @@
+	v0 = 30;									//initial velocity = 30
+	theta0 = 59;								// initial vinkel på retningsvektoren
+	m = 1.0;									// massen til objektet som blir kastet
+	g = 9.81;									// gravitasjonskonstant
+	b = 4e-1;									// luftmotsand, konstant
+	dt = 0.025;									// lengden (tid) pr. 'tick'
+	Nt = 200;									// antall 'ticks'
+	x = zeros(1, Nt);							// liste på 1*200 elementer, initialisert til nuller. Inneholder x-posisjon for hver tick
+	y = zeros(1, Nt);							// liste på 1*200 elementer, initialisert til nuller. Inneholder y-posisjon for hver tick
+	vprevx = v0*cosd(theta0);					// hastighet i x-retning, første tick
+	vprevy = v0*sind(theta0);					// hastighet i y-retning, første tick
+	for ii = 2:Nt								// løkke
+	    %
+	v = sqrt(vprevx^2 + vprevy^2);				// total hastighet: pythagoras / vektorlengde
+	    Fd = -b*v;								// bremsekraft fra luftmotstand
+	    theta = atand(vprevy/vprevx);			// ny vinkel på hastighetsvektoren
+	    Fdx = Fd*cosd(theta);					// endring i kraft i x-retning
+	Fdy = Fd*sind(theta);						// endring i kraft i y-retning
+		%
+	Fgravx = 0;									// gravitasjonskraft i x retn.
+	Fgravy = -m*g;								// gravitasjonskraft i y retn
+	    %
+	Fx = Fdx + Fgravx;							// total kraft i x-retning
+	Fy = Fdy + Fgravy;							// total kraft i y-retning
+	%
+	vx = vprevx + Fx/m*dt;						// ny fart i x-retning
+	vy = vprevy + Fy/m*dt;						// ny fart i y-retning
+	%
+	x(ii)  = x(ii-1) + vx*dt;					//oppdater x fra ii
+	y(ii)  = y(ii-1) + vy*dt;					//oppdater y fra ii
+	    %
+	vprevx = vx;								// oppdater fart i x-retning
+	vprevy = vy;								// oppdater fart i y-retning
+	end
+	figure
+	plot(x,y,'b.-')								// plotter grafen. 
+	axis equal									// normaliserer aksene
