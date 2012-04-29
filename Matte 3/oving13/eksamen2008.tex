@@ -215,7 +215,30 @@ x3
 -x\\ y-x\\ x\\ y\\ 
 \end{bmatrix} | x, y \in \mathbb{R}}\right\}
 \end{equation*}
+For at $A\vec{x} = \vec{b}$ skal ha en løsning, må $\vec{b} $ være i $Col A$.\\
+Siden $b_1$ og $b_2$ er gitt, kan vi finne hvilken kombinasjon av kollonnevektorer i $A$ som $\vec{b} $ består av. Vi fokuserer på rad 1 og 2; siden disse er gitt for $\vec{b}$.\\
+\\
+Vi må finne $a$ og $b$ slik at $a + b = 1$, og $-2a + 3b = 0$
 
+\begin{equation*}
+\begin{bmatrix}
+1&1&|&1\\
+-2 & 3&|& 0
+\end{bmatrix}
+\sim
+\begin{bmatrix}
+1&0&|& \frac{3}{5}\\ 
+0&1&|& \frac{2}{5}\\ 
+\end{bmatrix}
+\end{equation*}
+Dermed har vi at $a = \frac{3}{5} $ og $b = \frac{2}{5}$. Dette betyr at $\vec{b}$ består av $\frac{3}{5} \vec{v_1} + \frac{2}{5}\vec{v_2}$, der $\vec{v_1}$ og $\vec{v_2}$ er vektorene i $Col A$.
+Da gjenstår bare litt enkel regning for å finne $\alpha $ og $ \beta$:
+\begin{equation*}
+\alpha = \frac{3}{5} \cdot 0 + \frac{2}{5} \cdot 1 = \mathbf{\uuline{\frac{2}{5}}}
+\end{equation*}
+\begin{equation*}
+\beta = \frac{3}{5} \cdot 2 + \frac{2}{5} \cdot -1 = \mathbf{\uuline{\frac{4}{5}}}
+\end{equation*}
 % subsubsection b_ (end)
 % subsection a_ (end)
 % section oppgave_4 (end)
