@@ -139,7 +139,7 @@ Denne klarte jeg ikke :(
 \label{sec:oppgave_3}
 \subsection{a)} % (fold)
 \label{sub:a_}
-\uuline{Alternativ B}
+\uuline{Alternativ C}
 \subsection{b)}
 \uuline{Alternativ A}
 \clearpage
@@ -160,9 +160,9 @@ Basis for $Col A$: {$\vec{v_1}, \vec{v_2}$}\\
 \end{bmatrix} & , &
 \begin{bmatrix}
 1\\
--2\\
-0\\
-2
+3\\
+1\\
+-1
 \end{bmatrix}
 \end{Bmatrix}
 \end{equation*}
@@ -239,8 +239,44 @@ Da gjenstår bare litt enkel regning for å finne $\alpha $ og $ \beta$:
 \begin{equation*}
 \beta = \frac{3}{5} \cdot 2 + \frac{2}{5} \cdot -1 = \mathbf{\uuline{\frac{4}{5}}}
 \end{equation*}
-% subsubsection b_ (end)
-% subsection a_ (end)
-% section oppgave_4 (end)
-% section oppgave_3 (end)
+\clearpage
+
+
+\subsection{c)} % (fold)
+\label{sub:c_}
+\[\vec{v_1} = \vec{u_1}\]
+\[\tilde{v_2} = \vec{u_2} - \left(\frac{\vec{u_2} \cdot \vec{v_1}}{\vec{v_1}\cdot\vec{v_1}}\right)\vec{v_1} = 
+\begin{bmatrix}
+0\\1\\1\\-1
+\end{bmatrix}
+- \frac{1}{2}
+\begin{bmatrix}
+1\\0\\1\\0 
+\end{bmatrix}
+= \frac{1}{2} 
+\begin{bmatrix}
+-1\\2\\1\\-2
+\end{bmatrix}, \hspace{0.5cm} \vec{v_2} = (-1,2,1,-2)
+ \]
+
+\section{Oppgave 5} % (fold)
+\label{sec:oppgave_5}
+Vi ser på den karakteristiske likningen $det(A - I) = 0$:
+\[
+\begin{vmatrix}
+3-\lambda & 4 & -2\\
+-2 & -3-\lambda & 2\\
+0&0& 1-\lambda
+\end{vmatrix}
+= (1-\lambda)
+\begin{vmatrix}
+3-\lambda & 4\\
+-2 & -3-\lambda
+\end{vmatrix}
+= (1-\lambda)(\lambda^2 -1) = -(\lambda-1)^2(\lambda +1) = 0
+\]
+
+Dermed er egenverdiene til $A$ $1$ og $-1$
+% section oppgave_5 (end)
+
 \end{document}
