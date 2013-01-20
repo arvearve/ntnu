@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jex:Exercise xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore" text="5" description="ov5.pre.xml" comment="This exercise focuses on encapsulation: How to hide the internal representation of an object to the outside world with getters, and to prevent an object to be in an illegal state through setters.">
+  <javaElements xsi:type="jex:JavaPack" name="oving5">
+    <classes xsi:type="jex:TestSuite" name="AllTests" modifiers="public"/>
+  </javaElements>
+  <javaElements xsi:type="jex:JavaPack" name="oving5.card">
+    <classes name="Card" modifiers="public" required="true">
+      <members xsi:type="jex:JavaMethod" name="Card" modifiers="public">
+        <parameters>String</parameters>
+        <parameters>int</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="getSuit" modifiers="public" returnType="String"/>
+      <members xsi:type="jex:JavaMethod" name="getFace" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="toString" modifiers="public" returnType="String"/>
+    </classes>
+    <classes xsi:type="jex:JavaClassTester" name="CardTest" modifiers="public" testedElement="//@javaElements.1/@classes.0">
+      <members xsi:type="jex:JavaMethodTester" name="testCard" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testToString" modifiers="public" returnType="void"/>
+      <superclasses>TestCase</superclasses>
+    </classes>
+    <classes name="CardDeck" modifiers="public" required="true">
+      <members xsi:type="jex:JavaMethod" name="CardDeck" modifiers="public"/>
+      <members xsi:type="jex:JavaMethod" name="getCardCount" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="getCard" modifiers="public" returnType="Card">
+        <parameters>int</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="deal" modifiers="public" returnType="ArrayList&lt;Card>">
+        <parameters>int</parameters>
+      </members>
+    </classes>
+    <classes xsi:type="jex:JavaClassTester" name="CardDeckTest" modifiers="public" testedElement="//@javaElements.1/@classes.2">
+      <members xsi:type="jex:JavaMethodTester" name="testCardDeck" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetCard" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testDeal" modifiers="public" returnType="void"/>
+      <superclasses>TestCase</superclasses>
+    </classes>
+  </javaElements>
+  <javaElements xsi:type="jex:JavaPack" name="oving5.person">
+    <classes name="Person" modifiers="public">
+      <members xsi:type="jex:JavaMethod" name="Person" modifiers="public">
+        <parameters>char</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="getName" modifiers="public" returnType="String"/>
+      <members xsi:type="jex:JavaMethod" name="setName" modifiers="public" returnType="void">
+        <parameters>String</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="isMale" modifiers="public" required="true" returnType="boolean"/>
+      <members xsi:type="jex:JavaMethod" name="isFemale" modifiers="public" required="true" returnType="boolean"/>
+      <members xsi:type="jex:JavaMethod" name="indexOfChild" modifiers="public" returnType="int">
+        <parameters>Person</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="containsChild" modifiers="public" returnType="boolean">
+        <parameters>Person</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="getChildCount" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="addChild" modifiers="public" returnType="void">
+        <parameters>Person</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="removeChild" modifiers="public" returnType="void">
+        <parameters>Person</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="getChild" modifiers="public" returnType="Person">
+        <parameters>int</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="getMother" modifiers="public" returnType="Person"/>
+      <members xsi:type="jex:JavaMethod" name="setMother" modifiers="public" returnType="void">
+        <parameters>Person</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="getFather" modifiers="public" returnType="Person"/>
+      <members xsi:type="jex:JavaMethod" name="setFather" modifiers="public" returnType="void">
+        <parameters>Person</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="isAncestorOf" modifiers="public" returnType="boolean">
+        <parameters>Person</parameters>
+      </members>
+    </classes>
+    <classes xsi:type="jex:JavaClassTester" name="PersonTest" modifiers="public" testedElement="//@javaElements.2/@classes.0">
+      <members xsi:type="jex:JavaMethodTester" name="testPerson" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetSetName" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGender" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testPersonWithChildCount" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testIndexOfChild" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testContainsChild" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testAddChild" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testSetAsAddChild" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testRemoveChild" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testSetAsRemoveChild" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetSetParents" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testIsAncestorOf" modifiers="public" returnType="void"/>
+      <superclasses>TestCase</superclasses>
+    </classes>
+  </javaElements>
+  <requirements xsi:type="jex:ExercisePart" text="Person class with name and gender" description="The &lt;code>Person&lt;/code> class encapsulates information about name, gender and parent/child association. In part 1 we focus on the first two of these.">
+    <requirements xsi:type="jex:JavaRequirement" text="public class Person in package oving5.person" description="The &lt;code>Person&lt;/code> class includes information about the &lt;b>name&lt;/b> and &lt;b>gender&lt;/b> of a person. How these are actually implemented in terms of fields is not specified. Instead, we specify the methods used for reading and setting this information." javaElement="//@javaElements.2/@classes.0">
+      <requirements xsi:type="jex:JavaRequirement" text="public constructor Person in public class Person in package oving5.person" description="Create a constructor that takes one argument; the &lt;b>gender&lt;/b>, represented as &lt;code>'m'&lt;/code> for &lt;b>male&lt;/b> and &lt;code>'f'&lt;/code> for &lt;b>female&lt;/b>. The constructor should initialize the new &lt;code>Person&lt;/code> appropriately. If other values than &lt;code>'m'&lt;/code> or &lt;code>'f'&lt;/code> are given, the &lt;b>gender&lt;/b> should not be set. Also, the number of &lt;b>children&lt;/b> for this &lt;code>Person&lt;/code> should initially be 0." javaElement="//@javaElements.2/@classes.0/@members.0" requiredFeatures=""/>
+      <requirements xsi:type="jex:JavaRequirement" text="public boolean method isMale in public class Person in package oving5.person" description="Returns &lt;code>true&lt;/code> if the this &lt;code>Person&lt;/code> is male, &lt;code>false&lt;/code> otherwise." javaElement="//@javaElements.2/@classes.0/@members.3"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public boolean method isFemale in public class Person in package oving5.person" description="Returns &lt;code>true&lt;/code> if this &lt;code>Person&lt;/code> is &lt;b>female&lt;/b>, &lt;code>false&lt;/code> otherwise." comment="Notice that a &lt;code>Person&lt;/code> may have an unspecified gender, in which case both &lt;code>isFemale&lt;/code> and &lt;code>isMale&lt;/code> will return &lt;code>false&lt;/code>." javaElement="//@javaElements.2/@classes.0/@members.4" requiredFeatures=""/>
+      <requirements xsi:type="jex:JUnitTest" text="public void method testPerson in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.0" points="5"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGender in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.2" points="5"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public String method getName in public class Person in package oving5.person" description="Returns the &lt;b>name&lt;/b> of this &lt;code>Person&lt;/code>, as set by &lt;code>setName&lt;/code>." javaElement="//@javaElements.2/@classes.0/@members.1"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public void method setName in public class Person in package oving5.person" description="Sets the &lt;b>name&lt;/b> of this &lt;code>Person&lt;/code> to the provided argument. The &lt;b>name&lt;/b> should only be set if the argument is &lt;code>null&lt;/code> or a valid name. A name is valid if it contains only letters and whitespaces." comment="Character.isLetter may be of use here." javaElement="//@javaElements.2/@classes.0/@members.2"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetSetName in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.1" points="5"/>
+    </requirements>
+  </requirements>
+  <requirements xsi:type="jex:ExercisePart" text="Person class properly implementing and encapsulating a bi-directional parent/child association" description="In this part, we focus on the bi-directional parent/child association.">
+    <requirements xsi:type="jex:JavaRequirement" text="public class Person in package oving5.person" description="The &lt;code>Person&lt;/code> class propertly implements and encapsulates a bi-directional parent/children association. The parent/child association relates a Person to a &lt;b>father&lt;/b> and a &lt;b>mother&lt;/b> (both &lt;code>Person&lt;/code>s), in one direction, and a &lt;code>Person&lt;/code> to zero, one or more &lt;b>children&lt;/b> (also &lt;code>Person&lt;/code>s), in the other direction. The &lt;b>mother&lt;/b> and &lt;b>father&lt;/b> must be encapsulated with &lt;code>getFather()&lt;/code>/&lt;code>setFather(Person)&lt;/code> and &lt;code>getMother()&lt;/code>/&lt;code>setMother(Person)&lt;/code> methods, respectively, while the &lt;b>children&lt;/b> must be encapsulated &lt;code>getChildCount()&lt;/code>, &lt;code>getChild(int)&lt;/code>, &lt;code>addChild(Person)&lt;/code> and &lt;code>removeChild(Person)&lt;/code> methods. Note that it is illegal to set the &lt;b>father&lt;/b> of a &lt;code>Person&lt;/code> to a female or the &lt;b>mother&lt;/b> to a male.&#xD;&#xA;&lt;p/>Special care must be taken to make sure that the parent/child association is kept consistent:&#xD;&#xA;&lt;ul>&#xD;&#xA;&lt;li>If a child has a parent, either the mother or father, the parent must also have that child as one of its children, and vica versa.&lt;/li>&#xD;&#xA;&lt;li>A child cannot have a parent, unless that parent also has that child as one of its children.&lt;/li>&#xD;&#xA;&lt;/ul>&#xD;&#xA;Hence, &lt;code>setParent&lt;/code>, &lt;code>addChild&lt;/code> and &lt;code>removeChild&lt;/code> must all take care to call each other (or helper methods that you introduce), as appropriate." comment="Making sure the parent/child association is consistent is more tricky than you may think. It may be helpful to draw an object diagram for the various cases you must handle, before coding." javaElement="//@javaElements.2/@classes.0">
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getChildCount in public class Person in package oving5.person" description="Returns the number of &lt;b>children&lt;/b> that &lt;code>this&lt;/code> Person has." javaElement="//@javaElements.2/@classes.0/@members.7"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public Person method getMother in public class Person in package oving5.person" description="Returns the &lt;b>mother&lt;/b> of this &lt;code>Person&lt;/code>." javaElement="//@javaElements.2/@classes.0/@members.11"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public void method setMother in public class Person in package oving5.person" description="Takes a Person as argument and sets it as the &lt;b>mother&lt;/b> of this &lt;code>Person&lt;/code>. You must also make sure that the &lt;b>mother&lt;/b> has this &lt;code>Person&lt;/code> as one of its &lt;b>children&lt;/b>. Note that if the argument is &lt;code>null&lt;/code>, this &lt;code>Person&lt;/code> must be removed as a &lt;b>child&lt;/b> from its &lt;b>mother&lt;/b>." comment="What happens if this Person already has a mother?" javaElement="//@javaElements.2/@classes.0/@members.12"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public Person method getFather in public class Person in package oving5.person" description="Returns the &lt;b>father&lt;/b> of this &lt;code>Person&lt;/code>." javaElement="//@javaElements.2/@classes.0/@members.13" requiredFeatures=""/>
+      <requirements xsi:type="jex:JavaRequirement" text="public void method setFather in public class Person in package oving5.person" description="Takes a Person as a parameter and sets it as the &lt;b>father&lt;/b> of this &lt;code>Person&lt;/code>. You must also make sure that the &lt;b>father&lt;/b> has this &lt;code>Person&lt;/code> as one of its &lt;b>children&lt;/b>. Note that if the argument is &lt;code>null&lt;/code>, this &lt;code>Person&lt;/code> must be removed as a &lt;b>child&lt;/b> from its &lt;b>father&lt;/b>" javaElement="//@javaElements.2/@classes.0/@members.14"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public void method addChild in public class Person in package oving5.person" description="Adds a &lt;b>child&lt;/b> to this &lt;code>Person&lt;/code>. If the child is already present, it should not be added. Note that the &lt;b>child&lt;/b>'s &lt;b>mother&lt;/b> or &lt;b>father&lt;/b> property must be set accordingly, depending on the gender of this &lt;code>Person&lt;/code>." javaElement="//@javaElements.2/@classes.0/@members.8"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public void method removeChild in public class Person in package oving5.person" description="Removes the given &lt;b>child&lt;/b> from this &lt;code>Person&lt;/code>. Note that the &lt;b>child&lt;/b>'s &lt;b>mother&lt;/b> or &lt;b>father&lt;/b> property must be set accordingly, depending on the gender of this &lt;code>Person&lt;/code>." javaElement="//@javaElements.2/@classes.0/@members.9"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public Person method getChild in public class Person in package oving5.person" description="Returns the &lt;b>child&lt;/b> at the given index. The index must be between 0 and (up to but not including) the number of children of this &lt;code>Person&lt;/code>. The order must correspond to the order the &lt;b>children&lt;/b> were added." javaElement="//@javaElements.2/@classes.0/@members.10"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testAddChild in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.6" points="5"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testSetAsAddChild in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.7" points="5"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testRemoveChild in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.8" points="5"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testSetAsRemoveChild in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.9" points="5"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetSetParents in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.10" points="5"/>
+    </requirements>
+  </requirements>
+  <requirements xsi:type="jex:ExercisePart" text="Person class with additional encapsulation methods." description="In this part, we implement additional utility methods in the &lt;code>Person&lt;/code> class.">
+    <requirements xsi:type="jex:JavaRequirement" text="public class Person in package oving5.person" description="The &lt;code>Person&lt;/code> class must implement additional encapsulation methods." javaElement="//@javaElements.2/@classes.0">
+      <requirements xsi:type="jex:JavaRequirement" text="public int method indexOfChild in public class Person in package oving5.person" description="This method that takes a &lt;code>Person&lt;/code> as argument and returns the index of that Person among the &lt;b>children&lt;/b> of this &lt;code>Person&lt;/code>. If the Person argument is not a &lt;b>child&lt;/b> of this &lt;code>Person&lt;/code>, the method should return &lt;code>-1&lt;/code>." comment="This method is the opposite of &lt;code>getChild&lt;/code>: If &lt;code>person.getChild(i) == child&lt;/code> then &lt;code>person.indexOfChild(child) == i&lt;/code>." javaElement="//@javaElements.2/@classes.0/@members.5"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public boolean method containsChild in public class Person in package oving5.person" description="Method that returns &lt;code>true&lt;/code> if the &lt;code>Person&lt;/code> argument is a &lt;b>child&lt;/b> of this &lt;code>Person&lt;/code>, and &lt;code>false&lt;/code> otherwise." javaElement="//@javaElements.2/@classes.0/@members.6"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testIndexOfChild in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.4" points="5"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testContainsChild in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.5" points="5"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public boolean method isAncestorOf in public class Person in package oving5.person" description="Returns &lt;code>true&lt;/code> if this &lt;code>Person&lt;/code> is an &lt;b>ancestor&lt;/b> of the provided &lt;code>Person&lt;/code> argument, and &lt;code>false&lt;/code> otherwise. A &lt;code>Person&lt;/code> is an ancestor of another &lt;code>Person&lt;/code>, if&#xD;&#xA;&lt;li>this &lt;code>Person&lt;/code> is the &lt;b>father&lt;/b> or &lt;b>mother&lt;/b> of the other &lt;code>Person&lt;/code> or&lt;/li>&#xD;&#xA;&lt;li>this &lt;code>Person&lt;/code> is the &lt;b>ancestor&lt;/b> of the other &lt;code>Person&lt;/code>'s &lt;b>father&lt;/b> or &lt;b>mother&lt;/b>.&lt;/li>" comment="One way of doing it would be to create a helper method that takes two &lt;code>Person&lt;/code> objects as arguments and check whether or not one is the ancestor of the other. Use this helper method to check if &lt;code>this&lt;/code> is an ancestor of the fathers father and mothers mother and so on, until a person is &lt;code>null&lt;/code> or the ancestor is the father or mother. This means that the helper method must call itself recursively." javaElement="//@javaElements.2/@classes.0/@members.15"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testIsAncestorOf in public class PersonTest in package oving5.person" javaElement="//@javaElements.2/@classes.1/@members.11" requiredFeatures="" points="10"/>
+    </requirements>
+  </requirements>
+  <requirements xsi:type="jex:ExercisePart" text="Card and CardDeck-classes" description="In this part, we implement the &lt;code>Card&lt;/code> and &lt;code>CardDeck&lt;/code> classes, with appropriate getters, setters and constructors.">
+    <requirements xsi:type="jex:JavaRequirement" text="public class Card in package oving5.card" description="The &lt;code>Card&lt;/code> class will be very similar to the one in a previous exercise, but the properties &lt;b>suit&lt;/b> and &lt;b>face&lt;/b> will be encapsulated. You have have to implement getter methods to retrieve their values. By &lt;b>not&lt;/b> implementing setter methods you ensure these properties cannot be changed after a &lt;code>Card&lt;/code> is created." javaElement="//@javaElements.1/@classes.0">
+      <requirements xsi:type="jex:JavaRequirement" text="public constructor Card in public class Card in package oving5.card" description="Create a constructor that takes two parameters: &lt;b>suit&lt;/b> and &lt;b>face&lt;/b>. The constructor should initialize the new &lt;code>Card&lt;/code> with the given arguments. It should not accept other values than &quot;S&quot;, &quot;H&quot;, &quot;D&quot; or &quot;C&quot; for &lt;b>suit&lt;/b> and integers between 1 and (including) 13 for &lt;b>face&lt;/b>. For illegal input, &lt;b>suit&lt;/b> should be set to &lt;code>null&lt;/code> and &lt;b>face&lt;/b> to &lt;code>-1&lt;/code>, respectively." javaElement="//@javaElements.1/@classes.0/@members.0"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public String method getSuit in public class Card in package oving5.card" description="This method returns the &lt;b>suit&lt;/b> of this &lt;code>Card&lt;/code>." javaElement="//@javaElements.1/@classes.0/@members.1"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getFace in public class Card in package oving5.card" description="This method returns the &lt;b>face&lt;/b> of this &lt;code>Card&lt;/code>." javaElement="//@javaElements.1/@classes.0/@members.2"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public String method toString in public class Card in package oving5.card" description="The toString method returns the suit and face values as one &lt;code>String&lt;/code> with no space in between." comment="Example: The Ace of Spades should return &quot;S1&quot; as the value of the toString method." javaElement="//@javaElements.1/@classes.0/@members.3"/>
+      <requirements xsi:type="jex:JUnitTest" text="public void testCard in class CardTest in package oving5.card" javaElement="//@javaElements.1/@classes.1/@members.0" points="6"/>
+      <requirements xsi:type="jex:JUnitTest" text="public void testToString in class CardTest in package oving5.card" javaElement="//@javaElements.1/@classes.1/@members.1" requiredFeatures="" points="4"/>
+    </requirements>
+    <requirements xsi:type="jex:JavaRequirement" text="public class CardDeck in package oving5.card" description="The &lt;code>CardDeck&lt;/code> class will be very similar to the one in a previous exercise, but the list of &lt;code>Card&lt;/code>s will be encapsulated and a &lt;code>deal(int)&lt;/code> method will be added." javaElement="//@javaElements.1/@classes.2" requiredFeatures="">
+      <requirements xsi:type="jex:JavaRequirement" text="public constructor CardDeck in public class CardDeck in package oving5.card" description="The constructor should take no arguments, and initialize this &lt;code>CardDeck&lt;/code> with the cards in the correct order (suits S, H, D, C, faces 1 to 13)." javaElement="//@javaElements.1/@classes.2/@members.0"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getCardCount in public class CardDeck in package oving5.card" description="This method should return the number of cards in this &lt;code>CardDeck&lt;/code>." comment="Note that the card count may be lower than 52 because of the &lt;b>deal&lt;/b> method." javaElement="//@javaElements.1/@classes.2/@members.1"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public Card method getCard in public class CardDeck in package oving5.card" description="This method should return the &lt;code>Card&lt;/code> at the specified index among this &lt;code>CardDeck&lt;/code>'s &lt;b>cards&lt;/b>. If the index is not between 0 and the card count, &lt;code>null&lt;/code> should be returned." javaElement="//@javaElements.1/@classes.2/@members.2"/>
+      <requirements xsi:type="jex:JUnitTest" text="public void method testCardDeck in public class CardDeckTest in package oving5.card" description="" javaElement="//@javaElements.1/@classes.3/@members.0" requiredFeatures="" points="5"/>
+      <requirements xsi:type="jex:JUnitTest" text="public void method testGetCard in public class CardDeckTest in package oving5.card" javaElement="//@javaElements.1/@classes.3/@members.1" requiredFeatures="" points="5"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public ArrayList&lt;Card> method deal in public class CardDeck in package oving5.card" description="Takes an int argument and returns a list with that many &lt;code>Card&lt;/code>s removed from the top of this &lt;code>CardDeck&lt;/code>. Just as a real deck, the cards are dealt one by one from the top (highest index) of this &lt;code>CardDeck&lt;/code>, and each card should only be dealt once - meaning you have to keep track of how many cards have been dealt. If there are not enough cards left in the this &lt;code>CardDeck&lt;/code>, the method should return &lt;code>null&lt;/code>.&#xD;&#xA;&lt;p/>" comment="The order is important: The first card removed from (the top of) this &lt;code>CardDeck&lt;/code>, should be first in the returned list, the second card removed should be second in the list, and so forth. I.e. if deal(4) is called just after the &lt;code>CardDeck&lt;/code> is created, it should return a list containing the King of Clubs (since Ace has face value 1 and not 14), Queen of Clubs, Knight of Clubs and Ten of Clubs, in that order." javaElement="//@javaElements.1/@classes.2/@members.3" requiredFeatures=""/>
+      <requirements xsi:type="jex:JUnitTest" text="public void method testDeal in public class CardDeckTest in package oving5.card" javaElement="//@javaElements.1/@classes.3/@members.2" requiredFeatures="" points="20"/>
+    </requirements>
+  </requirements>
+</jex:Exercise>

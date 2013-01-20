@@ -1,0 +1,177 @@
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">
+				{font-size: 1.0em;}
+				code.small {font-size: 1.0em;}
+				dl {margin-top: 0.9em;}
+				dt {margin-top: 0.9em;}
+				h2 {margin-top: 1.5em;}
+				h3 {margin-top: 1.5em;}
+				p {margin-top: 1.1em;}
+				dl {margin-left: 2em;}
+			</style><title>
+         			Exercise
+         			6
+      </title>
+   </head>
+   <body>
+      <h1>TDT4100, Spring 2012</h1>
+      <h2>Exercise 6: Interfaces</h2>
+      <h3>Deadline 07.03.2011</h3>
+      <hr>
+      <h3>The objective of this exercise is to:</h3>
+      <ul>
+         <li>Learn about interfaces</li>
+         <li>Learn to implement and use the Comparable interface</li>
+      </ul>
+      <h3>General requirements:</h3>
+      <ul>
+         <li>
+            			Use Eclipse for writing and testing all parts of the exercise.
+            		
+         </li>
+         <li>
+            			Use the JExercise tool to verify the code.
+            		
+         </li>
+         <li>
+            			All classes must be defined/stored in package/folder oving6.
+            		
+         </li>
+         <li>
+            			For classes; use the exact names and modifiers that are specified in the exercise.
+            		
+         </li>
+         <li>
+            			For methods; use the exact name, parameter datatype, sequence of parameters, and 
+            			datatype for return value, that are specified.
+            		
+         </li>
+         <li>
+            			NB! Parameters and fields, and their types, are not always specified. If not, it can 
+            			be deduced from the text and it is a part of the exercise to figure out what it has 
+            			to be.
+            		
+         </li>
+      </ul>
+      <h3>Recommended reading:</h3>
+      <hr>
+      <h2>Overview</h2>
+      <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore" class="comment" id="__comment">This exercise deals with Java's interface construct: Interfaces define a standardized set of commands that a class will obey.
+         By implementing an interface, other classes will be able to take in any class which implements that interface and may call
+         the methods it implements.<br></br>For instance, if you have an ArrayList of Cards, then <code>Collections.sort</code> will sort the whole ArrayList based on the <code>compareTo</code> function you will implement! This is one of the great features of interfaces: By implementing the functions in an interface,
+         you can for instance use already defined methods such as <code>Collections.sort</code>, or use data structures such as PriorityQueue to sort your data.
+      </div>
+      <h2>Exercise parts</h2>
+      <ol>
+         <li><a href="#_requirements_0">Implementing the Comparable interface (20 pt.)</a></li>
+         <li><a href="#_requirements_1">The Account Interface (80 pt.)</a></li>
+      </ol>
+      <hr>
+      <h2><a name="_requirements_0">Part 1: Implementing the Comparable interface (20 pt.)</a><a name="_requirements_0_description"></a></h2>In this part, the task is to implement the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Comparable</code> interface in the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Card</code> class.
+      <dl>
+         <dt><a name="_requirements_0_requirements_0_description"></a><code>public class Card in package oving6</code></dt>
+         <dd><a name="_requirements_0_requirements_0_description"></a>Define a <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Card</code> class that implements the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Comparable</code> 
+            interface (java.lang.Comparable) and has the following methods:
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_0_description"></a><code>public constructor Card in public class Card in package oving6</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_0_description"></a>Constructor that takes the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">suit</b> as the first parameter and the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">face</b> as the second. The suit is a <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">String</code> and must be "S", "H", "D" or "C", for spades, hearts, diamonds and clubs, respectively. The face is an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">int</code> that represents the value of the card and must be between 1 (ace) and 13 (king).
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_1_description"></a><code>public String method getSuit in public class Card in package oving6</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_1_description"></a>Returns the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">suit</b> of this <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Card</code> as a <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">String</code>, either "S", "H", "D" or "C".
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_2_description"></a><code>public int method getFace in public class Card in package oving6</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_2_description"></a>Returns the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">face</b> of this <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Card</code>, an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">int</code> between 1 and (including) 13.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_3_description"></a><code>public String method toString in public class Card in package oving6</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_3_description"></a>Takes no parameters and returns a <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">String</code> consisting of the suit and face of this <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Card</code>, e.g. "S2", "H3", or "C5".
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_4_description"></a><code>public int method compareTo in public class Card in package oving6</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_4_description"></a>This method should behave as specified in the java documentation for the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">java.lang.Comparable</code> 
+            interface. Note that in most card games, the Ace is ranked as highest. Accordingly, the Ace (face = 1) should be counted as
+            the highest ranked card.
+            
+            <p xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore"></p>Cards should be compared first by face (value) and then by suit. An 8 is always higher than a 7, but 
+            a 7 of spades is higher than a 7 of hearts.
+            <p></p>Hint: Note that the strings "S", "H", "D" and "C" has the same order in the alphabet as the rank used for comparison.
+         </dd>
+      </dl><i></i><h2><a name="_requirements_1">Part 2: The Account Interface (80 pt.)</a><a name="_requirements_1_description"></a></h2>In this part, the task is to implement the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code> interface and two implementations, <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">SavingsAccount</code> and <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">CreditAccount</code>.
+      <dl>
+         <dt><a name="_requirements_1_requirements_0_description"></a><code>public interface Account in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_0_description"></a>Define the interface Account with the following method declarations:
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_0_requirements_0_description"></a><code>public int method getBalance in public interface Account in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_0_requirements_0_description"></a>Takes no parameters and returns the current <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">balance</b> of this <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code> as an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">int</code>.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_0_requirements_1_description"></a><code>public int method getCredit in public interface Account in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_0_requirements_1_description"></a>Takes no parameters and returns the granted <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">credit</b> of this <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code>, as an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">int</code>. If no credit is granted it should return zero.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_0_requirements_2_description"></a><code>public int method deposit in public interface Account in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_0_requirements_2_description"></a>Takes an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">int</code> as a parameter, increases the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">balance</b> of this <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code> and returns the new balance. If the parameter is negative, nothing should happen (the balance should still be returned).
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_0_requirements_3_description"></a><code>public int method withdraw in public interface Account in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_0_requirements_3_description"></a>Takes an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">int</code> as a parameter, decreases (if allowed) the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">balance</b> of this <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code> and returns the amount that is made available from the Account. If the requested amount is not covered or it is negative,
+            no money should be withdrawn and zero should be returned.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_1_description"></a><code>public class SavingsAccount in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_1_description"></a>The <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">SavingsAccount</code> class implements the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code> interface and is an ordinary account.
+            <p></p>An instance of SavingsAccount should be initialized with a balance of zero. No credit is granted.
+         </dd>
+         <dt><a name="_requirements_1_requirements_3_description"></a><code>public class CreditAccount in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_3_description"></a>The <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">CreditAccount</code> class implements the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code> interface and is an account that may have credit, i.e. the balance is allowed to be negative (still above a certain value).
+            
+            
+            <p xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore"></p>An instance of <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">CreditAccount</code> should be initialized with a <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">balance</b> of zero and a <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">credit</b> limit that is passed as an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">int</code> in the constructor.
+            
+            <p xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore"></p>Whenever a person uses the credit, a fee of 50 is charged the account. That is, for every withdrawal that causes the balance
+            to become less than zero (or increases the negative balance), an additional amount of 50 is drawn from the account. A withdrawal
+            including the fee cannot exceed the granted credit.
+            
+            <p xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore"></p>The <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">CreditAccount</code> class should additionally be able to report the fees that have been accumulated by implementing the method getFees().
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_5_description"></a><code>public class AccountOverview in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_5_description"></a>The <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">AccountOverview</code> class holds a set of <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code>s, and includes methods for getting information about these accounts as a whole. Create the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">AccountOverview</code> class, with the following methods:
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_5_requirements_0_description"></a><code>public constructor AccountOverview in public class AccountOverview in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_5_requirements_0_description"></a>The constructor should ensure that the set of <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code>s is empty.
+            <p></p>Remember to use Java's generics mechanism. This often makes casting unnecessary and eases the use of collection classes.
+         </dd>
+         <dt><a name="_requirements_1_requirements_5_requirements_1_description"></a><code>public int method getAccountCount in public class AccountOverview in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_5_requirements_1_description"></a>Takes no parameters and returns the number of <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code>s in this <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">AccountOverview</code>.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_5_requirements_2_description"></a><code>public Account method getAccount in public class AccountOverview in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_5_requirements_2_description"></a>Takes an int as a parameter and returns the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code> at that position.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_5_requirements_3_description"></a><code>public void method addAccount in public class AccountOverview in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_5_requirements_3_description"></a>This method takes an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code> as a parameter and adds it to the set of <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code>s. This can be implemented in any way you want, but it should be possible to add an unlimited number of accounts, and duplicates
+            are not allowed.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_5_requirements_4_description"></a><code>public int method getTotalBalance in public class AccountOverview in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_5_requirements_4_description"></a>Takes no parameters and returns the total <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">balance</b> of all <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code>s as an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">int</code>.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_5_requirements_5_description"></a><code>public int method getTotalCredit in public class AccountOverview in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_5_requirements_5_description"></a>Takes no parameters and returns the total <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">credit</b> of all the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code>s as an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">int</code>.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_5_requirements_6_description"></a><code>public int method getTotalFees in public class AccountOverview in package oving6</code></dt>
+         <dd><a name="_requirements_1_requirements_5_requirements_6_description"></a>Takes no parameters and returns the total <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">fees</b> of all the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code>s as an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">int</code>.
+            <p></p>Note that the method <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">getFees()</code> is only available for <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">CreditAccount</code> objects. You can use the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">instanceof</code> operator to check is an <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Account</code> is a <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">CreditAccount</code>, and use casting to get access to the <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">getFees()</code> method.
+         </dd>
+      </dl><i></i></body>
+</html>

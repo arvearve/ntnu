@@ -1,0 +1,157 @@
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">
+				{font-size: 1.0em;}
+				code.small {font-size: 1.0em;}
+				dl {margin-top: 0.9em;}
+				dt {margin-top: 0.9em;}
+				h2 {margin-top: 1.5em;}
+				h3 {margin-top: 1.5em;}
+				p {margin-top: 1.1em;}
+				dl {margin-left: 2em;}
+			</style><title>
+         			Exercise
+         			9
+      </title>
+   </head>
+   <body>
+      <h1>TDT4100, Spring 2012</h1>
+      <h2>Exercise 9: Abstract classes and observer pattern</h2>
+      <h3>Deadline 18.04.2012 (mandatory exercise)</h3>
+      <hr>
+      <h3>The objective of this exercise is to:</h3>
+      <ul>
+         <li>Learn about abstract classes</li>
+         <li>Learn to utilize the observer pattern</li>
+      </ul>
+      <h3>General requirements:</h3>
+      <ul>
+         <li>
+            			Use Eclipse for writing and testing all parts of the exercise.
+            		
+         </li>
+         <li>
+            			Use the JExercise tool to verify the code.
+            		
+         </li>
+         <li>
+            			All classes must be defined/stored in package/folder oving9.
+            		
+         </li>
+         <li>
+            			For classes; use the exact names and modifiers that are specified in the exercise.
+            		
+         </li>
+         <li>
+            			For methods; use the exact name, parameter datatype, sequence of parameters, and 
+            			datatype for return value, that are specified.
+            		
+         </li>
+         <li>
+            			NB! Parameters and fields, and their types, are not always specified. If not, it can 
+            			be deduced from the text and it is a part of the exercise to figure out what it has 
+            			to be.
+            		
+         </li>
+      </ul>
+      <hr>
+      <h2>Overview</h2>
+      <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore" class="comment" id="__comment">This exercise deals with abstract classes and interfaces</div>
+      <h2>Exercise parts</h2>
+      <ol>
+         <li><a href="#_requirements_0">Observable highscore list (75 pt.)</a></li>
+         <li><a href="#_requirements_1">Highscore view observing observable highscore list (25 points).</a></li>
+      </ol>
+      <hr>
+      <h2><a name="_requirements_0">Part 1: Observable highscore list (75 pt.)</a><a name="_requirements_0_description"></a></h2>In this part you will implement an observable highscore list, by means of a class <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">HighscoreList</b> inheriting from an abstract class <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b>. Observability is based on the listener interface <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ListListener</b>.
+      
+      <p xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore"></p>
+      <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b> implements support for adding and removing <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ListListener</b> objects, notifying these listeners about changes to a list, and adding and removing elements with proper notifications.
+      
+      <p xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore"></p>
+      <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">HighscoreList</b> contains elements, e.g. game results, implementing the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Comparable</b> interface. By inheriting from <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b> it supports listening to changes to the highscores.
+      <dl>
+         <dt><a name="_requirements_0_requirements_0_description"></a><code>public interface ListListener</code></dt>
+         <dd><a name="_requirements_0_requirements_0_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ListListener</b> interface is implemented by classes that want to be notified about changes to an <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b>. It contains one method, <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">listChanged</b>, that is called when the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b> changes.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_0_description"></a><code>public void method listChanged in ListListener</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_0_description"></a>The method <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">listChanged</b>, that is called when the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b> changes. It has receives three arguments: the ObservableList that has changed, the lowest index that has changed and the
+            highest index that has changed. Note that both indices can be greater or equal to the list's size, since they may refer to
+            indices that existed before the change, but not after. E.g. if the last element of the ObservableList is removed, both indices
+            will be equal to the list's size.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_1_description"></a><code>public abstract class ObservableList</code> (50 pt.)
+         </dt>
+         <dd><a name="_requirements_0_requirements_1_description"></a><b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b> implements support for adding and removing <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ListListener</b> objects, notifying these listeners about changes to a list, and adding and removing elements with proper notifications.
+            <p></p>Question: Why must this class be declared <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">abstract</b>?
+         </dd>
+         <dt><a name="_requirements_0_requirements_1_requirements_0_description"></a><code>public void method addListListener in ObservableList</code></dt>
+         <dd><a name="_requirements_0_requirements_1_requirements_0_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">addListListener</b> method adds the ListListener argument to the set of ListListeners that are notified when this <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b> changes.
+            <p></p><i xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Duplicate listeners are not allowed and order must be preserved.</i> Question: What kind of Collection should be used for holding the ListListeners, given these requirements?
+         </dd>
+         <dt><a name="_requirements_0_requirements_1_requirements_1_description"></a><code>public void method removeListListener in ObservableList</code></dt>
+         <dd><a name="_requirements_0_requirements_1_requirements_1_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">removeListListener</b> method removes the ListListener argument from the set of ListListeners that are notified when this ObservableList changes.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_1_requirements_2_description"></a><code>protected void method fireListChanged in ObservableList</code></dt>
+         <dd><a name="_requirements_0_requirements_1_requirements_2_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">fireListChanged</b> method takes two indices as argument, and notifies the ListListeners that this ObservableList has changed. The arguments
+            correspond to those of ListListener.
+            <p></p>This is a utility method that can be called from within ObservableList and from subclasses.
+         </dd>
+         <dt><a name="_requirements_0_requirements_1_requirements_6_description"></a><code>protected abstract List method getList in ObservableList</code></dt>
+         <dd><a name="_requirements_0_requirements_1_requirements_6_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">getList</b> method returns a non-specialized <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">List</b>. The list must be the actual list that is observed. The method is abstract and hence must be implemented by (non-abstract)
+            subclasses. <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b> must use this method in its implementation if the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">size</b>, <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">addElement</b> and <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">removeElement</b> methods.
+            <p></p>Question: Why should this method be <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">protected</b> and not <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">private</b> or <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">public</b>?
+         </dd>
+         <dt><a name="_requirements_0_requirements_1_requirements_7_description"></a><code>public int method size in ObservableList</code></dt>
+         <dd><a name="_requirements_0_requirements_1_requirements_7_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">size</b> method returns the size of this <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b>.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_1_requirements_10_description"></a><code>protected void method addElement in ObservableList</code></dt>
+         <dd><a name="_requirements_0_requirements_1_requirements_10_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">addElement</b> method takes two arguments, an index and an element. The method adds the element at the provided index to this <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b> and notifies the ListListeners about the change.
+            <p></p>Take care to call the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">fireListChanged</b> method with the correct indices, according to the requirements of the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ListListener.listChanged</b> method.
+         </dd>
+         <dt><a name="_requirements_0_requirements_1_requirements_11_description"></a><code>protected void method removeElement in ObservableList</code></dt>
+         <dd><a name="_requirements_0_requirements_1_requirements_11_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">removeElement</b> method removes the element at the provided index from this <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b> and notifies the ListListeners about the change.
+            <p></p>Take care to call the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">fireListChanged</b> method with the correct indices, according to the requirements of the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ListListener.listChanged</b> method.
+         </dd>
+         <dt><a name="_requirements_0_requirements_2_description"></a><code>public class HighscoreList</code> (25 pt.)
+         </dt>
+         <dd><a name="_requirements_0_requirements_2_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">HighscoreList</b> class contains a <i xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">limited</i> number of elements, e.g. game results, implementing the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Comparable</b> interface (to enable sorting). It inherits much of its implementation from <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">ObservableList</b>, e.g. its support for ListListeners.
+            
+            <p xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore"></p>This class must implement the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Iterable&lt;Comparable&gt;</b> interface, to support the simplified <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">for</b> looping construct.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_2_requirements_0_description"></a><code>public constructor HighscoreList</code></dt>
+         <dd><a name="_requirements_0_requirements_2_requirements_0_description"></a>HighscoreList's constructor must take an int argument, that specifies the maximum size of the list. If the list becomes too
+            large, by calling addResult too many times, the extra elements (lowest rated) must be automatically removed.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_2_requirements_1_description"></a><code>public void method addResult in HighscoreList</code></dt>
+         <dd><a name="_requirements_0_requirements_2_requirements_1_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">addResult</b> method takes an element implementing the Comparable interface, and adds it to the list.
+            <p></p>The element must be added at the appropriate position and the maximum size of the list must be considered.
+         </dd>
+         <dt><a name="_requirements_0_requirements_2_requirements_6_description"></a><code>public Iterator&lt;Comparable&gt; method iterator in HighscoreList</code></dt>
+         <dd><a name="_requirements_0_requirements_2_requirements_6_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">iterator</b> method implements the corresponding method from the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Iterable&lt;Comparable&gt;</b> interface.
+            <p></p>Question: How can this method be utilized by the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">for</b> construct?
+         </dd>
+      </dl><i></i><h2><a name="_requirements_1">Part 2: Highscore view observing observable highscore list (25 points).</a><a name=""></a></h2>
+      <dl>
+         <dt><a name="_requirements_1_requirements_0_description"></a><code>public class HighscoreView in package oving9</code></dt>
+         <dd><a name="_requirements_1_requirements_0_description"></a>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">HighscoreView</b> class shows the elements of a <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">HighscoreList</b> in a window.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_1_requirements_0_requirements_0_description"></a><code>public void method run in public class HighscoreView in package oving9</code></dt>
+         <dd><a name="_requirements_1_requirements_0_requirements_0_description"></a>In this task, you will create a high score screen. A HighscoreView should use a HighscoreList and display the scores in it.
+            It should update its display dynamically.
+            
+            To test your HighscoreView class, read console input from the user. Modify the HighscoreList by reading scores (e.g. using
+            the provided SokobanResult class), and adding them to the list. HighscoreView should then refresh correctly.
+            
+            A running <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">HighscoreView</b> should be demonstrated.
+            <p></p>Question: How do you make sure <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">HighscoreView</b> is notified about changes to the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">HighscoreList</b>?
+         </dd>
+      </dl><i></i></body>
+</html>

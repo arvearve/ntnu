@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jex:Exercise xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore" text="6" description="ov6.pre.xml" comment="This exercise deals with Java's interface construct: Interfaces define a standardized set of commands that a class will obey. By implementing an interface, other classes will be able to take in any class which implements that interface and may call the methods it implements.&lt;br />For instance, if you have an ArrayList of Cards, then &lt;code>Collections.sort&lt;/code> will sort the whole ArrayList based on the &lt;code>compareTo&lt;/code> function you will implement! This is one of the great features of interfaces: By implementing the functions in an interface, you can for instance use already defined methods such as &lt;code>Collections.sort&lt;/code>, or use data structures such as PriorityQueue to sort your data.">
+  <javaElements xsi:type="jex:JavaPack" name="oving6">
+    <classes name="Card" modifiers="public">
+      <members xsi:type="jex:JavaMethod" name="Card" modifiers="public">
+        <parameters>String</parameters>
+        <parameters>int</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="getSuit" modifiers="public" returnType="String"/>
+      <members xsi:type="jex:JavaMethod" name="getFace" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="toString" modifiers="public" returnType="String"/>
+      <members xsi:type="jex:JavaMethod" name="compareTo" modifiers="public" returnType="int">
+        <parameters>Card</parameters>
+      </members>
+      <superclasses>Comparable&lt;Card></superclasses>
+    </classes>
+    <classes xsi:type="jex:JavaClassTester" name="CardTest" modifiers="public" testedElement="//@javaElements.0/@classes.0">
+      <members xsi:type="jex:JavaMethodTester" name="testConstructor" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetFace" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetSuit" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testCompareTo" modifiers="public" returnType="void"/>
+      <superclasses>TestCase</superclasses>
+    </classes>
+    <classes name="Account" modifiers="public" classKind="interfaceKind">
+      <members xsi:type="jex:JavaMethod" name="getBalance" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="getCredit" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="deposit" modifiers="public" returnType="int">
+        <parameters>int</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="withdraw" modifiers="public" returnType="int">
+        <parameters>int</parameters>
+      </members>
+    </classes>
+    <classes name="SavingsAccount" modifiers="public">
+      <members xsi:type="jex:JavaMethod" name="SavingsAccount" modifiers="public"/>
+      <members xsi:type="jex:JavaMethod" name="getBalance" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="getCredit" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="deposit" modifiers="public" returnType="int">
+        <parameters>int</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="withdraw" modifiers="public" returnType="int">
+        <parameters>int</parameters>
+      </members>
+      <superclasses>Account</superclasses>
+    </classes>
+    <classes xsi:type="jex:JavaClassTester" name="SavingsAccountTest" modifiers="public" testedElement="//@javaElements.0/@classes.3">
+      <members xsi:type="jex:JavaMethodTester" name="testConstructor" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetBalance" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetCredit" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testWithdraw" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testDeposit" modifiers="public" returnType="void"/>
+      <superclasses>TestCase</superclasses>
+    </classes>
+    <classes name="CreditAccount" modifiers="public">
+      <members xsi:type="jex:JavaMethod" name="CreditAccount" modifiers="public">
+        <parameters>int</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="getBalance" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="getCredit" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="deposit" modifiers="public" returnType="int">
+        <parameters>int</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="withdraw" modifiers="public" returnType="int">
+        <parameters>int</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="getFees" modifiers="public" returnType="int"/>
+      <superclasses>Account</superclasses>
+    </classes>
+    <classes xsi:type="jex:JavaClassTester" name="CreditAccountTest" modifiers="public" testedElement="//@javaElements.0/@classes.5">
+      <members xsi:type="jex:JavaMethodTester" name="testConstructor" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetBalance" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetCredit" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testWithdraw" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testDeposit" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetFees" modifiers="public" returnType="void"/>
+      <superclasses>TestCase</superclasses>
+    </classes>
+    <classes name="AccountOverview" modifiers="public">
+      <members xsi:type="jex:JavaMethod" name="AccountOverview" modifiers="public"/>
+      <members xsi:type="jex:JavaMethod" name="getAccountCount" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="getAccount" modifiers="public" returnType="Account">
+        <parameters>int</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="addAccount" modifiers="public" returnType="void">
+        <parameters>Account</parameters>
+      </members>
+      <members xsi:type="jex:JavaMethod" name="getTotalBalance" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="getTotalCredit" modifiers="public" returnType="int"/>
+      <members xsi:type="jex:JavaMethod" name="getTotalFees" modifiers="public" returnType="int"/>
+    </classes>
+    <classes xsi:type="jex:JavaClassTester" name="AccountOverviewTest" modifiers="public" testedElement="//@javaElements.0/@classes.7">
+      <members xsi:type="jex:JavaMethodTester" name="testAddAccount" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetTotalBalance" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetTotalCredit" modifiers="public" returnType="void"/>
+      <members xsi:type="jex:JavaMethodTester" name="testGetTotalFees" modifiers="public" returnType="void"/>
+      <superclasses>TestCase</superclasses>
+    </classes>
+    <classes xsi:type="jex:TestSuite" name="AllTests" modifiers="public"/>
+  </javaElements>
+  <requirements xsi:type="jex:ExercisePart" text="Implementing the Comparable interface" description="In this part, the task is to implement the &lt;code>Comparable&lt;/code> interface in the &lt;code>Card&lt;/code> class.">
+    <requirements xsi:type="jex:JavaRequirement" text="public class Card in package oving6" description="Define a &lt;code>Card&lt;/code> class that implements the &lt;code>Comparable&lt;/code> &#xD;&#xA;interface (java.lang.Comparable) and has the following methods:" javaElement="//@javaElements.0/@classes.0" requiredFeatures="">
+      <requirements xsi:type="jex:JavaRequirement" text="public constructor Card in public class Card in package oving6" description="Constructor that takes the &lt;b>suit&lt;/b> as the first parameter and the &lt;b>face&lt;/b> as the second. The suit is a &lt;code>String&lt;/code> and must be &quot;S&quot;, &quot;H&quot;, &quot;D&quot; or &quot;C&quot;, for spades, hearts, diamonds and clubs, respectively. The face is an &lt;code>int&lt;/code> that represents the value of the card and must be between 1 (ace) and 13 (king)." javaElement="//@javaElements.0/@classes.0/@members.0"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public String method getSuit in public class Card in package oving6" description="Returns the &lt;b>suit&lt;/b> of this &lt;code>Card&lt;/code> as a &lt;code>String&lt;/code>, either &quot;S&quot;, &quot;H&quot;, &quot;D&quot; or &quot;C&quot;." javaElement="//@javaElements.0/@classes.0/@members.1"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getFace in public class Card in package oving6" description="Returns the &lt;b>face&lt;/b> of this &lt;code>Card&lt;/code>, an &lt;code>int&lt;/code> between 1 and (including) 13." javaElement="//@javaElements.0/@classes.0/@members.2"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public String method toString in public class Card in package oving6" description="Takes no parameters and returns a &lt;code>String&lt;/code> consisting of the suit and face of this &lt;code>Card&lt;/code>, e.g. &quot;S2&quot;, &quot;H3&quot;, or &quot;C5&quot;." javaElement="//@javaElements.0/@classes.0/@members.3"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method compareTo in public class Card in package oving6" description="This method should behave as specified in the java documentation for the &lt;code>java.lang.Comparable&lt;/code> &#xD;&#xA;interface. Note that in most card games, the Ace is ranked as highest. Accordingly, the Ace (face = 1) should be counted as the highest ranked card.&#xD;&#xA;&lt;p/>Cards should be compared first by face (value) and then by suit. An 8 is always higher than a 7, but &#xD;&#xA;a 7 of spades is higher than a 7 of hearts." comment="Hint: Note that the strings &quot;S&quot;, &quot;H&quot;, &quot;D&quot; and &quot;C&quot; has the same order in the alphabet as the rank used for comparison." javaElement="//@javaElements.0/@classes.0/@members.4"/>
+    </requirements>
+    <requirements xsi:type="jex:JUnitTest" text="Test public class Card in package oving6" javaElement="//@javaElements.0/@classes.1" points="2">
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testConstructor in public class CardTest in package oving6" javaElement="//@javaElements.0/@classes.1/@members.0" points="4"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetFace in public class CardTest in package oving6" javaElement="//@javaElements.0/@classes.1/@members.1" points="2"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetSuit in public class CardTest in package oving6" javaElement="//@javaElements.0/@classes.1/@members.2" points="2"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testCompareTo in public class CardTest in package oving6" javaElement="//@javaElements.0/@classes.1/@members.3" points="10"/>
+    </requirements>
+  </requirements>
+  <requirements xsi:type="jex:ExercisePart" text="The Account Interface" description="In this part, the task is to implement the &lt;code>Account&lt;/code> interface and two implementations, &lt;code>SavingsAccount&lt;/code> and &lt;code>CreditAccount&lt;/code>.">
+    <requirements xsi:type="jex:JavaRequirement" text="public interface Account in package oving6" description="Define the interface Account with the following method declarations:" javaElement="//@javaElements.0/@classes.2">
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getBalance in public interface Account in package oving6" description="Takes no parameters and returns the current &lt;b>balance&lt;/b> of this &lt;code>Account&lt;/code> as an &lt;code>int&lt;/code>." javaElement="//@javaElements.0/@classes.2/@members.0"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getCredit in public interface Account in package oving6" description="Takes no parameters and returns the granted &lt;b>credit&lt;/b> of this &lt;code>Account&lt;/code>, as an &lt;code>int&lt;/code>. If no credit is granted it should return zero." javaElement="//@javaElements.0/@classes.2/@members.1"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method deposit in public interface Account in package oving6" description="Takes an &lt;code>int&lt;/code> as a parameter, increases the &lt;b>balance&lt;/b> of this &lt;code>Account&lt;/code> and returns the new balance. If the parameter is negative, nothing should happen (the balance should still be returned)." javaElement="//@javaElements.0/@classes.2/@members.2"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method withdraw in public interface Account in package oving6" description="Takes an &lt;code>int&lt;/code> as a parameter, decreases (if allowed) the &lt;b>balance&lt;/b> of this &lt;code>Account&lt;/code> and returns the amount that is made available from the Account. If the requested amount is not covered or it is negative, no money should be withdrawn and zero should be returned." javaElement="//@javaElements.0/@classes.2/@members.3"/>
+    </requirements>
+    <requirements xsi:type="jex:JavaRequirement" text="public class SavingsAccount in package oving6" description="The &lt;code>SavingsAccount&lt;/code> class implements the &lt;code>Account&lt;/code> interface and is an ordinary account." comment="An instance of SavingsAccount should be initialized with a balance of zero. No credit is granted." javaElement="//@javaElements.0/@classes.3">
+      <requirements xsi:type="jex:JavaRequirement" text="public constructor SavingsAccount in public class SavingsAccount in package oving6" javaElement="//@javaElements.0/@classes.3/@members.0"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getBalance in public class SavingsAccount in package oving6" javaElement="//@javaElements.0/@classes.3/@members.1"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getCredit in public class SavingsAccount in package oving6" javaElement="//@javaElements.0/@classes.3/@members.2"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method deposit in public class SavingsAccount in package oving6" javaElement="//@javaElements.0/@classes.3/@members.3"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method withdraw in public class SavingsAccount in package oving6" javaElement="//@javaElements.0/@classes.3/@members.4"/>
+    </requirements>
+    <requirements xsi:type="jex:JUnitTest" text="Test public class SavingsAccount in package oving6" javaElement="//@javaElements.0/@classes.4" points="10">
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testConstructor in public class SavingsAccountTest in package oving6" javaElement="//@javaElements.0/@classes.4/@members.0" points="4"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetBalance in public class SavingsAccountTest in package oving6" javaElement="//@javaElements.0/@classes.4/@members.1" points="4"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetCredit in public class SavingsAccountTest in package oving6" javaElement="//@javaElements.0/@classes.4/@members.2" points="2"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testWithdraw in public class SavingsAccountTest in package oving6" javaElement="//@javaElements.0/@classes.4/@members.3" points="5"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testDeposit in public class SavingsAccountTest in package oving6" javaElement="//@javaElements.0/@classes.4/@members.4" points="5"/>
+    </requirements>
+    <requirements xsi:type="jex:JavaRequirement" text="public class CreditAccount in package oving6" description="The &lt;code>CreditAccount&lt;/code> class implements the &lt;code>Account&lt;/code> interface and is an account that may have credit, i.e. the balance is allowed to be negative (still above a certain value). &#xD;&#xA;&lt;p/>An instance of &lt;code>CreditAccount&lt;/code> should be initialized with a &lt;b>balance&lt;/b> of zero and a &lt;b>credit&lt;/b> limit that is passed as an &lt;code>int&lt;/code> in the constructor.&#xD;&#xA;&lt;p/>Whenever a person uses the credit, a fee of 50 is charged the account. That is, for every withdrawal that causes the balance to become less than zero (or increases the negative balance), an additional amount of 50 is drawn from the account. A withdrawal including the fee cannot exceed the granted credit.&#xD;&#xA;&lt;p/>The &lt;code>CreditAccount&lt;/code> class should additionally be able to report the fees that have been accumulated by implementing the method getFees()." javaElement="//@javaElements.0/@classes.5">
+      <requirements xsi:type="jex:JavaRequirement" text="public constructor CreditAccount in public class CreditAccount in package oving6" javaElement="//@javaElements.0/@classes.5/@members.0"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getBalance in public class CreditAccount in package oving6" javaElement="//@javaElements.0/@classes.5/@members.1"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getCredit in public class CreditAccount in package oving6" javaElement="//@javaElements.0/@classes.5/@members.2"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method deposit in public class CreditAccount in package oving6" javaElement="//@javaElements.0/@classes.5/@members.3"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method withdraw in public class CreditAccount in package oving6" javaElement="//@javaElements.0/@classes.5/@members.4"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getFees in public class CreditAccount in package oving6" javaElement="//@javaElements.0/@classes.5/@members.5"/>
+    </requirements>
+    <requirements xsi:type="jex:JUnitTest" text="Test public class CreditAccount in package oving6" javaElement="//@javaElements.0/@classes.6" points="10">
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testConstructor in public class CreditAccountTest in package oving6" javaElement="//@javaElements.0/@classes.6/@members.0" points="4"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetBalance in public class CreditAccountTest in package oving6" javaElement="//@javaElements.0/@classes.6/@members.1" points="4"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetCredit in public class CreditAccountTest in package oving6" javaElement="//@javaElements.0/@classes.6/@members.2" points="4"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testWithdraw in public class CreditAccountTest in package oving6" javaElement="//@javaElements.0/@classes.6/@members.3" points="6"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testDeposit in public class CreditAccountTest in package oving6" javaElement="//@javaElements.0/@classes.6/@members.4" points="6"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetFees in public class CreditAccountTest in package oving6" javaElement="//@javaElements.0/@classes.6/@members.5" points="2"/>
+    </requirements>
+    <requirements xsi:type="jex:JavaRequirement" text="public class AccountOverview in package oving6" description="The &lt;code>AccountOverview&lt;/code> class holds a set of &lt;code>Account&lt;/code>s, and includes methods for getting information about these accounts as a whole. Create the &lt;code>AccountOverview&lt;/code> class, with the following methods:" javaElement="//@javaElements.0/@classes.7">
+      <requirements xsi:type="jex:JavaRequirement" text="public constructor AccountOverview in public class AccountOverview in package oving6" description="The constructor should ensure that the set of &lt;code>Account&lt;/code>s is empty." comment="Remember to use Java's generics mechanism. This often makes casting unnecessary and eases the use of collection classes." javaElement="//@javaElements.0/@classes.7/@members.0"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getAccountCount in public class AccountOverview in package oving6" description="Takes no parameters and returns the number of &lt;code>Account&lt;/code>s in this &lt;code>AccountOverview&lt;/code>." javaElement="//@javaElements.0/@classes.7/@members.1"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public Account method getAccount in public class AccountOverview in package oving6" description="Takes an int as a parameter and returns the &lt;code>Account&lt;/code> at that position." javaElement="//@javaElements.0/@classes.7/@members.2"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public void method addAccount in public class AccountOverview in package oving6" description="This method takes an &lt;code>Account&lt;/code> as a parameter and adds it to the set of &lt;code>Account&lt;/code>s. This can be implemented in any way you want, but it should be possible to add an unlimited number of accounts, and duplicates are not allowed." javaElement="//@javaElements.0/@classes.7/@members.3"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getTotalBalance in public class AccountOverview in package oving6" description="Takes no parameters and returns the total &lt;b>balance&lt;/b> of all &lt;code>Account&lt;/code>s as an &lt;code>int&lt;/code>." javaElement="//@javaElements.0/@classes.7/@members.4"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getTotalCredit in public class AccountOverview in package oving6" description="Takes no parameters and returns the total &lt;b>credit&lt;/b> of all the &lt;code>Account&lt;/code>s as an &lt;code>int&lt;/code>." javaElement="//@javaElements.0/@classes.7/@members.5"/>
+      <requirements xsi:type="jex:JavaRequirement" text="public int method getTotalFees in public class AccountOverview in package oving6" description="Takes no parameters and returns the total &lt;b>fees&lt;/b> of all the &lt;code>Account&lt;/code>s as an &lt;code>int&lt;/code>." comment="Note that the method &lt;code>getFees()&lt;/code> is only available for &lt;code>CreditAccount&lt;/code> objects. You can use the &lt;code>instanceof&lt;/code> operator to check is an &lt;code>Account&lt;/code> is a &lt;code>CreditAccount&lt;/code>, and use casting to get access to the &lt;code>getFees()&lt;/code> method." javaElement="//@javaElements.0/@classes.7/@members.6"/>
+    </requirements>
+    <requirements xsi:type="jex:JUnitTest" text="Test public class AccountOverview in package oving6" javaElement="//@javaElements.0/@classes.8" points="2">
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testAddAccount in public class AccountOverviewTest in package oving6" javaElement="//@javaElements.0/@classes.8/@members.0" points="2"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetTotalBalance in public class AccountOverviewTest in package oving6" javaElement="//@javaElements.0/@classes.8/@members.1" points="2"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetTotalCredit in public class AccountOverviewTest in package oving6" javaElement="//@javaElements.0/@classes.8/@members.2" points="4"/>
+      <requirements xsi:type="jex:JUnitTest" text="Test with public void method testGetTotalFees in public class AccountOverviewTest in package oving6" javaElement="//@javaElements.0/@classes.8/@members.3" points="4"/>
+    </requirements>
+  </requirements>
+</jex:Exercise>

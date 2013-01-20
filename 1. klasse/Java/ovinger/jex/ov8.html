@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h1>TDT4100, Spring 2012</h1>
+<h2>Exercise 8: Inheritance</h2>
+
+<h3>Deadline 11. April 2012</h3>
+
+<hr/>
+
+<h3>The objective of this exercise is to:</h3>
+<ul>
+  <li>Understand inheritance.</li>
+  <li>Use a class hierarchy in an interactive game with a graphical interface</li>
+</ul>
+
+<h3>General requirements:</h3>
+<ul>
+  <li>You must use inheritance in this exercise.</li>
+  <li>Your design must contain the classes shown in the inheritance diagram below.</li>
+</ul>
+
+<h3>Recommended reading:</h3>
+<ul>
+  <li>Chapter 9 Inheritance, of Big Java</li>
+</ul>
+
+<h2>Introduction</h2>
+<p>In this exercise, we will focus on inheritance. In Java, classes can inherit fields and methods from other classes.
+Through inheritance, you can share common behaviour and reuse code.</p>
+
+<p>The goal of this exercise is to write a simple version of Asteroids with gravity.
+A screenshot of a completed game is shown below.
+Note that this is just an example on how a completed game may look like, and
+that it is completely fine if your solution does not look exactly the same.</p>
+
+<img src="./ov8-screenshot.png" />
+
+<p>Our version of Asteroids supports two kinds of space objects, asteroids and spaceships.
+Their behavior will be coded in Java in two classes, <b>Asteroid</b> and <b>Spaceship</b>, respectively.
+Since they have some things in common, some of the behavior will be collected in a common superclass called <b>SpaceObject</b>.
+Briefly, the concepts <b>SpaceObject</b>, <b>Asteroid</b> and <b>Spaceship</b> have the following behavior.
+
+<ul>
+<li>Space objects have a (possibly irregular) shape (outline) defined by a polygon. Hence <b>SpaceObject</b> inherits from <b>GPolygon</b>.</it>
+<li>Space objects have a speed (a vector) that may change (i.e. acceleration) due to forces.</li>
+<li>The forces are from mutual gravitational pull and from thrusters (spaceships only).</it>
+<li>All space objects have a mass, but how it is computed depends on the kind. The mass of a space object should of course affect how forces accelerate it.</it>
+<li>Asteroids are solid object with a certain sizes (radius) and density that float around in space.</li>
+<li><b>Spaceship</b> also float around in space, but the user can control it by changing its direction and using its thruster for acceleration</li>
+</ul>
+
+<p>The figure below illustrates the inheritance hierarchy, and also shows the methods that implement the behavior.</p>
+
+<img src="./ov8-classes.png"/>
+
+<p>We suggest implementing these classes in the order <b>SpaceObject</b>, <b>Asteroid</b> and <b>Spaceship</b>. To help you test each of them,
+we provide three classes that can be used to test each of them:
+<ul>
+<li><b>AsteroidsStep1</b> creates three <b>SpaceObject</b> instances with specific shapes, locations and speed that make sure they collide.
+When they intersect their color will change.</li>
+<li><b>AsteroidsStep2</b> creates a lot of small <b>Asteroid</b> instances and one big and dense one corresponding to the sun.
+The asteroids should float around and change their direction due to gravitational pull.</li> 
+<li><b>AsteroidsStep3</b> builds on Asteroids2 and adds a <b>Spaceship</b> instance that you make control with the arrow keys.
+Note that you may have to click in the window to activate the keyboard.</li> 
+</ul>
+<p>You should study each of these classes and their common superclass <b>Asteroids</b>, to understand how they
+use and test the other classes. Below you'll find a more detailed descriptions of <b>SpaceObject</b>, <b>Asteroid</b> and <b>Spaceship</b>.
+
+<h3><b>SpaceObject</b> (50+ points)</h3>
+
+<li>Space objects have a speed (a vector) that may change (i.e. acceleration) due to forces.</li>
+<li>The forces are from mutual gravitational pull and from thrusters (spaceships only).</it>
+<li>All space objects have a mass, but how it is computed depends on the kind. The mass of a space object should of course affect how forces accelerate it.</it>
+
+<ul>
+    <li>The <b>SpaceObject</b> should inherit from <b>GPolygon</b>, and hence may depend on and utilize its methods.</li>
+    <li>The speed of a <b>SpaceObject</b> must be encapsulated by the <b>getSpeedX()</b>, <b>getSpeedY()</b> and <b>setSpeed(double, double)</b> methods.
+    	In addition, there should be an <b>accelerate(double, double)</b> method for causing a relative change to the speed.</li>
+    <li>The <b>getMass()</b> method can return any constant value (use 0, if you want them to be unaffected by gravitational pull).</li>
+    <li>The <b>tick()</b> method is continuously called to simulate proper movements. Calling <b>tick()</b> should move the <b>SpaceObject</b> based on its speed (vector).
+    <li>The <b>intersects(SpaceObject)</b> method should return true if this <b>SpaceObject</b> intersects the other <b>SpaceObject</b>. We propose two ways of testing this,
+    that utilizes the contains method inherited from <b>GPolygon</b>. A simple solution is to test whether the one of the corners of the bounding box
+    (as reported by <b>getBounds()</b>) of the other <b>SpaceObject</b> is inside this <b>SpaceObject</b>. A more complex solution (giving 10 extra points) is to test whether one of the corners
+    of the other <b>SpaceObject</b>'s Polygon (as reported by <b>getPolygon()</b>) is inside this <b>SpaceObject</b>. In either case, you should think of what happens if
+    a very small <b>SpaceObject</b> enters a very big one between two of its corners. The <b>AsteroidsStep1</b> has been carefully designed to test whether you handle this correctly!</li>
+    <li>The <b>applyGravitationalForce()</b> method in <b>SpaceObject</b> should use the formula for gravitational pull to accelerate itself.
+    Note that it should not move the <b>SpaceObject</b>, since this is the role of <b>tick()</b>!</li>
+</ul>
+
+<p>Test with the <b>AsteroidsStep1</b> class. It creates a few space objects that move across the screen. When two objects collide (intersects) they will become red.</p>
+
+<h3><b>Asteroid</b> (25 points)</h3>
+
+<ul>
+    <li>The <b>Asteroid</b> class should inherit from <b>SpaceObject</b>.</li>
+    <li>It should be possible to set the density, radius and number of corners when creating an <b>Asteroid</b>,
+    i.e. <b>new <b>Asteroid</b>(1, 5, 10)</b> should create an asteroid with density=1 and radius=5 having 10 corners.
+    Hint: The method <b>addPolarEdge(radius, angle)</b> inherited from <b>GPolygon</b> is useful for adding corners.
+    <li>The mass of an asteroid must be computed from its size and density (remember the formula?)</li> 
+</ul>
+
+<p>Test with <b>AsteroidsStep2</b>. It creates a lot of smaller asteroids and big one, that should affect each other (and collide).
+Note: When the objects get really close to each other they will get enormous speed because of dividing by a small number <code>r</code>. Don't worry about this.</p>
+
+<h3><b>Spaceship</b> (25 points)</h3>
+<ul>
+    <li>The <b>Spaceship</b> class should inherit from <b>SpaceObject</b>.</li>
+    <li>A spaceship has constant mass. Find a value suitable for the simulation.</li>
+    <li>A spaceship has a direction (an angle between 0 and 360) that can be set to an absolute value with <b>setDirection(int)</b> and relatively with <b>incrementDirection(int)</b>.</li>
+    <li>The <b>thrust()</b> method should accelerate the <b>Spaceship</b> (but not move it).</li> 
+</ul>
+
+<p>Test with <b>AsteroidsStep3</b>. It builds on <b>AsteroidsStep2</b> and adds a spaceship that can be controlled with the keyboard. Note that you may have to click in the window to activate the keyboard.
+All the features mentioned earlier should work after step 3. Feel free to experiment with your game and try to make it even nicer.</p>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">
+				{font-size: 1.0em;}
+				code.small {font-size: 1.0em;}
+				dl {margin-top: 0.9em;}
+				dt {margin-top: 0.9em;}
+				h2 {margin-top: 1.5em;}
+				h3 {margin-top: 1.5em;}
+				p {margin-top: 1.1em;}
+				dl {margin-left: 2em;}
+			</style><title>
+         			Exercise
+         			3
+      </title>
+   </head>
+   <body>
+      <h1>TDT4100, Spring 2012</h1>
+      <h2>Exercise 3: Object-structures</h2>
+      <h3>Deadline 08.02.2012 (mandatory exercise)</h3>
+      <hr>
+      <h3>The objective of this exercise is to:</h3>
+      <ul>
+         <li>learn to declare a class with fields</li>
+         <li>learn how to declare methods, invoke methods, and pass arguments to a method</li>
+         <li>learn how to use object-oriented structures</li>
+      </ul>
+      <h3>General requirements:</h3>
+      <ul>
+         <li>
+            			Use Eclipse for writing and testing all parts of the exercise.
+            		
+         </li>
+         <li>
+            			Use the JExercise tool to verify the code.
+            		
+         </li>
+         <li>
+            			All classes must be defined/stored in package/folder oving3.
+            		
+         </li>
+         <li>
+            			For classes; use the exact names and modifiers that are specified in the exercise.
+            		
+         </li>
+         <li>
+            			For methods; use the exact name, parameter datatype, sequence of parameters, and 
+            			datatype for return value, that are specified.
+            		
+         </li>
+         <li>
+            			NB! Parameters and fields, and their types, are not always specified. If not, it can 
+            			be deduced from the text and it is a part of the exercise to figure out what it has 
+            			to be.
+            		
+         </li>
+      </ul>
+      <h3>Recommended reading:</h3>
+      <hr>
+      <h2>Overview</h2>
+      <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore" class="comment" id="__comment">This exercise focuses on object structures and simple methods. The goal is to teach you basic object-orientation concepts.</div>
+      <h2>Exercise parts</h2>
+      <ol>
+         <li><a href="#_requirements_0">Person class (35 pt.)</a></li>
+         <li><a href="#_requirements_1">Creation of object structure for the Royal Family (20 pt.)</a></li>
+         <li><a href="#_requirements_2">Card and CardDeck classes (30 pt.)</a></li>
+         <li><a href="#_requirements_3">Drawing the deck of cards</a></li>
+      </ol>
+      <hr>
+      <h2><a name="_requirements_0">Part 1: Person class (35 pt.)</a><a name="_requirements_0_description"></a></h2>The <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Person</b> class will be used to, obviously, define a person.
+      <dl>
+         <dt><a name="_requirements_0_requirements_0_requirements_0_description"></a><code>String field name in public class Person in package oving3</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_0_description"></a>A <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Person</b> has a name. Create a String-field to hold the name.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_1_description"></a><code>Person field mother in public class Person in package oving3</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_1_description"></a>A <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Person</b> has a mother. Create a field for that, too.
+            <p></p><b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Note:</b> This is not a <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">String</b> field. A <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Person</b>'s mother is also a <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Person</b>: This gives you a taste of OOP. A class can actually hold fields of the same type as the class itself.
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_2_description"></a><code>Person field father in public class Person in package oving3</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_2_description"></a>A <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Person</b> has a father. Create a field for the father.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_3_description"></a><code>ArrayList&lt;Person&gt; field children in public class Person in package oving3</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_3_description"></a>An ArrayList holding the <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Person</b>'s children.
+            <p></p>The children are naturally <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Person</b>s as well. Since a person can have more than one child, we cannot use a simple field, but need to use an ArrayList.
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_4_description"></a><code>public boolean method isMotherOf in public class Person in package oving3</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_4_description"></a>Create a method that tests whether this Person is the mother of the Person given as an argument to the method.
+            <p></p>It is not enough to check whether the Person has <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">this</b> Person registered as his or her mother, you must check that the Person is in <b xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">this</b> Person's children list, too. Consistency is key here.
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_6_description"></a><code>public boolean method isFatherOf in public class Person in package oving3</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_6_description"></a>Create a method that tests whether this Person is the father of the Person given as an argument to the method.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_0_requirements_0_requirements_8_description"></a><code>public boolean method isSiblingOf in public class Person in package oving3</code></dt>
+         <dd><a name="_requirements_0_requirements_0_requirements_8_description"></a>Create a method that tests whether this Person is the full sibling of the Person given as an argument to the method.
+            <p></p>This method is actually a lot more subtle than it might seem at a first glance. Ask yourself: When are two people formally
+            full siblings? Furthermore, Java doesn't care whether or not a Person can be his/her own sibling in the real world. In Java,
+            that is completely possible unless you force it not to be!
+         </dd>
+      </dl><i></i><h2><a name="_requirements_1">Part 2: Creation of object structure for the Royal Family (20 pt.)</a><a name="_requirements_1_description"></a></h2>Create objects corresponding to the Norwegian Royal Family. A diagram of the family is shown below. You can create the objects
+      f.ex. in a new class with a method createRoyalFamily() and call that method from the run() method.
+      
+      <ul xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">
+         	
+         <li>Harald og Sonja</li>
+         		
+         <ul>
+            			
+            <li>Haakon og Mette-Marit</li>
+            				
+            <ul>
+               					
+               <li>Ingrid Alexandra</li>
+               					
+               <li>Sigurd Magnus</li>
+               				
+            </ul>
+            			
+            <li>Märtha og Ari</li>
+            				
+            <ul>
+               					
+               <li>Maud Angelica</li>
+               					
+               <li>Leah Isadora</li>
+               					
+               <li>Emma Talulah</li>
+               				
+            </ul>
+            		
+         </ul>
+         
+      </ul>
+      
+      You need to verify that you have created the correct object structure by e.g. printing out all the Person objects in the family.
+      You can do this by making a toString() method in the Person class that prints out the mother, father and children attributes
+      of the object. Then call this method for each member of the family (object).
+      <dl></dl><i>
+         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore" class="comment" id="_requirements_1_comment">This part is not covered by JExercise. This means that you must demonstrate your code and output to the student assistant
+            to get these 20 points.
+         </div></i><h2><a name="_requirements_2">Part 3: Card and CardDeck classes (30 pt.)</a><a name="_requirements_2_description"></a></h2>In this part, we're going to create cards and decks of cards.
+      <dl>
+         <dt><a name="_requirements_2_requirements_0_description"></a><code>public class Card in package oving3</code> (10 pt.)
+         </dt>
+         <dd><a name="_requirements_2_requirements_0_description"></a>Create a class <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">Card</code><p></p>
+         </dd>
+         <dt><a name="_requirements_2_requirements_0_requirements_0_description"></a><code>String field suit in public class Card in package oving3</code></dt>
+         <dd><a name="_requirements_2_requirements_0_requirements_0_description"></a>A card has a suit. The suit can either be Clubs, Hearts, Spades or Diamonds. We let each be denoted by a capital letter; "C",
+            "H", "S" or "D", respectively.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_2_requirements_0_requirements_1_description"></a><code>int field face in public class Card in package oving3</code></dt>
+         <dd><a name="_requirements_2_requirements_0_requirements_1_description"></a>The face is the value of the card. For our purposes, let Ace have the value 1, and then let the rest of the cards have their
+            conventional values.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_2_requirements_0_requirements_2_description"></a><code>public String method toString in public class Card in package oving3</code></dt>
+         <dd><a name="_requirements_2_requirements_0_requirements_2_description"></a>The toString method returns the suit and face values as one String with no space in between.
+            <p></p>Example: The Ace of Spades should return "S1" as the value of the toString method, and the Queen of Hearts should return "H12".
+         </dd>
+         <dt><a name="_requirements_2_requirements_1_description"></a><code>public class CardDeck in package oving3</code> (20 pt.)
+         </dt>
+         <dd><a name="_requirements_2_requirements_1_description"></a>Create the class <code xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore">CardDeck</code>. The card deck will obviously hold some cards later on.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_2_requirements_1_requirements_0_description"></a><code>ArrayList&lt;Card&gt; field cards in public class CardDeck in package oving3</code></dt>
+         <dd><a name="_requirements_2_requirements_1_requirements_0_description"></a>A CardDeck is effectively a list of Cards. Create such an list field.
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_2_requirements_1_requirements_1_description"></a><code>public void method init in public class CardDeck in package oving3</code></dt>
+         <dd><a name="_requirements_2_requirements_1_requirements_1_description"></a>The init() method fills the deck with the 52 cards that are in a standard (Norwegian) deck. Fill it in the order S,H,D,C and
+            in increasing face value, i.e. the first card is the Ace of Spades ("S1"), the second 2 of Spades ("S2"), and the last is
+            King of Clubs ("C13").
+            <p></p>
+         </dd>
+         <dt><a name="_requirements_2_requirements_1_requirements_3_description"></a><code>public Card method getCard in public class CardDeck in package oving3</code></dt>
+         <dd><a name="_requirements_2_requirements_1_requirements_3_description"></a>Create a method that takes an int argument and returns the card in that position in the Card list.
+            <p></p>
+         </dd>
+      </dl><i></i><h2><a name="_requirements_3">Part 4: Drawing the deck of cards</a><a name="_requirements_3_description"></a></h2>Extend CardDeck to also draw the card deck in some way of your choosing. The CardDeck class already has a method called createGImage
+      for returning a returning a GImage for a given suit and face (String and int, respectively). This simply means that if you
+      call createGImage("H", 3), you will get a GImage object which will be an image of the card H3, namely the three of hearts.
+      Add one such GImage for each card in the deck , and the whole deck will be shown in the application window. Note you also
+      must set the location of each card appropriately, so they won't cover each other.<i>
+         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jex="platform:/plugin/no.hal.jex/model/jex.ecore" class="comment" id="_requirements_3_comment">For the final 15 points, demonstrate this program to your student assistant.</div></i></body>
+</html>
