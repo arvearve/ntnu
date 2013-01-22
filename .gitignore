@@ -6,6 +6,6 @@
 *.synctex.gz
 *.toc
 */.DS_Store
-Java/*
-!Java/ovinger/src
 .svn/
+*.class
+
