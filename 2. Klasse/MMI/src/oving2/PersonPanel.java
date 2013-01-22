@@ -15,6 +15,7 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
+import javax.swing.JTextField;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
@@ -29,9 +30,9 @@ public class PersonPanel extends JPanel implements ActionListener{
 	private Label genderLabel = new Label("Gender: ");
 	private Label heightLabel = new Label("Height: ");
 	
-	private TextField nameField = new TextField();
-	private TextField emailField = new TextField();
-	private TextField birthdayField = new TextField();
+	private JTextField nameField = new JTextField();
+	private JTextField emailField = new JTextField();
+	private JTextField birthdayField = new JTextField();
 	private JComboBox genderComboBox = new JComboBox(Gender.values());
 	private JSlider heightSlider = new JSlider(120, 220, 180);
 	
