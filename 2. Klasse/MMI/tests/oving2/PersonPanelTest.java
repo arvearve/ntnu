@@ -61,7 +61,8 @@ public class PersonPanelTest extends JFCTestCase {
         super.tearDown();
     }
 
-    private JComponent findComponent(Class c, String name, boolean shouldAssert) {
+    @SuppressWarnings("rawtypes")
+	private JComponent findComponent(Class c, String name, boolean shouldAssert) {
         finder.setComponentClass(c);
         finder.setName(name);
         JComponent comp = (JComponent) finder.find(testPanel, 0);
@@ -72,15 +73,13 @@ public class PersonPanelTest extends JFCTestCase {
         return comp;
     }
 
+    @SuppressWarnings("rawtypes") 
     private JComponent findComponent(Class c, String name) {
         return findComponent(c, name, true);
     }
 
     public void testComponentPresence() {
-    	System.out.println("looking for nameproperty..");
         findComponent(JTextField.class, "NamePropertyComponent");
-        
-        System.out.println("looking for dateofbirthproperty..");
         findComponent(JTextField.class, "DateOfBirthPropertyComponent");
         findComponent(JComboBox.class, "GenderPropertyComponent");
         findComponent(JTextField.class, "EmailPropertyComponent");

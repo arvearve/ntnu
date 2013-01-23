@@ -16,7 +16,8 @@ import junit.extensions.jfcunit.eventdata.MouseEventData;
 import junit.extensions.jfcunit.eventdata.StringEventData;
 import junit.extensions.jfcunit.finder.NamedComponentFinder;
 
-public class ButtonsNTextTest extends JFCTestCase{	
+public class ButtonsNTextTest extends JFCTestCase {
+
     private JPanel testPanel;
 
     private NamedComponentFinder finder;
@@ -41,7 +42,8 @@ public class ButtonsNTextTest extends JFCTestCase{
         super.tearDown();
     }
 
-    private JComponent findComponent(Class c, String name) {
+    @SuppressWarnings("rawtypes")
+	private JComponent findComponent(Class c, String name) {
         finder.setComponentClass(c);
         finder.setName(name);
         JComponent comp = (JComponent) finder.find(testPanel, 0);

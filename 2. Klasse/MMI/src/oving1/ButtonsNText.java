@@ -14,13 +14,7 @@ import javax.swing.JToggleButton;
  
 @SuppressWarnings("serial")
 public class ButtonsNText extends JPanel implements ActionListener, KeyListener {
-	// Fields
 	
-//	The ButtonsNText panel must contain the following components:  
-//		- A JTextField named TextLine  
-//		- A JToggleButton named UpperCaseButton  
-//		- A JToggleButton named LowerCaseButton  
-//		- A JCheckBox named ContinuousButton
 	private JTextField TextLine;
 	private JToggleButton UpperCaseButton;
 	private JToggleButton LowerCaseButton;
