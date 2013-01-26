@@ -97,6 +97,11 @@ public class PersonPanel extends JPanel implements PropertyChangeListener{
 		public void setModel(Person theModel) {
 			model = theModel;
 			model.addPropertyChangeListener(this);
+			nameField.setText(model.getName());
+			emailField.setText(model.getEmail());
+			birthdayField.setText(model.getDateOfBirth());
+			genderComboBox.setSelectedItem(model.getGender());
+			heightSlider.setValue(model.getHeight());
 		}
 
 	public Person getModel(){
@@ -131,14 +136,11 @@ public class PersonPanel extends JPanel implements PropertyChangeListener{
 			
 		}
 	}
-	
-	
 	// PropertyChangeListener
 	public void propertyChange(PropertyChangeEvent e) {
-		if ( e.getNewValue().equals(e.getOldValue()) ) {return;}
+		if ( e.getNewValue() == e.getOldValue() ) {return;}
 		
 		String p = e.getPropertyName();
-		
 		if ( p.equals(Person.NAME_PROPERTY) ){
 			nameField.setText(model.getName());
 		} else if ( p.equals(Person.DATEOFBIRTH_PROPERTY) ){

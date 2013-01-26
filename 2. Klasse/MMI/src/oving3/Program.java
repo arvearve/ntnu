@@ -21,5 +21,6 @@ public class Program {
 		frame.getContentPane().add(content);
 		frame.pack();
 		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }

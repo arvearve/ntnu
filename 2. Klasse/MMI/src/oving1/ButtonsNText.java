@@ -103,9 +103,10 @@ public class ButtonsNText extends JPanel implements ActionListener, KeyListener 
 
 
 	public static void main(String[] args) {
-		JFrame frame = new JFrame("Oving1");
+		JFrame frame = new JFrame("Oving1");	
 		frame.getContentPane().add(new ButtonsNText()); 
 		frame.pack();
 		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }

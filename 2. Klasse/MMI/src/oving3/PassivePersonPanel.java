@@ -1,7 +1,5 @@
 package oving3;
 
-import javax.swing.JFrame;
-
 @SuppressWarnings("serial")
 public class PassivePersonPanel extends PersonPanel {
 	public PassivePersonPanel() {

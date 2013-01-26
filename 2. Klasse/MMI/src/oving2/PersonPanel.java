@@ -114,6 +114,7 @@ public class PersonPanel extends JPanel implements ActionListener{
 		frame.getContentPane().add(new PersonPanel());
 		frame.pack();
 		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 	

@@ -17,6 +17,9 @@ public class Person {
 	private Gender gender;
 	private int height;
 	
+	public Person(){
+		this("No Name");
+	}
 	
 	public Person(String name){
 		this.name = name;
@@ -78,6 +81,6 @@ public class Person {
 
 	
 	public String toString() {
-		return "Name: " + name + "\nBirthday: " + dateOfBirth + "\nGender: " + gender + "\n Email: " + email + "\nHeight: " + height;
+		return name;
 	};
 }
