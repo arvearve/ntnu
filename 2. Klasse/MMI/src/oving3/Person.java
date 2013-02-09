@@ -79,6 +79,9 @@ public class Person {
 		pcs.addPropertyChangeListener(listener);
 	}
 
+	public void removePropertyChangeListener(PropertyChangeListener listener){
+		pcs.removePropertyChangeListener(listener);
+	}
 	
 	public String toString() {
 		return name;

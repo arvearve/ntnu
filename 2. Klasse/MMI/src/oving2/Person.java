@@ -17,6 +17,7 @@ public class Person {
 
 	public void setName(String name) {
 		this.name = name;
+		System.out.println(name);
 	}
 
 	public String getDateOfBirth() {
@@ -25,6 +26,7 @@ public class Person {
 
 	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
+		System.out.println(dateOfBirth);
 	}
 
 	public Gender getGender() {
@@ -33,6 +35,7 @@ public class Person {
 
 	public void setGender(Gender gender) {
 		this.gender = gender;
+		System.out.println(gender);
 	}
 
 	public String getEmail() {
@@ -41,14 +44,17 @@ public class Person {
 
 	public void setEmail(String email) {
 		this.email = email;
+		System.out.println(email);
 	}
 
 	public int getHeight() {
 		return height;
+		
 	}
 
 	public void setHeight(int height) {
 		this.height = height;
+		System.out.println(height);
 	}
 
 	public String toString() {

@@ -27,7 +27,8 @@ public class PersonPanel extends JPanel implements ActionListener{
 	private JLabel birthdayLabel = new JLabel("Birthday: ");
 	private JLabel genderLabel = new JLabel("Gender: ");
 	private JLabel heightLabel = new JLabel("Height: ");
-
+	private JLabel heightRangeLabel = new JLabel();
+	
 	private JTextField nameField = new JTextField();
 	private JTextField emailField = new JTextField();
 	private JTextField birthdayField = new JTextField();
@@ -40,6 +41,9 @@ public class PersonPanel extends JPanel implements ActionListener{
 	// Constructor
 	public PersonPanel(){
 		this.setLayout(new GridBagLayout());
+		
+		heightSlider.setLabelTable(heightSlider.createStandardLabels(20));
+		heightSlider.setPaintLabels(true);
 		
 		nameField.addKeyListener(listener);
 		emailField.addKeyListener(listener);
