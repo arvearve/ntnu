@@ -1,8 +1,10 @@
 package oving4;
 
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.BoxLayout;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -35,11 +37,20 @@ public class PersonListPanel extends JPanel{
 		addPersonButton.addActionListener(new newPersonAction());
 		deletePersonButton.addActionListener(new removePersonAction());
 		
-		// TODO fix layout!
+		// Layout
+		JPanel buttons = new JPanel();
+		buttons.add(addPersonButton);
+		buttons.add(deletePersonButton);
+		buttons.setLayout(new BoxLayout(buttons, BoxLayout.Y_AXIS));
+		
+		personList.setSize(150, 300);
+		
 		add(personPanel);
 		add(personList);
-		add(addPersonButton);
-		add(deletePersonButton);
+		add(buttons);
+		
+			
+		
 	}
 
 

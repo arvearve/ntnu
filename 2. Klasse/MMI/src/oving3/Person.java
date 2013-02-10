@@ -18,7 +18,7 @@ public class Person {
 	private int height;
 	
 	public Person(){
-		this("No Name");
+		this("");
 	}
 	
 	public Person(String name){
@@ -26,7 +26,7 @@ public class Person {
 	}
 	
 	public String getName() {
-		return name;
+		return (name != null)?name:"";
 	}
 
 	public void setName(String name) {
@@ -36,7 +36,7 @@ public class Person {
 	}
 
 	public String getDateOfBirth() {
-		return dateOfBirth;
+		return (dateOfBirth != null)?dateOfBirth:"";
 	}
 
 	public void setDateOfBirth(String dateOfBirth) {
@@ -56,7 +56,7 @@ public class Person {
 	}
 
 	public String getEmail() {
-		return email;
+		return (email != null)?email:"";
 	}
 
 	public void setEmail(String email) {

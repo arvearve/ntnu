@@ -1,9 +1,12 @@
 package oving4;
 
+import java.awt.Color;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 import oving3.*;
+
+import javax.swing.CellRendererPane;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JPanel;
@@ -20,11 +23,13 @@ public class PersonList extends JPanel implements PropertyChangeListener{
 	JScrollPane scroller = new JScrollPane(personList);
 	
 	public PersonList(){
+		this.setBackground(new Color(0.1f, 0.1f, 0.3f));
 		scroller.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		personList.setName("PersonList");
 		personList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		personList.setCellRenderer(new PersonRenderer());
 		add(scroller);
-	}
+		}
 	
 	
 	public void addListSelectionListener(ListSelectionListener listener){
@@ -61,11 +66,8 @@ public class PersonList extends JPanel implements PropertyChangeListener{
 
 	@Override
 	public void propertyChange(PropertyChangeEvent e) {
-		if ( e.getNewValue() == e.getOldValue() ) {return;}
-		
-		personList.repaint();
-		System.out.println("Property changed, repainting list.");
-		
+		if ( e.getNewValue() == e.getOldValue()) {return;}
+		personList.repaint();		
 	}
 
 	

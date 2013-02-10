@@ -51,6 +51,14 @@ public class PersonPanel extends JPanel implements PropertyChangeListener{
 		genderComboBox.setName("GenderPropertyComponent");
 		heightSlider.setName("HeightPropertyComponent");
 		
+		
+		heightSlider.setMaximum(220);
+	    heightSlider.setMinimum(120);
+	    heightSlider.setMajorTickSpacing(20);
+	    heightSlider.setMinorTickSpacing(10);
+	    heightSlider.setPaintTicks(true);
+	    heightSlider.setPaintLabels(true);
+	    
 		GridBagConstraints c = new GridBagConstraints();
 		c.insets = new Insets(3, 7, 3, 7);
 		c.gridx = 0;
@@ -102,6 +110,7 @@ public class PersonPanel extends JPanel implements PropertyChangeListener{
 			birthdayField.setText(model.getDateOfBirth());
 			genderComboBox.setSelectedItem(model.getGender());
 			heightSlider.setValue(model.getHeight());
+			
 		}
 
 	public Person getModel(){
