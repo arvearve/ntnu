@@ -29,6 +29,7 @@ public class PersonListPanel extends JPanel{
 	
 	public PersonListPanel(){
 		
+		
 		personPanel.setName("PersonPanel");
 		addPersonButton.setName("NewPersonButton");
 		deletePersonButton.setName("DeletePersonButton");
@@ -43,13 +44,9 @@ public class PersonListPanel extends JPanel{
 		buttons.add(deletePersonButton);
 		buttons.setLayout(new BoxLayout(buttons, BoxLayout.Y_AXIS));
 		
-		personList.setSize(150, 300);
-		
 		add(personPanel);
 		add(personList);
 		add(buttons);
-		
-			
 		
 	}
 
