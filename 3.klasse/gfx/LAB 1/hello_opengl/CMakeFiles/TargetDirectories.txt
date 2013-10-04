@@ -1,0 +1,1 @@
+/Users/arve/Code/NTNU/3.klasse/gfx/assignment1/hello_opengl/CMakeFiles/Hello_world_GL.dir

@@ -1,0 +1,363 @@
+01:19:53, Thread-3: Customer 1 is appears at the shop
+01:19:53, Thread-3: Customer 1 has a seat now.
+01:19:53, Thread-3: Customer 1 started eating.
+01:19:53, Thread-4: Customer 2 is appears at the shop
+01:19:53, Thread-4: Customer 2 has a seat now.
+01:19:53, Thread-4: Customer 2 started eating.
+01:19:53, Thread-5: Customer 3 is appears at the shop
+01:19:53, Thread-5: Customer 3 has a seat now.
+01:19:53, Thread-5: Customer 3 started eating.
+01:19:53, Thread-6: Customer 4 is appears at the shop
+01:19:53, Thread-6: Customer 4 has a seat now.
+01:19:53, Thread-6: Customer 4 started eating.
+01:19:53, Thread-7: Customer 5 is appears at the shop
+01:19:53, Thread-7: Customer 5 has a seat now.
+01:19:53, Thread-7: Customer 5 started eating.
+01:19:53, Thread-8: Customer 6 is appears at the shop
+01:19:53, Thread-8: Customer 6 has a seat now.
+01:19:53, Thread-8: Customer 6 started eating.
+01:19:53, Thread-9: Customer 7 is appears at the shop
+01:19:53, Thread-9: Customer 7 has a seat now.
+01:19:53, Thread-9: Customer 7 started eating.
+01:19:54, Thread-10: Customer 8 is appears at the shop
+01:19:54, Thread-10: Customer 8 has a seat now.
+01:19:54, Thread-10: Customer 8 started eating.
+01:19:54, Thread-11: Customer 9 is appears at the shop
+01:19:54, Thread-11: Customer 9 has a seat now.
+01:19:54, Thread-11: Customer 9 started eating.
+01:19:54, Thread-12: Customer 10 is appears at the shop
+01:19:54, Thread-12: Customer 10 has a seat now.
+01:19:54, Thread-12: Customer 10 started eating.
+01:19:54, Thread-13: Customer 11 is appears at the shop
+01:19:54, Thread-13: Customer 11 is waiting for a free seat
+01:19:54, Thread-14: Customer 12 is appears at the shop
+01:19:54, Thread-14: Customer 12 is waiting for a free seat
+01:19:54, Thread-15: Customer 13 is appears at the shop
+01:19:54, Thread-15: Customer 13 is waiting for a free seat
+01:19:54, Thread-16: Customer 14 is appears at the shop
+01:19:54, Thread-16: Customer 14 is waiting for a free seat
+01:19:54, Thread-17: Customer 15 is appears at the shop
+01:19:54, Thread-17: Customer 15 is waiting for a free seat
+01:19:54, Thread-18: Customer 16 is appears at the shop
+01:19:54, Thread-18: Customer 16 is waiting for a free seat
+01:19:54, Thread-19: Customer 17 is appears at the shop
+01:19:54, Thread-19: Customer 17 is waiting for a free seat
+01:19:54, Thread-20: Customer 18 is appears at the shop
+01:19:54, Thread-20: Customer 18 is waiting for a free seat
+01:19:54, Thread-21: Customer 19 is appears at the shop
+01:19:54, Thread-21: Customer 19 is waiting for a free seat
+01:19:54, Thread-22: Customer 20 is appears at the shop
+01:19:54, Thread-22: Customer 20 is waiting for a free seat
+01:19:54, Thread-23: Customer 21 is appears at the shop
+01:19:54, Thread-23: Customer 21 is waiting for a free seat
+01:19:54, Thread-24: Customer 22 is appears at the shop
+01:19:54, Thread-24: Customer 22 is waiting for a free seat
+01:19:54, Thread-25: Customer 23 is appears at the shop
+01:19:54, Thread-25: Customer 23 is waiting for a free seat
+01:19:54, Thread-26: Customer 24 is appears at the shop
+01:19:54, Thread-26: Customer 24 is waiting for a free seat
+01:19:54, Thread-27: Customer 25 is appears at the shop
+01:19:54, Thread-27: Customer 25 is waiting for a free seat
+01:19:54, Thread-28: Customer 26 is appears at the shop
+01:19:54, Thread-28: Customer 26 is waiting for a free seat
+01:19:55, Thread-29: Customer 27 is appears at the shop
+01:19:55, Thread-29: Customer 27 is waiting for a free seat
+01:19:55, Thread-30: Customer 28 is appears at the shop
+01:19:55, Thread-30: Customer 28 is waiting for a free seat
+01:19:55, Thread-31: Customer 29 is appears at the shop
+01:19:55, Thread-31: Customer 29 is waiting for a free seat
+01:19:55, Thread-32: Customer 30 is appears at the shop
+01:19:55, Thread-32: Customer 30 is waiting for a free seat
+01:19:55, Thread-33: Customer 31 is appears at the shop
+01:19:55, Thread-33: Customer 31 is waiting for a free seat
+01:19:55, Thread-34: Customer 32 is appears at the shop
+01:19:55, Thread-34: Customer 32 is waiting for a free seat
+01:19:55, Thread-35: Customer 33 is appears at the shop
+01:19:55, Thread-35: Customer 33 is waiting for a free seat
+01:19:55, Thread-36: Customer 34 is appears at the shop
+01:19:55, Thread-36: Customer 34 is waiting for a free seat
+01:19:55, Thread-37: Customer 35 is appears at the shop
+01:19:55, Thread-37: Customer 35 is waiting for a free seat
+01:19:55, Thread-39: Customer 37 is appears at the shop
+01:19:55, Thread-38: Customer 36 is appears at the shop
+01:19:55, Thread-38: Customer 36 is waiting for a free seat
+01:19:55, Thread-39: Customer 37 is waiting for a free seat
+01:19:55, Thread-40: Customer 38 is appears at the shop
+01:19:55, Thread-40: Customer 38 is waiting for a free seat
+01:19:55, Thread-41: Customer 39 is appears at the shop
+01:19:55, Thread-41: Customer 39 is waiting for a free seat
+01:19:55, Thread-42: Customer 40 is appears at the shop
+01:19:55, Thread-42: Customer 40 is waiting for a free seat
+01:19:55, Thread-43: Customer 41 is appears at the shop
+01:19:55, Thread-43: Customer 41 is waiting for a free seat
+01:19:55, Thread-44: Customer 42 is appears at the shop
+01:19:55, Thread-44: Customer 42 is waiting for a free seat
+01:19:55, Thread-45: Customer 43 is appears at the shop
+01:19:55, Thread-45: Customer 43 is waiting for a free seat
+01:19:55, Thread-46: Customer 44 is appears at the shop
+01:19:55, Thread-46: Customer 44 is waiting for a free seat
+01:19:56, Thread-47: Customer 45 is appears at the shop
+01:19:56, Thread-47: Customer 45 is waiting for a free seat
+01:19:56, Thread-48: Customer 46 is appears at the shop
+01:19:56, Thread-48: Customer 46 is waiting for a free seat
+01:19:56, Thread-49: Customer 47 is appears at the shop
+01:19:56, Thread-49: Customer 47 is waiting for a free seat
+01:19:56, Thread-50: Customer 48 is appears at the shop
+01:19:56, Thread-50: Customer 48 is waiting for a free seat
+01:19:56, Thread-51: Customer 49 is appears at the shop
+01:19:56, Thread-51: Customer 49 is waiting for a free seat
+01:19:56, Thread-52: Customer 50 is appears at the shop
+01:19:56, Thread-52: Customer 50 is waiting for a free seat
+01:19:56, Thread-53: Customer 51 is appears at the shop
+01:19:56, Thread-53: Customer 51 is waiting for a free seat
+01:19:56, Thread-54: Customer 52 is appears at the shop
+01:19:56, Thread-54: Customer 52 is waiting for a free seat
+01:19:56, Thread-55: Customer 53 is appears at the shop
+01:19:56, Thread-55: Customer 53 is waiting for a free seat
+01:19:56, Thread-56: Customer 54 is appears at the shop
+01:19:56, Thread-56: Customer 54 is waiting for a free seat
+01:19:56, Thread-57: Customer 55 is appears at the shop
+01:19:56, Thread-57: Customer 55 is waiting for a free seat
+01:19:56, Thread-58: Customer 56 is appears at the shop
+01:19:56, Thread-58: Customer 56 is waiting for a free seat
+01:19:56, Thread-59: Customer 57 is appears at the shop
+01:19:56, Thread-59: Customer 57 is waiting for a free seat
+01:19:56, Thread-60: Customer 58 is appears at the shop
+01:19:56, Thread-60: Customer 58 is waiting for a free seat
+01:19:56, Thread-61: Customer 59 is appears at the shop
+01:19:56, Thread-61: Customer 59 is waiting for a free seat
+01:19:56, Thread-62: Customer 60 is appears at the shop
+01:19:56, Thread-62: Customer 60 is waiting for a free seat
+01:19:56, Thread-63: Customer 61 is appears at the shop
+01:19:56, Thread-63: Customer 61 is waiting for a free seat
+01:19:56, closing door..
+01:19:56, Thread-3: Customer 1 finished eating 1 pieces of sushi.
+01:19:56, Thread-3: Customer 1 has left the shop.
+01:19:56, Thread-13: Customer 11 has a seat now.
+01:19:56, Thread-13: Customer 11 started eating.
+01:19:56, door closed
+01:19:56, Thread-4: Customer 2 finished eating 1 pieces of sushi.
+01:19:56, Thread-4: Customer 2 has left the shop.
+01:19:56, Thread-14: Customer 12 has a seat now.
+01:19:56, Thread-14: Customer 12 started eating.
+01:19:56, Thread-7: Customer 5 finished eating 1 pieces of sushi.
+01:19:56, Thread-7: Customer 5 has left the shop.
+01:19:56, Thread-15: Customer 13 has a seat now.
+01:19:56, Thread-15: Customer 13 started eating.
+01:19:56, Thread-8: Customer 6 finished eating 1 pieces of sushi.
+01:19:56, Thread-8: Customer 6 has left the shop.
+01:19:56, Thread-16: Customer 14 has a seat now.
+01:19:56, Thread-16: Customer 14 started eating.
+01:19:56, Thread-9: Customer 7 finished eating 1 pieces of sushi.
+01:19:56, Thread-9: Customer 7 has left the shop.
+01:19:56, Thread-17: Customer 15 has a seat now.
+01:19:56, Thread-17: Customer 15 started eating.
+01:19:59, Thread-13: Customer 11 finished eating 1 pieces of sushi.
+01:19:59, Thread-13: Customer 11 has left the shop.
+01:19:59, Thread-18: Customer 16 has a seat now.
+01:19:59, Thread-18: Customer 16 started eating.
+01:19:59, Thread-5: Customer 3 finished eating 2 pieces of sushi.
+01:19:59, Thread-5: Customer 3 has left the shop.
+01:19:59, Thread-19: Customer 17 has a seat now.
+01:19:59, Thread-19: Customer 17 started eating.
+01:19:59, Thread-15: Customer 13 finished eating 1 pieces of sushi.
+01:19:59, Thread-15: Customer 13 has left the shop.
+01:19:59, Thread-20: Customer 18 has a seat now.
+01:19:59, Thread-20: Customer 18 started eating.
+01:20:00, Thread-10: Customer 8 finished eating 2 pieces of sushi.
+01:20:00, Thread-10: Customer 8 has left the shop.
+01:20:00, Thread-21: Customer 19 has a seat now.
+01:20:00, Thread-21: Customer 19 started eating.
+01:20:00, Thread-11: Customer 9 finished eating 2 pieces of sushi.
+01:20:00, Thread-11: Customer 9 has left the shop.
+01:20:00, Thread-22: Customer 20 has a seat now.
+01:20:00, Thread-22: Customer 20 started eating.
+01:20:00, Thread-12: Customer 10 finished eating 2 pieces of sushi.
+01:20:00, Thread-12: Customer 10 has left the shop.
+01:20:00, Thread-23: Customer 21 has a seat now.
+01:20:00, Thread-23: Customer 21 started eating.
+01:20:02, Thread-20: Customer 18 finished eating 1 pieces of sushi.
+01:20:02, Thread-20: Customer 18 has left the shop.
+01:20:02, Thread-24: Customer 22 has a seat now.
+01:20:02, Thread-24: Customer 22 started eating.
+01:20:05, Thread-24: Customer 22 finished eating 1 pieces of sushi.
+01:20:05, Thread-24: Customer 22 has left the shop.
+01:20:05, Thread-25: Customer 23 has a seat now.
+01:20:05, Thread-25: Customer 23 started eating.
+01:20:05, Thread-16: Customer 14 finished eating 3 pieces of sushi.
+01:20:05, Thread-16: Customer 14 has left the shop.
+01:20:05, Thread-26: Customer 24 has a seat now.
+01:20:05, Thread-26: Customer 24 started eating.
+01:20:05, Thread-17: Customer 15 finished eating 3 pieces of sushi.
+01:20:06, Thread-17: Customer 15 has left the shop.
+01:20:06, Thread-27: Customer 25 has a seat now.
+01:20:06, Thread-27: Customer 25 started eating.
+01:20:06, Thread-21: Customer 19 finished eating 2 pieces of sushi.
+01:20:06, Thread-21: Customer 19 has left the shop.
+01:20:06, Thread-28: Customer 26 has a seat now.
+01:20:06, Thread-28: Customer 26 started eating.
+01:20:08, Thread-14: Customer 12 finished eating 4 pieces of sushi.
+01:20:08, Thread-14: Customer 12 has left the shop.
+01:20:08, Thread-29: Customer 27 has a seat now.
+01:20:08, Thread-29: Customer 27 started eating.
+01:20:09, Thread-27: Customer 25 finished eating 1 pieces of sushi.
+01:20:09, Thread-27: Customer 25 has left the shop.
+01:20:09, Thread-30: Customer 28 has a seat now.
+01:20:09, Thread-30: Customer 28 started eating.
+01:20:09, Thread-22: Customer 20 finished eating 3 pieces of sushi.
+01:20:09, Thread-22: Customer 20 has left the shop.
+01:20:09, Thread-31: Customer 29 has a seat now.
+01:20:09, Thread-31: Customer 29 started eating.
+01:20:11, Thread-18: Customer 16 finished eating 4 pieces of sushi.
+01:20:11, Thread-18: Customer 16 has left the shop.
+01:20:11, Thread-32: Customer 30 has a seat now.
+01:20:11, Thread-32: Customer 30 started eating.
+01:20:11, Thread-29: Customer 27 finished eating 1 pieces of sushi.
+01:20:11, Thread-29: Customer 27 has left the shop.
+01:20:11, Thread-33: Customer 31 has a seat now.
+01:20:11, Thread-33: Customer 31 started eating.
+01:20:11, Thread-25: Customer 23 finished eating 2 pieces of sushi.
+01:20:11, Thread-25: Customer 23 has left the shop.
+01:20:11, Thread-34: Customer 32 has a seat now.
+01:20:11, Thread-34: Customer 32 started eating.
+01:20:11, Thread-26: Customer 24 finished eating 2 pieces of sushi.
+01:20:11, Thread-26: Customer 24 has left the shop.
+01:20:11, Thread-35: Customer 33 has a seat now.
+01:20:11, Thread-35: Customer 33 started eating.
+01:20:14, Thread-19: Customer 17 finished eating 5 pieces of sushi.
+01:20:14, Thread-19: Customer 17 has left the shop.
+01:20:14, Thread-36: Customer 34 has a seat now.
+01:20:14, Thread-36: Customer 34 started eating.
+01:20:14, Thread-34: Customer 32 finished eating 1 pieces of sushi.
+01:20:14, Thread-34: Customer 32 has left the shop.
+01:20:14, Thread-37: Customer 35 has a seat now.
+01:20:14, Thread-37: Customer 35 started eating.
+01:20:15, Thread-28: Customer 26 finished eating 3 pieces of sushi.
+01:20:15, Thread-28: Customer 26 has left the shop.
+01:20:15, Thread-38: Customer 36 has a seat now.
+01:20:15, Thread-38: Customer 36 started eating.
+01:20:17, Thread-6: Customer 4 finished eating 8 pieces of sushi.
+01:20:17, Thread-6: Customer 4 has left the shop.
+01:20:17, Thread-39: Customer 37 has a seat now.
+01:20:17, Thread-39: Customer 37 started eating.
+01:20:17, Thread-37: Customer 35 finished eating 1 pieces of sushi.
+01:20:17, Thread-37: Customer 35 has left the shop.
+01:20:17, Thread-40: Customer 38 has a seat now.
+01:20:17, Thread-40: Customer 38 started eating.
+01:20:18, Thread-38: Customer 36 finished eating 1 pieces of sushi.
+01:20:18, Thread-38: Customer 36 has left the shop.
+01:20:18, Thread-41: Customer 39 has a seat now.
+01:20:18, Thread-41: Customer 39 started eating.
+01:20:20, Thread-33: Customer 31 finished eating 3 pieces of sushi.
+01:20:20, Thread-33: Customer 31 has left the shop.
+01:20:20, Thread-42: Customer 40 has a seat now.
+01:20:20, Thread-42: Customer 40 started eating.
+01:20:21, Thread-41: Customer 39 finished eating 1 pieces of sushi.
+01:20:21, Thread-41: Customer 39 has left the shop.
+01:20:21, Thread-43: Customer 41 has a seat now.
+01:20:21, Thread-43: Customer 41 started eating.
+01:20:21, Thread-31: Customer 29 finished eating 4 pieces of sushi.
+01:20:21, Thread-31: Customer 29 has left the shop.
+01:20:21, Thread-44: Customer 42 has a seat now.
+01:20:21, Thread-44: Customer 42 started eating.
+01:20:21, Thread-23: Customer 21 finished eating 7 pieces of sushi.
+01:20:21, Thread-23: Customer 21 has left the shop.
+01:20:21, Thread-45: Customer 43 has a seat now.
+01:20:21, Thread-45: Customer 43 started eating.
+01:20:24, Thread-30: Customer 28 finished eating 5 pieces of sushi.
+01:20:24, Thread-30: Customer 28 has left the shop.
+01:20:24, Thread-46: Customer 44 has a seat now.
+01:20:24, Thread-46: Customer 44 started eating.
+01:20:24, Thread-44: Customer 42 finished eating 1 pieces of sushi.
+01:20:24, Thread-44: Customer 42 has left the shop.
+01:20:24, Thread-47: Customer 45 has a seat now.
+01:20:24, Thread-47: Customer 45 started eating.
+01:20:26, Thread-40: Customer 38 finished eating 3 pieces of sushi.
+01:20:26, Thread-40: Customer 38 has left the shop.
+01:20:26, Thread-48: Customer 46 has a seat now.
+01:20:26, Thread-48: Customer 46 started eating.
+01:20:29, Thread-32: Customer 30 finished eating 6 pieces of sushi.
+01:20:29, Thread-32: Customer 30 has left the shop.
+01:20:29, Thread-49: Customer 47 has a seat now.
+01:20:29, Thread-49: Customer 47 started eating.
+01:20:29, Thread-36: Customer 34 finished eating 5 pieces of sushi.
+01:20:29, Thread-36: Customer 34 has left the shop.
+01:20:29, Thread-50: Customer 48 has a seat now.
+01:20:29, Thread-50: Customer 48 started eating.
+01:20:30, Thread-43: Customer 41 finished eating 3 pieces of sushi.
+01:20:30, Thread-43: Customer 41 has left the shop.
+01:20:30, Thread-51: Customer 49 has a seat now.
+01:20:30, Thread-51: Customer 49 started eating.
+01:20:30, Thread-45: Customer 43 finished eating 3 pieces of sushi.
+01:20:30, Thread-45: Customer 43 has left the shop.
+01:20:30, Thread-52: Customer 50 has a seat now.
+01:20:30, Thread-52: Customer 50 started eating.
+01:20:32, Thread-42: Customer 40 finished eating 4 pieces of sushi.
+01:20:32, Thread-42: Customer 40 has left the shop.
+01:20:32, Thread-53: Customer 51 has a seat now.
+01:20:32, Thread-53: Customer 51 started eating.
+01:20:32, Thread-48: Customer 46 finished eating 2 pieces of sushi.
+01:20:32, Thread-48: Customer 46 has left the shop.
+01:20:32, Thread-54: Customer 52 has a seat now.
+01:20:32, Thread-54: Customer 52 started eating.
+01:20:32, Thread-35: Customer 33 finished eating 7 pieces of sushi.
+01:20:32, Thread-35: Customer 33 has left the shop.
+01:20:32, Thread-55: Customer 53 has a seat now.
+01:20:32, Thread-55: Customer 53 started eating.
+01:20:35, Thread-49: Customer 47 finished eating 2 pieces of sushi.
+01:20:35, Thread-49: Customer 47 has left the shop.
+01:20:35, Thread-56: Customer 54 has a seat now.
+01:20:35, Thread-56: Customer 54 started eating.
+01:20:35, Thread-53: Customer 51 finished eating 1 pieces of sushi.
+01:20:35, Thread-53: Customer 51 has left the shop.
+01:20:35, Thread-57: Customer 55 has a seat now.
+01:20:35, Thread-57: Customer 55 started eating.
+01:20:35, Thread-39: Customer 37 finished eating 6 pieces of sushi.
+01:20:35, Thread-39: Customer 37 has left the shop.
+01:20:35, Thread-58: Customer 56 has a seat now.
+01:20:35, Thread-58: Customer 56 started eating.
+01:20:36, Thread-52: Customer 50 finished eating 2 pieces of sushi.
+01:20:36, Thread-52: Customer 50 has left the shop.
+01:20:36, Thread-59: Customer 57 has a seat now.
+01:20:36, Thread-59: Customer 57 started eating.
+01:20:39, Thread-47: Customer 45 finished eating 5 pieces of sushi.
+01:20:39, Thread-47: Customer 45 has left the shop.
+01:20:39, Thread-60: Customer 58 has a seat now.
+01:20:39, Thread-60: Customer 58 started eating.
+01:20:39, Thread-59: Customer 57 finished eating 1 pieces of sushi.
+01:20:39, Thread-59: Customer 57 has left the shop.
+01:20:39, Thread-61: Customer 59 has a seat now.
+01:20:39, Thread-61: Customer 59 started eating.
+01:20:41, Thread-55: Customer 53 finished eating 3 pieces of sushi.
+01:20:41, Thread-55: Customer 53 has left the shop.
+01:20:41, Thread-62: Customer 60 has a seat now.
+01:20:41, Thread-62: Customer 60 started eating.
+01:20:42, Thread-60: Customer 58 finished eating 1 pieces of sushi.
+01:20:42, Thread-60: Customer 58 has left the shop.
+01:20:42, Thread-63: Customer 61 has a seat now.
+01:20:42, Thread-63: Customer 61 started eating.
+01:20:44, Thread-56: Customer 54 finished eating 3 pieces of sushi.
+01:20:44, Thread-56: Customer 54 has left the shop.
+01:20:44, Thread-54: Customer 52 finished eating 4 pieces of sushi.
+01:20:44, Thread-54: Customer 52 has left the shop.
+01:20:45, Thread-46: Customer 44 finished eating 7 pieces of sushi.
+01:20:45, Thread-46: Customer 44 has left the shop.
+01:20:45, Thread-63: Customer 61 finished eating 1 pieces of sushi.
+01:20:45, Thread-63: Customer 61 has left the shop.
+01:20:47, Thread-57: Customer 55 finished eating 4 pieces of sushi.
+01:20:47, Thread-57: Customer 55 has left the shop.
+01:20:47, Thread-50: Customer 48 finished eating 6 pieces of sushi.
+01:20:47, Thread-50: Customer 48 has left the shop.
+01:20:48, Thread-61: Customer 59 finished eating 3 pieces of sushi.
+01:20:48, Thread-61: Customer 59 has left the shop.
+01:20:51, Thread-51: Customer 49 finished eating 7 pieces of sushi.
+01:20:51, Thread-51: Customer 49 has left the shop.
+01:20:56, Thread-62: Customer 60 finished eating 5 pieces of sushi.
+01:20:56, Thread-62: Customer 60 has left the shop.
+01:20:59, Thread-58: Customer 56 finished eating 8 pieces of sushi.
+01:20:59, Thread-58: Customer 56 has left the shop.
+01:20:59, Thread-2***** NO MORE CUSTOMERS - THE SHOP IS CLOSED NOW. *****
+01:20:59, Thread-2*** Statistics ***
+01:20:59, Thread-2 Total Orders: 300
+01:20:59, Thread-2 Takeaway orders: 116
+01:20:59, Thread-2 'Eat Here' orders: 184

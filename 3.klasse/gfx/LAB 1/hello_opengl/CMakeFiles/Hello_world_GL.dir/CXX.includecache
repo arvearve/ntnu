@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/arve/Code/NTNU/3.klasse/gfx/assignment1/hello_opengl/visuals.cpp
+GLUT/glut.h
+-
+GL/glut.h
+-
+stdio.h
+-
+visuals.h
+/Users/arve/Code/NTNU/3.klasse/gfx/assignment1/hello_opengl/visuals.h
+
+/Users/arve/Code/NTNU/3.klasse/gfx/assignment1/hello_opengl/visuals.h
+

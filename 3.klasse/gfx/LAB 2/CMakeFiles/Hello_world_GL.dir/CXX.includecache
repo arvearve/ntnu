@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/arve/Code/NTNU/3.klasse/gfx/LAB 2/shader.cpp
+stdio.h
+-
+string
+-
+vector
+-
+iostream
+-
+fstream
+-
+algorithm
+-
+stdlib.h
+-
+string.h
+-
+GL/glew.h
+-
+shader.hpp
+/Users/arve/Code/NTNU/3.klasse/gfx/LAB 2/shader.hpp
+
+/Users/arve/Code/NTNU/3.klasse/gfx/LAB 2/shader.hpp
+
+/usr/local/include/GL/glew.h
+stddef.h
+-
+inttypes.h
+-
+stdint.h
+-
+inttypes.h
+-
+OpenGL/glu.h
+-
+GL/glu.h
+-
+

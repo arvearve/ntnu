@@ -1,0 +1,48 @@
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	margin: 5px;
+}
+code{
+	line-height: 2em;
+	border: 1px solid #eaeaea;
+	background-color: #f8f8f8;
+	padding: 2px 3px;
+	border-radius: 3px;	
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+hr{
+	border:none;
+	border-bottom: 1px darkgrey dashed;
+	width: 90%;
+	margin:2em auto;
+}
+
+h1{
+	width:100%;
+}
+h1 strong{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-left:20%;
+	font-size: 1.5em;
+}
+
+h5{
+	page-break-before: always;
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	margin:none;
+	padding:none;
+}
+
+body, html{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
