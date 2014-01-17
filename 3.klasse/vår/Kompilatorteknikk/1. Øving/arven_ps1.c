@@ -32,8 +32,9 @@ int* create_random_array(int size, int n){
 
 // Should print the contents of array of lenght size
 void print_array(int* array, int size){
+    printf("\n");
     for(int i=0; i<size; i++){
-        printf("%d\n", array[i]);
+        printf("%d", array[i]);
     }
 }
 
@@ -64,15 +65,20 @@ void sort(int* array, int size){
 // Inserts the node into the tree rooted at the node pointed to by root
 void insert_node(Node** root, Node* node){
     // Early return if this is the new root.
-    if(*root == NULL){*root = node; return;}
-    
-    // Any free children?
-    if((*root)->left == NULL){ (*root)->left = node;  return;}
-    else if( (*root)->right == NULL ){ (*root)->right = node; return; }
-
-    // No free children, go left.
-    else{
-       insert_node(&(*root)->left, node);
+    Node* r = *root;
+    if( r == NULL){ r = node;}
+    if(node->value < r->value){
+        if(r->left == NULL){ 
+            r->left = node;
+        }else{
+            insert_node(&(r->left), node);
+        }
+    }else{
+        if(r->right == NULL){
+            r->right = node;
+        }else{
+            insert_node(&(r->right), node);
+        }
     }
 }
 
@@ -80,9 +86,14 @@ void insert_node(Node** root, Node* node){
 // Searches for the number n in the tree rooted at root.
 // Should return 1 if the number is present, and 0 if not.
 int search(Node* root, int n){
+    if(root == NULL){ return 0;}
     if(root->value == n){ return 1;}
-    if(root->right == NULL && root->left == NULL){ return 0; }
-    return search(root->right, n) || search(root->left, n);
+    else if(n < root->value){
+        return search(root->left, n);
+    }
+    else{
+        return search(root->right, n);
+    }
 }
 
 
@@ -92,6 +103,9 @@ Node* create_blank_node(){
     Node* n = malloc(sizeof(Node));
     n->left = malloc(sizeof(Node));
     n->right = malloc(sizeof(Node));
+    n->left = NULL;
+    n->right = NULL;
+    n->value = 0;
     return n;
 }
 
@@ -112,12 +126,12 @@ Node* create_tree(int* array, int size){
 // Prints all the nodes of the tree.
 void print_tree(Node* node, int offset){
     if(node == NULL){return;}
-    printf("%*d", offset, node->value);
+    printf("\n%*d", offset+1, node->value);
     print_tree(node->left, offset+1);
     print_tree(node->right, offset+1);
 }
 
-/*
+
 // Computes x^2
 double x_squared(double x){
     return x*x;
@@ -132,8 +146,18 @@ double x_cubed(double x){
 
 // Computes the definite integral of the function using the rectangle method
 double integrate(double (*function)(double), double start, double end, double stepsize){
+    double result = 0.0f;
+    double head = start;
+    
+    // move right with <stepsize> steps, taking care never to go past <end>,
+    // taking the funciton value at the middle of the rectangle as it's height.
+    while(head<end){
+        head += stepsize;
+        result += (*function)(head - (stepsize/2)) * stepsize; 
+    }
+    return result;
 }
-*/
+
 
 int main(int argc, char** argv){
 
@@ -142,7 +166,7 @@ int main(int argc, char** argv){
 
     // Prints the values of the array, e.g:
     // 3 6 7 5 3 5 6 2 9 1
-    printf("Random array:\n");
+    printf("Random array:");
     print_array(array, 10);
 
     // Sorts the array
@@ -150,14 +174,14 @@ int main(int argc, char** argv){
 
     // Prints the sorted array, e.g:
     // 1 2 3 3 5 5 6 6 7 9
-    printf("Sorted array:\n");
+    printf("\n\nSorted array:");
     print_array(array, 10);
 
     // Create another random array
     int* new_array = create_random_array(10,10);
 
     // Print the second array
-    printf("Another random array:\n");
+    printf("\n\nAnother random array:");
     print_array(new_array, 10);
 
 
@@ -165,20 +189,22 @@ int main(int argc, char** argv){
     Node* root = create_tree(new_array, 10);
 
     // Print the tree
+    printf("\n\nPrint tree:");
     print_tree(root, 0);
 
     // Search for the values 3 and 11 in the tree
     // and print the results
     int found_3 = search(root, 3);
     int found_11 = search(root, 11);
-    printf("%d, %d\n", found_3, found_11);
-/*
+    printf("\n\nFound values 3 and 11: %d, %d", found_3, found_11);
+
     // Integrate x^2 and x^3 from 0 to 1.
     // Should be approx 1/3 and 1/4.
-    printf("%f\n", integrate(&x_squared, 0, 1, 0.001));
-    printf("%f\n", integrate(&x_cubed, 0, 1, 0.001));
+    printf("\n\nIntegrate x^2: \n%f", integrate(&x_squared, 0, 1, 0.001));
+    printf("\n\nIntegrate x^3: \n%f\n", integrate(&x_cubed, 0, 1, 0.001));
 
-    */
+    
+    return 0;
 }
 
 
