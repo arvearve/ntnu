@@ -1,0 +1,92 @@
+CLASS Inner HAS
+	INT a;
+	INT b;
+	
+	WITH
+	
+	VOID FUNC print() START
+		PRINT THIS.a, THIS.b;
+	END
+	
+	INT FUNC sum() START
+		RETURN THIS.a + THIS.b;
+	END
+END
+
+CLASS Middle HAS
+	INT a;
+	INT b;
+	Inner i;
+	
+	WITH
+	
+	VOID FUNC print() START
+		PRINT THIS.a, THIS.b, THIS.i.a, THIS.i.b;
+	END
+	
+	INT FUNC sumMultiply(INT a) START
+		INT d;
+		INT e;
+		d := THIS.a + THIS.b;
+		e := THIS.i.a + THIS.i.b;
+		RETURN (e+d)*a;
+	END
+END
+
+CLASS Outer HAS
+	INT a;
+	INT b;
+	Middle m;
+	
+	WITH
+	
+	VOID FUNC print() START
+		PRINT THIS.a, THIS.b, THIS.m.a, THIS.m.b, THIS.m.i.a, THIS.m.i.b;
+	END
+	
+	INT FUNC sumMultiply(INT a) START
+		INT d;
+		INT e;
+		d := THIS.a + THIS.b;
+		e := THIS.m.a + THIS.m.b;
+		INT f;
+		f := THIS.m.i.a + THIS.m.i.b;
+		RETURN (e+d+f)*a;
+	END
+END
+	
+	
+VOID FUNC main() START
+	Inner i;
+	i := NEW Inner;
+	i.a := 1;
+	i.b := 2;
+	
+	Middle m;
+	m := NEW Middle;
+	m.a := 3;
+	m.b := 4;
+	
+	Outer o;
+	o := NEW Outer;
+	o.a := 5;
+	o.b := 6;
+	
+	m.i := i;
+	o.m := m;
+	
+	i.print();
+	m.print();
+	o.print();
+	
+	PRINT i.sum();
+	PRINT m.i.sum();
+	PRINT o.m.i.sum();
+	
+	PRINT m.sumMultiply(10);
+	PRINT o.m.sumMultiply(10);
+	
+	PRINT o.sumMultiply(10);
+END
+	
+	

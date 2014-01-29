@@ -1,0 +1,31 @@
+// Function list
+INT FUNC f()
+START
+    RETURN 0;
+END
+
+INT FUNC g(INT a, INT b, INT c) // Variable list
+START
+    // Declarations
+    INT u; INT v; INT w;
+    INT x; INT y; INT z;
+
+    // Statement list
+    u := 1;
+    v := 2;
+    w := g ( x+1, y+2, z+3 );    // Expression list
+    PRINT u, v, w;               // Print list
+    RETURN 0;
+END
+
+INT FUNC h(INT a, INT b)
+START
+    INT x;
+    x := 2+3;
+    x := 3-2;
+    x := 2*2;
+    x := 4/2;
+    x := -6;
+    x := (2+3)*4/5;
+    RETURN 0;
+END

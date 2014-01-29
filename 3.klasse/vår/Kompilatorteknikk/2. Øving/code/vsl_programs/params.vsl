@@ -1,0 +1,4 @@
+VOID FUNC params (INT a, FLOAT b)
+START
+	PRINT a;
+END

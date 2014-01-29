@@ -1,0 +1,18 @@
+INT FUNC hello ()
+START
+    PRINT "t is", test ( 64 );
+    RETURN 0;
+END
+
+INT FUNC test ( INT a )
+START
+    INT x; INT y;
+    x := 32;
+    y := 20;
+    IF TRUE THEN
+        INT z;
+        z := 64;
+        RETURN z+a;
+        PRINT "This never executes";
+    END
+END
