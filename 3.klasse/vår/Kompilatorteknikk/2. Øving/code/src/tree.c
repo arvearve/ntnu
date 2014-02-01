@@ -145,17 +145,36 @@ node_t * node_init ( nodetype_t type,
 		int n_children,
 		va_list child_list )
 {
-
+    // Create new node
+    node_t* n = malloc(sizeof(node_t));
+    
+    // Assign fields
+    n->nodetype = type;
+    n->label = label;
+    n->expression_type = expression_type;
+    n->data_type.base_type = base_type;
+    n->children = malloc(sizeof(node_t*) * n_children);
+    for(int i = 0; i < n_children; i++){
+        n->children[i] = va_arg(child_list, node_t*);
+    }
+    return n;
 }
 
 
 void node_finalize ( node_t *discard )
 {
-
+    free(discard->label);
+    free(discard->children);
+    free(discard);
 }
 
 
 void destroy_subtree ( FILE *output, node_t *discard )
 {
-
+    if(discard->n_children > 0){
+        for(int i = 0; i < discard->n_children; i++){
+            destroy_subtree(NULL , discard->children[i]);
+        }
+    }
+    node_finalize(discard);
 }
