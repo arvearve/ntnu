@@ -21,51 +21,74 @@ LETTER [a-zA-Z_]
 ALPHANUMERIC [a-zA-Z0-9_]
 DIGIT [0-9]
 WHITESPACE [\ \t\n]
+
 %%
 
+"CLASS"						{ RETURN( _CLASS_ ); }
+"THIS"						{ RETURN( THIS ); }
+"HAS"						{ RETURN( HAS ); }
+"WITH"						{ RETURN( WITH ); }
+"NEW"						{ RETURN( NEW ); }
 
 
+"FUNC"						{ RETURN( FUNC ); }
+"START"						{ RETURN( START ); }
+"PRINT"						{ RETURN( PRINT ); }
+"RETURN"					{ RETURN( RETURN ); }
+"IF"						{ RETURN( IF ); }
+"THEN"						{ RETURN( THEN ); }
+"ELSE"						{ RETURN( ELSE ); }
+"END"						{ RETURN( END ); }
+"WHILE"						{ RETURN( WHILE ); }
+"DO"						{ RETURN( DO ); }
 
-
-"class"						{ RETURN( _CLASS_ ); }
-"this"						{ RETURN( THIS ); }
-"has"						{ RETURN( HAS ); }
-"with"						{ RETURN( WITH ); }
-"new"						{ RETURN( NEW ); }
-
-":="							{ RETURN( ASSIGN ); }
-"func"						{ RETURN( FUNC ); }
-"start"						{ RETURN( START ); }
-"print"						{ RETURN( PRINT ); }
-"return"					{ RETURN( RETURN ); }
-"if"						{ RETURN( IF ); }
-"then"						{ RETURN( THEN ); }
-"else"						{ RETURN( ELSE ); }
-"end"						{ RETURN( END ); }
-"while"						{ RETURN( WHILE ); }
-"do"						{ RETURN( DO ); }
-
-"="							{ RETURN( EQUAL );}
-">="						{ RETURN( GEQUAL );}
-"<="						{ RETURN( LEQUAL );}
-"!="						{ RETURN( NEQUAL );}
-"&&"						{ RETURN( AND );}
-"||"						{ RETURN( OR );}
-					
-"int"						{ RETURN( INT ); }
-"float"						{ RETURN( FLOAT ); }
-"bool"						{ RETURN( BOOL ); }
-"void"						{ RETURN( VOID ); }
 
 
 "TRUE"						{ RETURN( TRUE_CONST ); }
 "FALSE"						{ RETURN( FALSE_CONST ); }
 {DIGIT}+					{ RETURN( INT_CONST ); }
 {DIGIT}+\.{DIGIT}+			{ RETURN( FLOAT_CONST ); }
-"\""[^\n]*"\""				{ RETURN( STRING_CONST ); }
+"\""(\\.|[^\"\n])*"\"" 				{ RETURN( STRING_CONST ); }
 
+
+":="							{ RETURN( ASSIGN ); }
+"=="							{ RETURN( EQUAL );}
+">="						{ RETURN( GEQUAL );}
+"<="						{ RETURN( LEQUAL );}
+"!="						{ RETURN( NEQUAL );}
+"&&"						{ RETURN( AND );}
+"||"						{ RETURN( OR );}
+
+"+"						{ RETURN( '+' );}
+"-"						{ RETURN( '-' );}
+"*"						{ RETURN( '*' );}
+"/"						{ RETURN( '/' );}
+"<"						{ RETURN( '<' );}
+">"						{ RETURN( '>' );}
+					
+
+
+"."						{ RETURN( '.' );}
+","						{ RETURN( ',' );}
+":"						{ RETURN( ':' );}
+";"						{ RETURN( ';' );}
+"("						{ RETURN( '(' );}
+")"						{ RETURN( ')' );}
+"="						{ RETURN( '=' );}
+
+
+
+"INT"						{ RETURN( INT ); }
+"FLOAT"						{ RETURN( FLOAT ); }
+"BOOL"						{ RETURN( BOOL ); }
+"VOID"						{ RETURN( VOID ); }
+
+
+
+
+
+"//"[^\n]*\n			{}
 
 {LETTER}{ALPHANUMERIC}*		{ RETURN( IDENTIFIER ); }
-
 {WHITESPACE}+				{}
 %%
