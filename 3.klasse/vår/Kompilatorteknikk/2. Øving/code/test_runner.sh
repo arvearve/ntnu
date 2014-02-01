@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 rm -rf testOutput
 mkdir testOutput
 
@@ -9,7 +9,7 @@ correctDir="correct_output"
 
 warningsAssembler=0
 
-singleStage=0
+singleStage=1
 upToStage=3
 
 
