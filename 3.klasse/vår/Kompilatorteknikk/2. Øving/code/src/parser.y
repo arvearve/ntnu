@@ -89,7 +89,7 @@ static void SetBool(node_t* node, bool val)
 // Helper for setting the value of an string node
 static void SetString(node_t* node, char *string)
 {
-	node->string_const = STRDUP( string );
+	node->string_const = string;
 	node->data_type.base_type= STRING_TYPE;
 }
 
@@ -152,8 +152,8 @@ program 			: function_list  													{$$ = CN(program_n, 1, $1); root=$$;}
 
 function 			: type FUNC variable '('parameter_list')' START statement_list END {$$ = CN(function_n, 4, $1, $3, $5, $8); }
 
-function_list : function_list function 									{$$ = CN(function_list_n, 1, $1); }
-							| {$$ = NULL;}
+function_list : function_list function 									{$$ = CN(function_list_n, 2, $1, $2); }
+							| {$$ = NULL;}	
 
 statement_list	: statement 														{$$ = CN(statement_list_n, 1, $1); }
 								| statement_list statement 							{$$ = CN(statement_list_n, 2, $1, $2); }
@@ -218,9 +218,9 @@ expression 	: constant 											{$$= CNE(expression_n, constant_e, 1, $1); }
 						| '-'expression 								{$$ = CNE(expression_n, uminus_e, 1, $2); }
 						| '!'expression 								{$$ = CNE(expression_n, not_e, 1, $2); }
 						| '('expression')' 							{$$ = CN(expression_n, 1, $2); }
-						| call 													{$$ = CNE(expression_n, func_call_e, 1, $1); }
+						| call 													{$$ = CN(expression_n, 1, $1); }
 						| THIS 													{$$ = CNE(expression_n, this_e, 0); }
-						| lvalue												{$$ = CNE(expression_n, default_e, 1, $1); }
+						| lvalue												{$$ = CN(expression_n, 1, $1); }
 						| NEW type 											{$$ = CNE(expression_n, new_e, 1, $2); }
 
 
@@ -234,8 +234,8 @@ lvalue			: variable 									{$$ = CNE(expression_n, variable_e, 1, $1); }
 
 constant		: TRUE_CONST		{$$ = CN(constant_n, 0); SetBool($$, true); }
 						| FALSE_CONST 	{$$ = CN(constant_n, 0); SetBool($$, false); }
-						| INT_CONST 		{$$ = CN(constant_n, 0); SetInteger($$, STRDUP(yytext)); }
-						| FLOAT_CONST 	{$$ = CN(constant_n, 0); SetFloat($$, STRDUP(yytext));}
+						| INT_CONST 		{$$ = CN(constant_n, 0); SetInteger($$, yytext); }
+						| FLOAT_CONST 	{$$ = CN(constant_n, 0); SetFloat($$, yytext);}
 						| STRING_CONST 	{$$ = CN(constant_n, 0); SetString($$, STRDUP(yytext)); }
 
 type				: INT 				{$$ = CNT(type_n, INT_TYPE, 0);}

@@ -1,4 +1,4 @@
-INT FUNC euclid ( INT a, INT b )
+INT FUNC euclid ( INT a, INT b ) 
 START
     IF ( gcd ( a, b ) - 1 ) THEN
         PRINT "Greatest common divisor of", a, "and", b, "is", gcd ( a, b );

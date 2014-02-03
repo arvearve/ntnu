@@ -97,8 +97,8 @@ void node_print ( FILE *output, node_t *root, int nesting )
             node_print ( output, root->children[i], nesting+1 );
     }
     else
-        fprintf ( output, "%*c%p\n", nesting, ' ', root );
-        // fprintf ( output, "%*c%\n", nesting, ' ', "(nil)");
+        // fprintf ( output, "%*c%p\n", nesting, ' ', root );
+        fprintf ( output, "%*c%s\n", nesting, ' ', "(nil)");
 }
 
 
