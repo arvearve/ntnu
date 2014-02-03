@@ -98,6 +98,7 @@ void node_print ( FILE *output, node_t *root, int nesting )
     }
     else
         fprintf ( output, "%*c%p\n", nesting, ' ', root );
+        // fprintf ( output, "%*c%\n", nesting, ' ', "(nil)");
 }
 
 
@@ -145,14 +146,19 @@ node_t * node_init ( nodetype_t type,
 		int n_children,
 		va_list child_list )
 {
+
     // Create new node
     node_t* n = malloc(sizeof(node_t));
     
     // Assign fields
     n->nodetype = type;
     n->label = label;
+    n->n_children = n_children;
     n->expression_type = expression_type;
     n->data_type.base_type = base_type;
+    if(n_children == 0){
+        n->children = NULL;
+    }
     n->children = malloc(sizeof(node_t*) * n_children);
     for(int i = 0; i < n_children; i++){
         n->children[i] = va_arg(child_list, node_t*);
