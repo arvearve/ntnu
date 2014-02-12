@@ -115,7 +115,7 @@ Part C
 function [ sv ] = ForwardBackward(initialState, transitionModel, observationModel, observations)
     t = size(observations, 2);
 
-	% n is number of states in prob. distribution
+    % n is number of states in prob. distribution
     % initialize backward to 1's
     n = size(initialState, 2);
 	b= ones(1, n);
@@ -134,8 +134,6 @@ function [ sv ] = ForwardBackward(initialState, transitionModel, observationMode
 	
 	% backward
 	for i=t:-1:1,
-		
-		
 		tmp = fv(i+1, 1:end) .* b;
 		normalized = tmp / sum(tmp);
 		sv(i, 1:end) = normalized;
@@ -149,13 +147,14 @@ function [ sv ] = ForwardBackward(initialState, transitionModel, observationMode
 		
 		%print backward message to console
 		b 
-		
 	end
 end
 ```
 
+\pagebreak
 
 Running the program, gives the expected output for `{Umbrella, Umbrella}`:
+
 ```matlab
 initial = [.5 .5]
 obs = [1 1] % [Umbrella Umbrella]
@@ -171,6 +170,8 @@ b = 0.6533    0.3467
 ans=0.8834    0.1166
     0.8834    0.1166
 ```
+_I find it weird that both smoothed values should be the same here, and I expect there is some error in my program._
+
 
 Running the program again, with `obs = [1 1 2 1 1]` gives:
 
