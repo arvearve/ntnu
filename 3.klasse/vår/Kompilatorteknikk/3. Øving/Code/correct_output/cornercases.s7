@@ -1,0 +1,13 @@
+Add strings (" > "), index: 0 
+Add strings (" < "), index: 1 
+Add strings (" >= "), index: 2 
+Add strings (" <= "), index: 3 
+Add strings (" == "), index: 4 
+Add strings ("!= "), index: 5 
+Add strings ("STATIC, 4,4"), index: 6 
+Add strings (" > "), index: 7 
+Add strings (" < "), index: 8 
+Add strings (" >= "), index: 9 
+Add strings (" <= "), index: 10 
+Add strings (" == "), index: 11 
+Add strings ("!= "), index: 12 

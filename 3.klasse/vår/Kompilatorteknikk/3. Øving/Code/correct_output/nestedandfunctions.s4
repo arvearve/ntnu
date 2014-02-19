@@ -1,0 +1,352 @@
+ Simplify CLASS_LIST 
+  Simplify CLASS_LIST 
+   Simplify CLASS 
+    Simplify DECLARATION_LIST 
+     Simplify DECLARATION_LIST 
+      Simplify DECLARATION_STATEMENT 
+       Simplify TYPE 
+     Simplify DECLARATION_STATEMENT 
+      Simplify TYPE 
+    Simplify FUNCTION_LIST 
+     Simplify FUNCTION_LIST 
+      Simplify FUNCTION_LIST 
+       Simplify FUNCTION 
+        Simplify TYPE 
+        Simplify PARAMETER_LIST 
+         Simplify VARIABLE_LIST 
+          Simplify VARIABLE_LIST 
+           Simplify DECLARATION_STATEMENT 
+            Simplify TYPE 
+          Simplify DECLARATION_STATEMENT 
+           Simplify TYPE 
+        Simplify STATEMENT_LIST 
+         Simplify STATEMENT_LIST 
+          Simplify STATEMENT 
+            Simplify EXPRESSION (CLASS_FIELD) 
+             Simplify EXPRESSION (THIS) 
+            Simplify EXPRESSION () 
+             Simplify EXPRESSION (VARIABLE) 
+         Simplify STATEMENT 
+           Simplify EXPRESSION (CLASS_FIELD) 
+            Simplify EXPRESSION (THIS) 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (VARIABLE) 
+      Simplify FUNCTION 
+       Simplify TYPE 
+       Simplify STATEMENT_LIST 
+        Simplify STATEMENT 
+          Simplify EXPRESSION_LIST 
+           Simplify EXPRESSION_LIST 
+            Simplify EXPRESSION_LIST 
+             Simplify EXPRESSION_LIST 
+              Simplify EXPRESSION (CONSTANT) 
+             Simplify EXPRESSION () 
+              Simplify EXPRESSION (CLASS_FIELD) 
+               Simplify EXPRESSION (THIS) 
+            Simplify EXPRESSION (CONSTANT) 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (CLASS_FIELD) 
+             Simplify EXPRESSION (THIS) 
+     Simplify FUNCTION 
+      Simplify TYPE 
+      Simplify STATEMENT_LIST 
+       Simplify STATEMENT 
+         Simplify EXPRESSION (+) 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (CLASS_FIELD) 
+            Simplify EXPRESSION (THIS) 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (CLASS_FIELD) 
+            Simplify EXPRESSION (THIS) 
+  Simplify CLASS 
+   Simplify DECLARATION_LIST 
+    Simplify DECLARATION_LIST 
+     Simplify DECLARATION_LIST 
+      Simplify DECLARATION_STATEMENT 
+       Simplify TYPE 
+     Simplify DECLARATION_STATEMENT 
+      Simplify TYPE 
+    Simplify DECLARATION_STATEMENT 
+     Simplify TYPE 
+   Simplify FUNCTION_LIST 
+    Simplify FUNCTION_LIST 
+     Simplify FUNCTION_LIST 
+      Simplify FUNCTION 
+       Simplify TYPE 
+       Simplify PARAMETER_LIST 
+        Simplify VARIABLE_LIST 
+         Simplify VARIABLE_LIST 
+          Simplify VARIABLE_LIST 
+           Simplify VARIABLE_LIST 
+            Simplify DECLARATION_STATEMENT 
+             Simplify TYPE 
+           Simplify DECLARATION_STATEMENT 
+            Simplify TYPE 
+          Simplify DECLARATION_STATEMENT 
+           Simplify TYPE 
+         Simplify DECLARATION_STATEMENT 
+          Simplify TYPE 
+       Simplify STATEMENT_LIST 
+        Simplify STATEMENT_LIST 
+         Simplify STATEMENT_LIST 
+          Simplify STATEMENT_LIST 
+           Simplify STATEMENT_LIST 
+            Simplify STATEMENT 
+              Simplify EXPRESSION (CLASS_FIELD) 
+               Simplify EXPRESSION (THIS) 
+              Simplify EXPRESSION () 
+               Simplify EXPRESSION (VARIABLE) 
+           Simplify STATEMENT 
+             Simplify EXPRESSION (CLASS_FIELD) 
+              Simplify EXPRESSION (THIS) 
+             Simplify EXPRESSION () 
+              Simplify EXPRESSION (VARIABLE) 
+          Simplify STATEMENT 
+            Simplify EXPRESSION (CLASS_FIELD) 
+             Simplify EXPRESSION (THIS) 
+            Simplify EXPRESSION (NEW) 
+             Simplify TYPE 
+         Simplify STATEMENT 
+           Simplify EXPRESSION (CLASS_FIELD) 
+            Simplify EXPRESSION () 
+             Simplify EXPRESSION (CLASS_FIELD) 
+              Simplify EXPRESSION (THIS) 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (VARIABLE) 
+        Simplify STATEMENT 
+          Simplify EXPRESSION (CLASS_FIELD) 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (CLASS_FIELD) 
+             Simplify EXPRESSION (THIS) 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (VARIABLE) 
+     Simplify FUNCTION 
+      Simplify TYPE 
+      Simplify STATEMENT_LIST 
+       Simplify STATEMENT 
+         Simplify EXPRESSION_LIST 
+          Simplify EXPRESSION_LIST 
+           Simplify EXPRESSION_LIST 
+            Simplify EXPRESSION_LIST 
+             Simplify EXPRESSION_LIST 
+              Simplify EXPRESSION_LIST 
+               Simplify EXPRESSION_LIST 
+                Simplify EXPRESSION_LIST 
+                 Simplify EXPRESSION (CONSTANT) 
+                Simplify EXPRESSION () 
+                 Simplify EXPRESSION (CLASS_FIELD) 
+                  Simplify EXPRESSION (THIS) 
+               Simplify EXPRESSION (CONSTANT) 
+              Simplify EXPRESSION () 
+               Simplify EXPRESSION (CLASS_FIELD) 
+                Simplify EXPRESSION (THIS) 
+             Simplify EXPRESSION (CONSTANT) 
+            Simplify EXPRESSION () 
+             Simplify EXPRESSION (CLASS_FIELD) 
+              Simplify EXPRESSION () 
+               Simplify EXPRESSION (CLASS_FIELD) 
+                Simplify EXPRESSION (THIS) 
+           Simplify EXPRESSION (CONSTANT) 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (CLASS_FIELD) 
+            Simplify EXPRESSION () 
+             Simplify EXPRESSION (CLASS_FIELD) 
+              Simplify EXPRESSION (THIS) 
+    Simplify FUNCTION 
+     Simplify TYPE 
+     Simplify STATEMENT_LIST 
+      Simplify STATEMENT_LIST 
+       Simplify STATEMENT_LIST 
+        Simplify STATEMENT_LIST 
+         Simplify STATEMENT 
+          Simplify DECLARATION_STATEMENT 
+           Simplify TYPE 
+        Simplify STATEMENT 
+          Simplify EXPRESSION (VARIABLE) 
+          Simplify EXPRESSION (+) 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (CLASS_FIELD) 
+             Simplify EXPRESSION (THIS) 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (CLASS_FIELD) 
+             Simplify EXPRESSION (THIS) 
+       Simplify STATEMENT 
+         Simplify EXPRESSION (VARIABLE) 
+         Simplify EXPRESSION (+) 
+          Simplify EXPRESSION (+) 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (VARIABLE) 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (CLASS_FIELD) 
+             Simplify EXPRESSION () 
+              Simplify EXPRESSION (CLASS_FIELD) 
+               Simplify EXPRESSION (THIS) 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (CLASS_FIELD) 
+            Simplify EXPRESSION () 
+             Simplify EXPRESSION (CLASS_FIELD) 
+              Simplify EXPRESSION (THIS) 
+      Simplify STATEMENT 
+        Simplify EXPRESSION () 
+         Simplify EXPRESSION (VARIABLE) 
+ Simplify FUNCTION_LIST 
+  Simplify FUNCTION_LIST 
+   Simplify FUNCTION_LIST 
+    Simplify FUNCTION_LIST 
+     Simplify FUNCTION 
+      Simplify TYPE 
+      Simplify STATEMENT_LIST 
+       Simplify STATEMENT_LIST 
+        Simplify STATEMENT_LIST 
+         Simplify STATEMENT_LIST 
+          Simplify STATEMENT_LIST 
+           Simplify STATEMENT_LIST 
+            Simplify STATEMENT_LIST 
+             Simplify STATEMENT_LIST 
+              Simplify STATEMENT_LIST 
+               Simplify STATEMENT_LIST 
+                Simplify STATEMENT_LIST 
+                 Simplify STATEMENT_LIST 
+                  Simplify STATEMENT 
+                   Simplify DECLARATION_STATEMENT 
+                    Simplify TYPE 
+                 Simplify STATEMENT 
+                   Simplify EXPRESSION (VARIABLE) 
+                   Simplify EXPRESSION (NEW) 
+                    Simplify TYPE 
+                Simplify STATEMENT 
+                 Simplify EXPRESSION (METH_CALL) 
+                  Simplify EXPRESSION () 
+                   Simplify EXPRESSION (VARIABLE) 
+                  Simplify ARGUMENT_LIST 
+                   Simplify EXPRESSION_LIST 
+                    Simplify EXPRESSION_LIST 
+                     Simplify EXPRESSION_LIST 
+                      Simplify EXPRESSION_LIST 
+                       Simplify EXPRESSION (CONSTANT) 
+                      Simplify EXPRESSION (CONSTANT) 
+                     Simplify EXPRESSION (CONSTANT) 
+                    Simplify EXPRESSION (CONSTANT) 
+               Simplify STATEMENT 
+                Simplify EXPRESSION (FUNC_CALL) 
+                 Simplify ARGUMENT_LIST 
+                  Simplify EXPRESSION_LIST 
+                   Simplify EXPRESSION () 
+                    Simplify EXPRESSION (CLASS_FIELD) 
+                     Simplify EXPRESSION () 
+                      Simplify EXPRESSION (VARIABLE) 
+              Simplify STATEMENT 
+               Simplify EXPRESSION (FUNC_CALL) 
+                Simplify ARGUMENT_LIST 
+                 Simplify EXPRESSION_LIST 
+                  Simplify EXPRESSION () 
+                   Simplify EXPRESSION (VARIABLE) 
+             Simplify STATEMENT 
+              Simplify DECLARATION_STATEMENT 
+               Simplify TYPE 
+            Simplify STATEMENT 
+              Simplify EXPRESSION (VARIABLE) 
+              Simplify EXPRESSION () 
+               Simplify EXPRESSION (FUNC_CALL) 
+                Simplify ARGUMENT_LIST 
+                 Simplify EXPRESSION_LIST 
+                  Simplify EXPRESSION () 
+                   Simplify EXPRESSION (VARIABLE) 
+           Simplify STATEMENT 
+            Simplify EXPRESSION (FUNC_CALL) 
+             Simplify ARGUMENT_LIST 
+              Simplify EXPRESSION_LIST 
+               Simplify EXPRESSION () 
+                Simplify EXPRESSION (VARIABLE) 
+          Simplify STATEMENT 
+           Simplify DECLARATION_STATEMENT 
+            Simplify TYPE 
+         Simplify STATEMENT 
+           Simplify EXPRESSION (VARIABLE) 
+           Simplify EXPRESSION (NEW) 
+            Simplify TYPE 
+        Simplify STATEMENT 
+         Simplify EXPRESSION (METH_CALL) 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (VARIABLE) 
+          Simplify ARGUMENT_LIST 
+           Simplify EXPRESSION_LIST 
+            Simplify EXPRESSION_LIST 
+             Simplify EXPRESSION_LIST 
+              Simplify EXPRESSION_LIST 
+               Simplify EXPRESSION (CONSTANT) 
+              Simplify EXPRESSION (CONSTANT) 
+             Simplify EXPRESSION (CONSTANT) 
+            Simplify EXPRESSION (CONSTANT) 
+       Simplify STATEMENT 
+        Simplify EXPRESSION (FUNC_CALL) 
+         Simplify ARGUMENT_LIST 
+          Simplify EXPRESSION_LIST 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (FUNC_CALL) 
+             Simplify ARGUMENT_LIST 
+              Simplify EXPRESSION_LIST 
+               Simplify EXPRESSION () 
+                Simplify EXPRESSION (VARIABLE) 
+    Simplify FUNCTION 
+     Simplify TYPE 
+     Simplify PARAMETER_LIST 
+      Simplify VARIABLE_LIST 
+       Simplify DECLARATION_STATEMENT 
+        Simplify TYPE 
+     Simplify STATEMENT_LIST 
+      Simplify STATEMENT 
+        Simplify EXPRESSION_LIST 
+         Simplify EXPRESSION_LIST 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (CLASS_FIELD) 
+            Simplify EXPRESSION () 
+             Simplify EXPRESSION (VARIABLE) 
+         Simplify EXPRESSION () 
+          Simplify EXPRESSION (CLASS_FIELD) 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (VARIABLE) 
+   Simplify FUNCTION 
+    Simplify TYPE 
+    Simplify PARAMETER_LIST 
+     Simplify VARIABLE_LIST 
+      Simplify DECLARATION_STATEMENT 
+       Simplify TYPE 
+    Simplify STATEMENT_LIST 
+     Simplify STATEMENT 
+       Simplify EXPRESSION_LIST 
+        Simplify EXPRESSION_LIST 
+         Simplify EXPRESSION_LIST 
+          Simplify EXPRESSION_LIST 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (CLASS_FIELD) 
+             Simplify EXPRESSION () 
+              Simplify EXPRESSION (VARIABLE) 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (CLASS_FIELD) 
+            Simplify EXPRESSION () 
+             Simplify EXPRESSION (VARIABLE) 
+         Simplify EXPRESSION () 
+          Simplify EXPRESSION (CLASS_FIELD) 
+           Simplify EXPRESSION () 
+            Simplify EXPRESSION (CLASS_FIELD) 
+             Simplify EXPRESSION () 
+              Simplify EXPRESSION (VARIABLE) 
+        Simplify EXPRESSION () 
+         Simplify EXPRESSION (CLASS_FIELD) 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (CLASS_FIELD) 
+            Simplify EXPRESSION () 
+             Simplify EXPRESSION (VARIABLE) 
+  Simplify FUNCTION 
+   Simplify TYPE 
+   Simplify PARAMETER_LIST 
+    Simplify VARIABLE_LIST 
+     Simplify DECLARATION_STATEMENT 
+      Simplify TYPE 
+   Simplify STATEMENT_LIST 
+    Simplify STATEMENT 
+      Simplify EXPRESSION () 
+       Simplify EXPRESSION (CLASS_FIELD) 
+        Simplify EXPRESSION () 
+         Simplify EXPRESSION (VARIABLE) 

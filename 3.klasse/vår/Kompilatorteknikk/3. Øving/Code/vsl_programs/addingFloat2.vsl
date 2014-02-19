@@ -1,0 +1,5 @@
+VOID FUNC adding ()
+START
+	FLOAT a;
+	a := 1.0 + 2;
+END

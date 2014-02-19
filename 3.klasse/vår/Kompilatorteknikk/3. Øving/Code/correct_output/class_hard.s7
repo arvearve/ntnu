@@ -1,0 +1,12 @@
+Add strings ("Content: i: "), index: 0 
+Add strings (", f: "), index: 1 
+Add strings ("Content tc1: i: "), index: 2 
+Add strings (", f: "), index: 3 
+Add strings ("Content: i: "), index: 4 
+Add strings (", f: "), index: 5 
+Add strings ("Content tc1: "), index: 6 
+Add strings ("printing t"), index: 7 
+Add strings ("printing h"), index: 8 
+Add strings ("printing h2"), index: 9 
+Add strings ("printing h.hc1"), index: 10 
+Add strings ("printing h.hc1.tc1"), index: 11 

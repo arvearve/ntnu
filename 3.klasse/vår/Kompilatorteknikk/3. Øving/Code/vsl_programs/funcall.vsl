@@ -1,0 +1,32 @@
+
+// This program tests activation records, function call and return
+
+INT FUNC funcall ()
+START
+    INT x; INT y; INT z;
+    x := 5;
+    y := 10;
+    PRINT "Calling my_function with parameters", x, y;
+    z := my_function ( x, y );
+    PRINT "The returned result is", z;
+    z := my_other_function ();
+    PRINT "The other returned result is", z;
+    RETURN 0;
+END
+
+INT FUNC my_function ( INT s, INT t )
+START
+    INT u;
+    u := s*s + t*t;
+    PRINT "Parameter s is", s;
+    PRINT "Parameter t is", t;
+    PRINT "The sum of their squares is", u;
+    RETURN u;
+END
+
+INT FUNC my_other_function ()
+START
+    INT x;
+    x := 42;
+    RETURN x;
+END

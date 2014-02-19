@@ -1,0 +1,14 @@
+.data
+.INTEGER: .string "%d "
+.FLOAT: .string "%f "
+.NEWLINE: .string "\n "
+.STRING0: .string "Testing if printf format codes are left alone."
+.STRING1: .string "\nAll stages *should* contain percent characters, but no integers."
+.STRING2: .string "\nExe output *will* contain integers or crash."
+.STRING3: .string "\tHello, world! %d %d"
+.STRING4: .string "Adding a splash of ANSI color codes - This will only work in a color terminal"
+.STRING5: .string "\t\033[31mRed"
+.STRING6: .string "\t\033[32mGreen"
+.STRING7: .string "\t\033[34mBlue"
+.STRING8: .string "\033[0m"
+.globl main

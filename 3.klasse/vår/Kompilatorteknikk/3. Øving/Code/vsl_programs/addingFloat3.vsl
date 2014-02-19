@@ -1,0 +1,5 @@
+VOID FUNC adding ()
+START
+	INT a;
+	a := 1.0 + 2;
+END

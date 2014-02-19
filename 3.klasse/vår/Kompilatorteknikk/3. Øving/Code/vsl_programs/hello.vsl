@@ -1,0 +1,4 @@
+VOID FUNC hello ()
+START
+    PRINT "Hello, world!";
+END

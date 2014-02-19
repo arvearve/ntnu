@@ -1,0 +1,4 @@
+INT FUNC return42Func ()
+START
+	RETURN 42;
+END

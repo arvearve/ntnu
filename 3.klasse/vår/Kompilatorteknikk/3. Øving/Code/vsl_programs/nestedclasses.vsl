@@ -1,0 +1,69 @@
+CLASS Inner HAS
+	INT a;
+	INT b;
+	
+	WITH
+	
+	VOID FUNC construct(INT a, INT b) START
+		THIS.a := a;
+		THIS.b := b;
+	END
+	
+	VOID FUNC print() START
+		PRINT "a: ", THIS.a, "b: ", THIS.b;
+	END
+	
+	INT FUNC sum() START
+		RETURN THIS.a + THIS.b;
+	END
+END
+
+CLASS Outer HAS
+	INT a;
+	INT b;
+	Inner i;
+	
+	WITH
+	
+	VOID FUNC construct(INT oa, INT ob, INT ia, INT ib) START
+		THIS.a := oa;
+		THIS.b := ob;
+		THIS.i := NEW Inner;
+		THIS.i.a := ia;
+		THIS.i.b := ib;
+	END
+	
+	VOID FUNC print() START
+		PRINT "oa: ", THIS.a, "ob: ", THIS.b, "ia: ", THIS.i.a, "ib: ", THIS.i.b;
+	END
+	
+	INT FUNC sum() START
+		INT d;
+		d := THIS.a + THIS.b;
+		d := d + THIS.i.a + THIS.i.b;
+		RETURN d;
+	END
+END
+
+VOID FUNC main() START
+	Outer o;
+	o := NEW Outer;
+	o.construct(1,2,3,4);
+	o.print();
+	PRINT o.sum();
+	
+	Inner i2;
+	i2 := o.i;
+	i2.print();
+	
+	Inner i;
+	i := NEW Inner;
+	i.construct(10,11);
+	
+	o.i := i;
+	o.print();
+	o.i.print();
+	PRINT o.i.sum();
+END
+	
+	

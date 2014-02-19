@@ -1,0 +1,28 @@
+Add strings ("Hello, world!"), index: 0 
+Add strings (""), index: 1 
+Add strings ("Hello, \"world\"!"), index: 2 
+Add strings ("+"), index: 3 
+Add strings ("="), index: 4 
+Add strings ("-"), index: 5 
+Add strings ("="), index: 6 
+Add strings ("+ (-"), index: 7 
+Add strings (") ="), index: 8 
+Add strings ("*"), index: 9 
+Add strings ("="), index: 10 
+Add strings ("/"), index: 11 
+Add strings ("="), index: 12 
+Add strings (">"), index: 13 
+Add strings ("="), index: 14 
+Add strings ("<"), index: 15 
+Add strings ("="), index: 16 
+Add strings (">="), index: 17 
+Add strings ("="), index: 18 
+Add strings ("<="), index: 19 
+Add strings ("="), index: 20 
+Add strings ("=="), index: 21 
+Add strings ("="), index: 22 
+Add strings ("!="), index: 23 
+Add strings ("="), index: 24 
+Add strings ("*"), index: 25 
+Add strings ("="), index: 26 
+Add strings ("Skip..."), index: 27 

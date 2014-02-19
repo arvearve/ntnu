@@ -1,0 +1,10 @@
+Hit rule "TYPE" on text 'VOID' at line 1
+Hit rule "VARIABLE" on text 'simple' at line 3
+Hit rule "CONSTANT" on text '0' at line 7
+Hit rule "EXPRESSION" on text '0' at line 7
+Hit rule "RETURN_STATEMENT" on text ';' at line 7
+Hit rule "STATEMENT" on text ';' at line 7
+Hit rule "STATEMENT_LIST" on text ';' at line 7
+Hit rule "FUNCTION" on text 'END' at line 8
+Hit rule "FUNCTION_LIST" on text 'END' at line 8
+Hit rule "PROGRAM" on text '' at line 9

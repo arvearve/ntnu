@@ -1,0 +1,7 @@
+.data
+.INTEGER: .string "%d "
+.FLOAT: .string "%f "
+.NEWLINE: .string "\n "
+.STRING0: .string "2*(3-1) = "
+.STRING1: .string "2*3-1 = "
+.globl main

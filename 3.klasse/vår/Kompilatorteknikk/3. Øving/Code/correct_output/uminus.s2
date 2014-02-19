@@ -1,0 +1,65 @@
+Hit rule "TYPE" on text 'VOID' at line 4
+Hit rule "VARIABLE" on text 'negatives' at line 4
+Hit rule "TYPE" on text 'INT' at line 6
+Hit rule "VARIABLE" on text 'a' at line 6
+Hit rule "DECLARATION_STATEMENT" on text 'a' at line 6
+Hit rule "STATEMENT" on text ';' at line 6
+Hit rule "STATEMENT_LIST" on text ';' at line 6
+Hit rule "TYPE" on text 'INT' at line 7
+Hit rule "VARIABLE" on text 'b' at line 7
+Hit rule "DECLARATION_STATEMENT" on text 'b' at line 7
+Hit rule "STATEMENT" on text ';' at line 7
+Hit rule "STATEMENT_LIST" on text ';' at line 7
+Hit rule "VARIABLE" on text 'a' at line 8
+Hit rule "EXPRESSION" on text ':=' at line 8
+Hit rule "CONSTANT" on text '100' at line 8
+Hit rule "EXPRESSION" on text '100' at line 8
+Hit rule "ASSIGNMENT_STATEMENT" on text ';' at line 8
+Hit rule "STATEMENT" on text ';' at line 8
+Hit rule "STATEMENT_LIST" on text ';' at line 8
+Hit rule "VARIABLE" on text 'b' at line 9
+Hit rule "EXPRESSION" on text ':=' at line 9
+Hit rule "CONSTANT" on text '20' at line 9
+Hit rule "EXPRESSION" on text '20' at line 9
+Hit rule "ASSIGNMENT_STATEMENT" on text ';' at line 9
+Hit rule "STATEMENT" on text ';' at line 9
+Hit rule "STATEMENT_LIST" on text ';' at line 9
+Hit rule "CONSTANT" on text '"a is"' at line 10
+Hit rule "EXPRESSION" on text '"a is"' at line 10
+Hit rule "EXPRESSION_LIST" on text ',' at line 10
+Hit rule "VARIABLE" on text 'a' at line 10
+Hit rule "EXPRESSION" on text ',' at line 10
+Hit rule "EXPRESSION" on text ',' at line 10
+Hit rule "EXPRESSION_LIST" on text ',' at line 10
+Hit rule "CONSTANT" on text '" and b is "' at line 10
+Hit rule "EXPRESSION" on text '" and b is "' at line 10
+Hit rule "EXPRESSION_LIST" on text ',' at line 10
+Hit rule "VARIABLE" on text 'b' at line 10
+Hit rule "EXPRESSION" on text ';' at line 10
+Hit rule "EXPRESSION" on text ';' at line 10
+Hit rule "EXPRESSION_LIST" on text ';' at line 10
+Hit rule "PRINT_STATEMENT" on text ';' at line 10
+Hit rule "STATEMENT" on text ';' at line 10
+Hit rule "STATEMENT_LIST" on text ';' at line 10
+Hit rule "CONSTANT" on text '"- a is"' at line 11
+Hit rule "EXPRESSION" on text '"- a is"' at line 11
+Hit rule "EXPRESSION_LIST" on text ',' at line 11
+Hit rule "VARIABLE" on text 'a' at line 11
+Hit rule "EXPRESSION" on text ',' at line 11
+Hit rule "EXPRESSION" on text ',' at line 11
+Hit rule "EXPRESSION" on text ',' at line 11
+Hit rule "EXPRESSION_LIST" on text ',' at line 11
+Hit rule "CONSTANT" on text '" and -b is "' at line 11
+Hit rule "EXPRESSION" on text '" and -b is "' at line 11
+Hit rule "EXPRESSION_LIST" on text ',' at line 11
+Hit rule "VARIABLE" on text 'b' at line 11
+Hit rule "EXPRESSION" on text ';' at line 11
+Hit rule "EXPRESSION" on text ';' at line 11
+Hit rule "EXPRESSION" on text ';' at line 11
+Hit rule "EXPRESSION_LIST" on text ';' at line 11
+Hit rule "PRINT_STATEMENT" on text ';' at line 11
+Hit rule "STATEMENT" on text ';' at line 11
+Hit rule "STATEMENT_LIST" on text ';' at line 11
+Hit rule "FUNCTION" on text 'END' at line 12
+Hit rule "FUNCTION_LIST" on text 'END' at line 12
+Hit rule "PROGRAM" on text '' at line 13

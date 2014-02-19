@@ -1,0 +1,40 @@
+CLASS Simple HAS
+	INT a;
+	INT b;
+	
+	WITH
+	
+	VOID FUNC construct(INT a, INT b) START
+		THIS.a := a;
+		THIS.b := b;
+	END
+	
+	VOID FUNC print() START
+		PRINT "a: ", THIS.a, "b: ", THIS.b;
+	END
+	
+	INT FUNC sum() START
+		RETURN THIS.a + THIS.b;
+	END
+	
+	INT FUNC sumAndMultiply(INT c) START
+		INT d;
+		d := THIS.a + THIS.b;
+		d := d * c;
+		RETURN d;
+	END
+END
+
+VOID FUNC main() START
+	Simple s;
+	s := NEW Simple;
+	s.construct(3,4);
+	s.print();
+	INT b;
+	b := s.sum();
+	PRINT b;
+	b := s.sumAndMultiply(10);
+	PRINT b;
+END
+	
+

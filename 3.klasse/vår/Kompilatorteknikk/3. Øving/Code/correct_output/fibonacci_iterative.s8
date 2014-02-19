@@ -1,0 +1,7 @@
+.data
+.INTEGER: .string "%d "
+.FLOAT: .string "%f "
+.NEWLINE: .string "\n "
+.STRING0: .string "Fibonacci number #"
+.STRING1: .string "is "
+.globl main

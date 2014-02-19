@@ -1,0 +1,37 @@
+VOID FUNC maxmin()
+START
+	INT a; INT b; INT c; INT d; INT e;
+	a := max(5,6);
+	b := min(-1,4);
+	c := max(0,0);
+	
+	PRINT "a is: ", a, "b is: ", b, "c is: ", c;
+END
+
+// Returns maximum of a and b, or zero if equal
+INT FUNC max(INT a, INT b)
+START
+	IF ( a > b) THEN
+		RETURN a;
+	END
+	
+	IF ( b > a) THEN
+		RETURN b;
+	END
+	
+	RETURN 0;
+END
+
+// Returns minimum of a and b, or zero if equal
+INT FUNC min(INT a, INT b)
+START
+	IF ( a < b) THEN
+		RETURN a;
+	END
+	
+	IF ( b < a) THEN
+		RETURN b;
+	END
+	
+	RETURN 0;
+END

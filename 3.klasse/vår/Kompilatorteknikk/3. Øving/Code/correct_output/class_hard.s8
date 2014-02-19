@@ -1,0 +1,17 @@
+.data
+.INTEGER: .string "%d "
+.FLOAT: .string "%f "
+.NEWLINE: .string "\n "
+.STRING0: .string "Content: i: "
+.STRING1: .string ", f: "
+.STRING2: .string "Content tc1: i: "
+.STRING3: .string ", f: "
+.STRING4: .string "Content: i: "
+.STRING5: .string ", f: "
+.STRING6: .string "Content tc1: "
+.STRING7: .string "printing t"
+.STRING8: .string "printing h"
+.STRING9: .string "printing h2"
+.STRING10: .string "printing h.hc1"
+.STRING11: .string "printing h.hc1.tc1"
+.globl main

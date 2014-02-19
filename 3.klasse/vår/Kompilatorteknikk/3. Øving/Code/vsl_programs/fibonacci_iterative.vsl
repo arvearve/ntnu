@@ -1,0 +1,21 @@
+INT FUNC fibonacci_iterative( INT n )
+START
+    INT x; INT y; INT f;
+    x := 1;
+    y := 1;
+    f := 1;
+ 
+    IF n >= 2 THEN
+        INT i;
+        i := 2;
+    	WHILE (i < n) DO
+    		f := x + y;
+    		x := y;
+    		y := f;
+    		i := i + 1;
+    	END
+    END
+
+    PRINT "Fibonacci number #",n,"is ",f;
+    RETURN 0;
+END

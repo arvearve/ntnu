@@ -1,0 +1,8 @@
+.data
+.INTEGER: .string "%d "
+.FLOAT: .string "%f "
+.NEWLINE: .string "\n "
+.STRING0: .string "a is: "
+.STRING1: .string "b is: "
+.STRING2: .string "c is: "
+.globl main

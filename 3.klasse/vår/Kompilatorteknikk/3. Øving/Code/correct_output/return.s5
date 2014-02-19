@@ -1,0 +1,7 @@
+ PROGRAM()()
+ FUNCTION_LIST()()
+  FUNCTION(INTEGER)("return42Func")()
+   (nil)
+   STATEMENT_LIST()()
+    RETURN_STATEMENT()()
+     CONSTANT(INTEGER)(42)()

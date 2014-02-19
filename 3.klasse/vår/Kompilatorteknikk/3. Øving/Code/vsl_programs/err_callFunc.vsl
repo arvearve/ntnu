@@ -1,0 +1,9 @@
+VOID FUNC one ()
+START
+    PRINT "void is ", two();
+END
+
+VOID FUNC two ()
+START
+    INT a;
+END

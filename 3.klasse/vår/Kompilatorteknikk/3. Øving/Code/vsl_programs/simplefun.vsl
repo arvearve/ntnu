@@ -1,0 +1,12 @@
+INT FUNC funcall ()
+START
+    INT x;
+    x := my_function( 5, 10 );
+    RETURN 0;
+END
+
+INT FUNC my_function ( INT s, INT t )
+START
+    PRINT "Parameter s is", s, "t is ", t;
+    RETURN 0;
+END

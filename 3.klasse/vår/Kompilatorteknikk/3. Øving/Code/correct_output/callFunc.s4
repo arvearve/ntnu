@@ -1,0 +1,16 @@
+ Simplify FUNCTION_LIST 
+  Simplify FUNCTION_LIST 
+   Simplify FUNCTION 
+    Simplify TYPE 
+    Simplify STATEMENT_LIST 
+     Simplify STATEMENT 
+       Simplify EXPRESSION_LIST 
+        Simplify EXPRESSION_LIST 
+         Simplify EXPRESSION (CONSTANT) 
+        Simplify EXPRESSION () 
+         Simplify EXPRESSION (FUNC_CALL) 
+  Simplify FUNCTION 
+   Simplify TYPE 
+   Simplify STATEMENT_LIST 
+    Simplify STATEMENT 
+      Simplify EXPRESSION (CONSTANT) 
