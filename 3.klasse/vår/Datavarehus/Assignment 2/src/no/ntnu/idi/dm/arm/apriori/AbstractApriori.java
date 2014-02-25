@@ -135,10 +135,28 @@ public abstract class AbstractApriori<V> {
 	 * @param frequentItemSet
 	 * @param consequent
 	 */
-	public void generateRulesBase(ItemSet<V> frequentItemSet,
-			ItemSet<V> consequent) {
+	public void generateRulesBase(ItemSet<V> frequentItemSet, ItemSet<V> consequent) {
+        if(frequentItemSet.size() == 0){ return; }
 
-		AssociationRule rule=new AssociationRule(frequentItemSet,consequent);
+		AssociationRule rule = new AssociationRule(frequentItemSet,consequent);
+        //Get support for the combined expression
+//        double minconf  = 0.6;
+        double support  = getAndCacheSupportForItemset(frequentItemSet.union(consequent));
+        double LhsSupport  = getAndCacheSupportForItemset(frequentItemSet);
+        double confidence = support/ LhsSupport;
+
+
+          // Only recurse if the rule is better than minConf.
+//        double minConf = 0.7;
+//        if(confidence >= minConf){
+            rule.setSupport(support);
+            rule.setConfidence(confidence);
+            rules.add(rule);
+            // move a rule from frequentItemSet to to consequent.
+            consequent = consequent.union(frequentItemSet.last());
+            frequentItemSet = frequentItemSet.difference(consequent);
+            generateRulesBase(frequentItemSet, consequent);
+//        }
 	}
 
 	/**

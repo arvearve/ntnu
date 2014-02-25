@@ -14,13 +14,27 @@ public class FkMinus1FKMinus1<V> extends BaseApriori<V> {
 
 	@Override
 	public List<ItemSet<V>> aprioriGen(
-			List<ItemSet<V>> frequentCandidatesKMinus1) {
+		   List<ItemSet<V>> frequentCandidatesKMinus1) {
 
 		Collections.sort(frequentCandidatesKMinus1);
 		int allGeneratedCandidatesCounter = 0;
 		Set<ItemSet<V>> frequentCandidateSet = new HashSet<ItemSet<V>>();
 
-		// TODO
+        for(ItemSet<V> prev: frequentCandidatesKMinus1){
+            for(ItemSet<V> single: frequentCandidatesKMinus1){
+
+                // Don't join with self
+
+                ItemSet<V> candidate = prev.union(single);
+
+                // Only keep candidates that are "allowed": They have k-2 common elements.
+                if(candidate.size() != prev.size()+1){ continue;}
+                getAndCacheSupportForItemset(candidate);
+
+                // Only add non-duplicates
+                if(!frequentCandidateSet.contains(candidate)){ frequentCandidateSet.add(candidate); }
+            }
+        }
 
 		return new LinkedList<ItemSet<V>>(frequentCandidateSet);
 	}

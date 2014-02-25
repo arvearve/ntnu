@@ -28,7 +28,7 @@ public class BruteForceApriori<V> extends BaseApriori<V> {
                 for(ItemSet<V> single:singles){
 
                     // Don't join if set already contains item.
-                    if(prev.intersection(single).size() != 0 ){ break; }
+                    if(prev.intersection(single).size() != 0 ){ continue; }
                     ItemSet<V> candidate = prev.union(single);
 
                     // Don't add duplicates
@@ -36,7 +36,7 @@ public class BruteForceApriori<V> extends BaseApriori<V> {
                 }
             }
 
-            // Stop processing if we couldn't add more candidate sets.
+            // Stop processing if there were no more candidate sets.
             if(current.size()==0){break;}
 
             // Save frequent item sets of current length
@@ -49,7 +49,7 @@ public class BruteForceApriori<V> extends BaseApriori<V> {
 
         // Prune infrequent candidates, add the frequent ones to frequentItemSets
         for(Map.Entry<Integer, List<ItemSet<V>>> entry: candidates.entrySet()){
-            Integer key = entry.getKey();
+            Integer level = entry.getKey();
             List<ItemSet<V>> candidateList = entry.getValue();
 
             // Why doesn't the povided prune method do this on the passed list? ~_~
@@ -58,9 +58,15 @@ public class BruteForceApriori<V> extends BaseApriori<V> {
 
             // Don't add empty entries to frequentItemSets
             if(frequentz.size()>0){
-                frequentItemSets.put(key, frequentz);
+                frequentItemSets.put(level, frequentz);
             }
+            System.out.println("Level " + level + ":");
+            System.out.println("    Generated " + candidateList.size() + " candidates.");
+            System.out.println("        " + candidateList.toString());
+
+            System.out.println("    Kept " + frequentz.size() + " item sets");
+            System.out.println("        " + frequentz.toString());
+
         }
-        System.out.println(frequentItemSets);
     }
 }

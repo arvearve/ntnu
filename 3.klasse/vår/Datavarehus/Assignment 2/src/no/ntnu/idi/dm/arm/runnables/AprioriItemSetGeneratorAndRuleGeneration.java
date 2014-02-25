@@ -24,7 +24,7 @@ public class AprioriItemSetGeneratorAndRuleGeneration {
 		ArrayList<ItemSet<String>> itemSets=new ArrayList<ItemSet<String>>();
 		String line=reader.readLine();
 		 line=reader.readLine();
-		 
+
 		while(line!=null)
 		{
 			if (line.contains("#") || line.length()<2)
@@ -92,18 +92,17 @@ public class AprioriItemSetGeneratorAndRuleGeneration {
 
 		AbstractApriori<String> apriori;
 
-		apriori = new BruteForceApriori<String>(transactions);
+//		apriori = new BruteForceApriori<String>(transactions);
 //		apriori = new FKMinus1F1Apriori<String>(transactions);
-//		apriori = new FkMinus1FKMinus1<String>(transactions);
+		apriori = new FkMinus1FKMinus1<String>(transactions);
 
 		apriori.apriori(minSupport);
 
 		apriori.generateAllRules();
 		
 		System.out.println("Generated " + apriori.getRules().size() + " rules.");
-
+		System.out.println("Generated " + apriori.getRules());
 	}
-
 }
 
 //public static List<ItemSet<String>> createDataSet() {
