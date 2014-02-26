@@ -70,37 +70,67 @@ public class AprioriItemSetGeneratorAndRuleGeneration {
 	}
 
 	public static void main(String[] args) {
+        List<ItemSet<String>> smallTransactions = null;
+        List<ItemSet<String>> largeTransactions = null;
 
-		// get the data set
-		List<ItemSet<String>> transactions=null;
-		boolean useSmallDataset=true; //use small or large dataset
-		try {
-			if(useSmallDataset)
-				transactions=readFile("smallDataset.txt");
-			else
-			transactions = readFile("supermarket.arff");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+        // get the data set
+        try {
+            smallTransactions = readFile("smallDataset.txt");
+            largeTransactions = readFile("supermarket.arff");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-		// print transactions ... just in case
-		System.out.println(transactions);
 
 		// threshold
 		Double minSupport = .4d;
 		System.out.println("We set the relative minsup to " + minSupport);
 
-		AbstractApriori<String> apriori;
+		AbstractApriori<String> brute, f1, km1, bruteBig, f1Big, km1Big;
 
-//		apriori = new BruteForceApriori<String>(transactions);
-//		apriori = new FKMinus1F1Apriori<String>(transactions);
-		apriori = new FkMinus1FKMinus1<String>(transactions);
+		brute = new BruteForceApriori<String>(smallTransactions);
+		f1 = new FKMinus1F1Apriori<String>(smallTransactions);
+		km1 = new FkMinus1FKMinus1<String>(smallTransactions);
+        bruteBig = new BruteForceApriori<String>(largeTransactions);
+		f1Big = new FKMinus1F1Apriori<String>(largeTransactions);
+		km1Big = new FkMinus1FKMinus1<String>(largeTransactions);
 
-		apriori.apriori(minSupport);
 
-		apriori.generateAllRules();
-		
-		System.out.println("Generated " + apriori.getRules().size() + " rules.");
-		System.out.println("Generated " + apriori.getRules());
+        System.out.println("\n\n\n---- Brute Force, small dataset ----");
+        brute.apriori(minSupport);
+        brute.generateAllRules();
+		System.out.println("Generated " + brute.getRules().size() + " rules.");
+		System.out.println("Generated " + brute.getRules());
+
+
+        System.out.println("\n\n\n---- F_{k-1} x F_1, small dataset ----");
+        f1.apriori(minSupport);
+        f1.generateAllRules();
+        System.out.println("Generated " + f1.getRules().size() + " rules.");
+        System.out.println("Generated " + f1.getRules());
+
+
+        System.out.println("\n\n\n---- F_{k-1} x F_{k-1}, small dataset ----");
+        km1.apriori(minSupport);
+        km1.generateAllRules();
+        System.out.println("Generated " + km1.getRules().size() + " rules.");
+        System.out.println("Generated " + km1.getRules());
+
+
+        System.out.println("\n\n\n---- Brute Force, large dataset: Infeasible. Not going to run.----");
+
+
+        System.out.println("\n\n\n---- F_{k-1} x F_1, large dataset ----");
+        f1Big.apriori(minSupport);
+        f1Big.generateAllRules();
+        System.out.println("Generated " + f1Big.getRules().size() + " rules.");
+        System.out.println("Generated " + f1Big.getRules());
+
+
+        System.out.println("\n\n\n---- F_{k-1} x F_{k-1}, large dataset ----");
+        km1Big.apriori(minSupport);
+        km1Big.generateAllRules();
+        System.out.println("Generated " + km1Big.getRules().size() + " rules.");
+        System.out.println("Generated " + km1Big.getRules());
 	}
 }
