@@ -147,8 +147,8 @@ public abstract class AbstractApriori<V> {
 
 
           // Only recurse if the rule is better than minConf.
-//        double minConf = 0.7;
-//        if(confidence >= minConf){
+        double minConf = 0.0;
+        if(confidence >= minConf){
             rule.setSupport(support);
             rule.setConfidence(confidence);
             rules.add(rule);
@@ -156,7 +156,7 @@ public abstract class AbstractApriori<V> {
             consequent = consequent.union(frequentItemSet.last());
             frequentItemSet = frequentItemSet.difference(consequent);
             generateRulesBase(frequentItemSet, consequent);
-//        }
+        }
 	}
 
 	/**
