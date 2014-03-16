@@ -1,0 +1,56 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("fibonacci_recursive"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("f"), depth: 2, stack_offset: -4, entry label: "f"
+     EXPRESSION
+      VARIABLE, ("fibonacci_number"), (nil)
+      EXPRESSION_LIST
+       VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+      VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+      CONSTANT
+      VARIABLE, ("f"), depth: 2, stack_offset: -4, entry label: "f"
+    RETURN_STATEMENT
+     CONSTANT
+  FUNCTION, ("fibonacci_number"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("y"), depth: 2, stack_offset: -4, entry label: "y"
+     CONSTANT
+    IF_STATEMENT
+     EXPRESSION
+      VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+      CONSTANT
+     STATEMENT_LIST
+      IF_STATEMENT
+       EXPRESSION
+        VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+        CONSTANT
+       STATEMENT_LIST
+        ASSIGNMENT_STATEMENT
+         VARIABLE, ("y"), depth: 2, stack_offset: -4, entry label: "y"
+         EXPRESSION
+          EXPRESSION
+           VARIABLE, ("fibonacci_number"), (nil)
+           EXPRESSION_LIST
+            EXPRESSION
+             VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+             CONSTANT
+          EXPRESSION
+           VARIABLE, ("fibonacci_number"), (nil)
+           EXPRESSION_LIST
+            EXPRESSION
+             VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+             CONSTANT
+    RETURN_STATEMENT
+     VARIABLE, ("y"), depth: 2, stack_offset: -4, entry label: "y"

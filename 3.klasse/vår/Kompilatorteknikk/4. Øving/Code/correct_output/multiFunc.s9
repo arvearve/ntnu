@@ -1,0 +1,18 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("return42Func"), (nil)
+   (nil)
+   STATEMENT_LIST
+    RETURN_STATEMENT
+     CONSTANT
+  FUNCTION, ("return41Func"), (nil)
+   (nil)
+   STATEMENT_LIST
+    RETURN_STATEMENT
+     CONSTANT
+  FUNCTION, ("returnVarFunc"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    RETURN_STATEMENT
+     VARIABLE, ("variable"), depth: 2, stack_offset: 8, entry label: "variable"

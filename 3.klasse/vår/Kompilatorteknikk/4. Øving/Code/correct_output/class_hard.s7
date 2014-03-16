@@ -1,0 +1,174 @@
+Add scope, index: 0 
+Inserting class testClass
+Inserting variable i INT depth:0 offset:0 in class testClass
+Retrieving class testClass
+Inserting variable f INT depth:0 offset:4 in class testClass
+Retrieving class testClass
+Inserting variable tc1 CLASS(testClass) depth:0 offset:8 in class testClass
+Retrieving class testClass
+Inserting method show VOID<=() in class testClass
+Retrieving class testClass
+Inserting method construct VOID<=(INT,INT,CLASS(testClass)) in class testClass
+Retrieving class testClass
+Inserting method getThis CLASS(testClass)<=() in class testClass
+Retrieving class testClass
+Inserting method get_i INT<=() in class testClass
+Retrieving class testClass
+Add scope, index: 1 
+Add scope, index: 2 
+Add strings ("Content: i: "), index: 0 
+Retrieving field i of class testClass
+Retrieving class testClass
+Add strings (", f: "), index: 1 
+Retrieving field f of class testClass
+Retrieving class testClass
+Add strings ("Content tc1: i: "), index: 2 
+Retrieving field tc1 of class testClass
+Retrieving class testClass
+Retrieving field i of class testClass
+Retrieving class testClass
+Add strings (", f: "), index: 3 
+Retrieving field tc1 of class testClass
+Retrieving class testClass
+Retrieving field f of class testClass
+Retrieving class testClass
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable i INT depth:2 offset:20
+Inserting variable f INT depth:2 offset:16
+Inserting variable tc1 CLASS(testClass) depth:2 offset:12
+Retrieving field i of class testClass
+Retrieving class testClass
+Retrieving variable i
+Retrieving field f of class testClass
+Retrieving class testClass
+Retrieving variable f
+Retrieving field tc1 of class testClass
+Retrieving class testClass
+Retrieving variable tc1
+Remove scope, index: 1 
+Add scope, index: 2 
+Remove scope, index: 1 
+Add scope, index: 2 
+Retrieving field i of class testClass
+Retrieving class testClass
+Remove scope, index: 1 
+Remove scope, index: 0 
+Inserting class hardClass
+Inserting variable i INT depth:0 offset:0 in class hardClass
+Retrieving class hardClass
+Inserting variable f INT depth:0 offset:4 in class hardClass
+Retrieving class hardClass
+Inserting variable tc1 CLASS(testClass) depth:0 offset:8 in class hardClass
+Retrieving class hardClass
+Inserting variable hc1 CLASS(hardClass) depth:0 offset:12 in class hardClass
+Retrieving class hardClass
+Inserting method show VOID<=() in class hardClass
+Retrieving class hardClass
+Inserting method construct VOID<=(INT,INT,CLASS(testClass)) in class hardClass
+Retrieving class hardClass
+Inserting method getTestClass CLASS(testClass)<=() in class hardClass
+Retrieving class hardClass
+Inserting method getHardClass CLASS(hardClass)<=() in class hardClass
+Retrieving class hardClass
+Inserting method setHardClass VOID<=(CLASS(hardClass)) in class hardClass
+Retrieving class hardClass
+Add scope, index: 1 
+Add scope, index: 2 
+Add strings ("Content: i: "), index: 4 
+Retrieving field i of class hardClass
+Retrieving class hardClass
+Add strings (", f: "), index: 5 
+Retrieving field f of class hardClass
+Retrieving class hardClass
+Add strings ("Content tc1: "), index: 6 
+Retrieving field tc1 of class hardClass
+Retrieving class hardClass
+Retrieving method show of class testClass
+Retrieving class testClass
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable i INT depth:2 offset:20
+Inserting variable f INT depth:2 offset:16
+Inserting variable tc1 CLASS(testClass) depth:2 offset:12
+Retrieving field i of class hardClass
+Retrieving class hardClass
+Retrieving variable i
+Retrieving field f of class hardClass
+Retrieving class hardClass
+Retrieving variable f
+Retrieving field tc1 of class hardClass
+Retrieving class hardClass
+Retrieving variable tc1
+Remove scope, index: 1 
+Add scope, index: 2 
+Retrieving field tc1 of class hardClass
+Retrieving class hardClass
+Remove scope, index: 1 
+Add scope, index: 2 
+Retrieving field hc1 of class hardClass
+Retrieving class hardClass
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable h CLASS(hardClass) depth:2 offset:12
+Retrieving field hc1 of class hardClass
+Retrieving class hardClass
+Retrieving variable h
+Remove scope, index: 1 
+Remove scope, index: 0 
+Add scope, index: 1 
+Inserting function test VOID<=() 
+Add scope, index: 2 
+Inserting variable h CLASS(hardClass) depth:2 offset:-4
+Inserting variable h2 CLASS(hardClass) depth:2 offset:-8
+Inserting variable t CLASS(testClass) depth:2 offset:-12
+Retrieving variable h
+Retrieving class hardClass
+Retrieving variable h2
+Retrieving class hardClass
+Retrieving variable t
+Retrieving class testClass
+Retrieving variable t
+Retrieving method construct of class testClass
+Retrieving class testClass
+Retrieving variable t
+Add strings ("printing t"), index: 7 
+Retrieving variable t
+Retrieving method show of class testClass
+Retrieving class testClass
+Retrieving variable h
+Retrieving method construct of class hardClass
+Retrieving class hardClass
+Retrieving variable t
+Add strings ("printing h"), index: 8 
+Retrieving variable h
+Retrieving method show of class hardClass
+Retrieving class hardClass
+Retrieving variable h2
+Retrieving method construct of class hardClass
+Retrieving class hardClass
+Retrieving variable t
+Add strings ("printing h2"), index: 9 
+Retrieving variable h2
+Retrieving method show of class hardClass
+Retrieving class hardClass
+Retrieving variable h
+Retrieving method setHardClass of class hardClass
+Retrieving class hardClass
+Retrieving variable h2
+Add strings ("printing h.hc1"), index: 10 
+Retrieving variable h
+Retrieving field hc1 of class hardClass
+Retrieving class hardClass
+Retrieving method show of class hardClass
+Retrieving class hardClass
+Add strings ("printing h.hc1.tc1"), index: 11 
+Retrieving variable h
+Retrieving field hc1 of class hardClass
+Retrieving class hardClass
+Retrieving field tc1 of class hardClass
+Retrieving class hardClass
+Retrieving method show of class testClass
+Retrieving class testClass
+Remove scope, index: 1 
+Remove scope, index: 0 

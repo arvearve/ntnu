@@ -1,0 +1,45 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function maxmin VOID<=() 
+Inserting function max INT<=(INT,INT) 
+Inserting function min INT<=(INT,INT) 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:-4
+Inserting variable b INT depth:2 offset:-8
+Inserting variable c INT depth:2 offset:-12
+Inserting variable d INT depth:2 offset:-16
+Inserting variable e INT depth:2 offset:-20
+Retrieving variable a
+Retrieving function max
+Retrieving variable b
+Retrieving function min
+Retrieving variable c
+Retrieving function max
+Add strings ("a is: "), index: 0 
+Retrieving variable a
+Add strings ("b is: "), index: 1 
+Retrieving variable b
+Add strings ("c is: "), index: 2 
+Retrieving variable c
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:12
+Inserting variable b INT depth:2 offset:8
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Retrieving variable b
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:12
+Inserting variable b INT depth:2 offset:8
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Retrieving variable b
+Remove scope, index: 1 
+Remove scope, index: 0 

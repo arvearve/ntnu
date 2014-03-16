@@ -1,0 +1,48 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function funcall INT<=() 
+Inserting function my_function INT<=(INT,INT) 
+Inserting function my_other_function INT<=() 
+Add scope, index: 2 
+Inserting variable x INT depth:2 offset:-4
+Inserting variable y INT depth:2 offset:-8
+Inserting variable z INT depth:2 offset:-12
+Retrieving variable x
+Retrieving variable y
+Add strings ("Calling my_function with parameters"), index: 0 
+Retrieving variable x
+Retrieving variable y
+Retrieving variable z
+Retrieving function my_function
+Retrieving variable x
+Retrieving variable y
+Add strings ("The returned result is"), index: 1 
+Retrieving variable z
+Retrieving variable z
+Retrieving function my_other_function
+Add strings ("The other returned result is"), index: 2 
+Retrieving variable z
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable s INT depth:2 offset:12
+Inserting variable t INT depth:2 offset:8
+Inserting variable u INT depth:2 offset:-4
+Retrieving variable u
+Retrieving variable s
+Retrieving variable s
+Retrieving variable t
+Retrieving variable t
+Add strings ("Parameter s is"), index: 3 
+Retrieving variable s
+Add strings ("Parameter t is"), index: 4 
+Retrieving variable t
+Add strings ("The sum of their squares is"), index: 5 
+Retrieving variable u
+Retrieving variable u
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable x INT depth:2 offset:-4
+Retrieving variable x
+Retrieving variable x
+Remove scope, index: 1 
+Remove scope, index: 0 

@@ -1,0 +1,79 @@
+Hit rule "TYPE" on text 'INT' at line 1
+Hit rule "VARIABLE" on text 'escapecodes' at line 1
+Hit rule "TYPE" on text 'INT' at line 3
+Hit rule "VARIABLE" on text 'a' at line 3
+Hit rule "DECLARATION_STATEMENT" on text 'a' at line 3
+Hit rule "STATEMENT" on text ';' at line 3
+Hit rule "STATEMENT_LIST" on text ';' at line 3
+Hit rule "TYPE" on text 'INT' at line 4
+Hit rule "VARIABLE" on text 'b' at line 4
+Hit rule "DECLARATION_STATEMENT" on text 'b' at line 4
+Hit rule "STATEMENT" on text ';' at line 4
+Hit rule "STATEMENT_LIST" on text ';' at line 4
+Hit rule "CONSTANT" on text '"Testing if printf format codes are left alone."' at line 6
+Hit rule "EXPRESSION" on text '"Testing if printf format codes are left alone."' at line 6
+Hit rule "EXPRESSION_LIST" on text ',' at line 6
+Hit rule "CONSTANT" on text '"\nAll stages *should* contain percent characters, but no integers."' at line 7
+Hit rule "EXPRESSION" on text '"\nAll stages *should* contain percent characters, but no integers."' at line 7
+Hit rule "EXPRESSION_LIST" on text ',' at line 7
+Hit rule "CONSTANT" on text '"\nExe output *will* contain integers or crash."' at line 8
+Hit rule "EXPRESSION" on text '"\nExe output *will* contain integers or crash."' at line 8
+Hit rule "EXPRESSION_LIST" on text ';' at line 8
+Hit rule "PRINT_STATEMENT" on text ';' at line 8
+Hit rule "STATEMENT" on text ';' at line 8
+Hit rule "STATEMENT_LIST" on text ';' at line 8
+Hit rule "VARIABLE" on text 'a' at line 9
+Hit rule "EXPRESSION" on text ':=' at line 9
+Hit rule "CONSTANT" on text '64' at line 9
+Hit rule "EXPRESSION" on text '64' at line 9
+Hit rule "ASSIGNMENT_STATEMENT" on text ';' at line 9
+Hit rule "STATEMENT" on text ';' at line 9
+Hit rule "STATEMENT_LIST" on text ';' at line 9
+Hit rule "VARIABLE" on text 'b' at line 10
+Hit rule "EXPRESSION" on text ':=' at line 10
+Hit rule "CONSTANT" on text '42' at line 10
+Hit rule "EXPRESSION" on text '42' at line 10
+Hit rule "ASSIGNMENT_STATEMENT" on text ';' at line 10
+Hit rule "STATEMENT" on text ';' at line 10
+Hit rule "STATEMENT_LIST" on text ';' at line 10
+Hit rule "CONSTANT" on text '"\tHello, world! %d %d"' at line 11
+Hit rule "EXPRESSION" on text '"\tHello, world! %d %d"' at line 11
+Hit rule "EXPRESSION_LIST" on text ';' at line 11
+Hit rule "PRINT_STATEMENT" on text ';' at line 11
+Hit rule "STATEMENT" on text ';' at line 11
+Hit rule "STATEMENT_LIST" on text ';' at line 11
+Hit rule "CONSTANT" on text '"Adding a splash of ANSI color codes - This will only work in a color terminal"' at line 14
+Hit rule "EXPRESSION" on text '"Adding a splash of ANSI color codes - This will only work in a color terminal"' at line 14
+Hit rule "EXPRESSION_LIST" on text ';' at line 14
+Hit rule "PRINT_STATEMENT" on text ';' at line 14
+Hit rule "STATEMENT" on text ';' at line 14
+Hit rule "STATEMENT_LIST" on text ';' at line 14
+Hit rule "CONSTANT" on text '"\t\033[31mRed"' at line 15
+Hit rule "EXPRESSION" on text '"\t\033[31mRed"' at line 15
+Hit rule "EXPRESSION_LIST" on text ';' at line 15
+Hit rule "PRINT_STATEMENT" on text ';' at line 15
+Hit rule "STATEMENT" on text ';' at line 15
+Hit rule "STATEMENT_LIST" on text ';' at line 15
+Hit rule "CONSTANT" on text '"\t\033[32mGreen"' at line 16
+Hit rule "EXPRESSION" on text '"\t\033[32mGreen"' at line 16
+Hit rule "EXPRESSION_LIST" on text ';' at line 16
+Hit rule "PRINT_STATEMENT" on text ';' at line 16
+Hit rule "STATEMENT" on text ';' at line 16
+Hit rule "STATEMENT_LIST" on text ';' at line 16
+Hit rule "CONSTANT" on text '"\t\033[34mBlue"' at line 17
+Hit rule "EXPRESSION" on text '"\t\033[34mBlue"' at line 17
+Hit rule "EXPRESSION_LIST" on text ',' at line 17
+Hit rule "CONSTANT" on text '"\033[0m"' at line 17
+Hit rule "EXPRESSION" on text '"\033[0m"' at line 17
+Hit rule "EXPRESSION_LIST" on text ';' at line 17
+Hit rule "PRINT_STATEMENT" on text ';' at line 17
+Hit rule "STATEMENT" on text ';' at line 17
+Hit rule "STATEMENT_LIST" on text ';' at line 17
+Hit rule "CONSTANT" on text '0' at line 19
+Hit rule "EXPRESSION" on text '0' at line 19
+Hit rule "RETURN_STATEMENT" on text ';' at line 19
+Hit rule "STATEMENT" on text ';' at line 19
+Hit rule "STATEMENT_LIST" on text ';' at line 19
+Hit rule "FUNCTION" on text 'END' at line 20
+Hit rule "FUNCTION_LIST" on text 'END' at line 20
+Hit rule "PROGRAM" on text '' at line 21

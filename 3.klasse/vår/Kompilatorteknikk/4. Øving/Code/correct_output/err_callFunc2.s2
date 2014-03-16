@@ -1,0 +1,30 @@
+Hit rule "TYPE" on text 'VOID' at line 1
+Hit rule "VARIABLE" on text 'one' at line 1
+Hit rule "CONSTANT" on text '"void is "' at line 3
+Hit rule "EXPRESSION" on text '"void is "' at line 3
+Hit rule "EXPRESSION_LIST" on text ',' at line 3
+Hit rule "VARIABLE" on text 'two' at line 3
+Hit rule "EXPRESSION" on text ')' at line 3
+Hit rule "EXPRESSION" on text ')' at line 3
+Hit rule "EXPRESSION_LIST" on text ';' at line 3
+Hit rule "PRINT_STATEMENT" on text ';' at line 3
+Hit rule "STATEMENT" on text ';' at line 3
+Hit rule "STATEMENT_LIST" on text ';' at line 3
+Hit rule "FUNCTION" on text 'END' at line 4
+Hit rule "FUNCTION_LIST" on text 'END' at line 4
+Hit rule "TYPE" on text 'INT' at line 6
+Hit rule "VARIABLE" on text 'two' at line 6
+Hit rule "TYPE" on text 'INT' at line 6
+Hit rule "VARIABLE" on text 'a' at line 6
+Hit rule "DECLARATION_STATEMENT" on text 'a' at line 6
+Hit rule "VARIABLE_LIST" on text 'a' at line 6
+Hit rule "PARAMETER_LIST" on text ')' at line 6
+Hit rule "VARIABLE" on text 'a' at line 8
+Hit rule "EXPRESSION" on text ';' at line 8
+Hit rule "EXPRESSION" on text ';' at line 8
+Hit rule "RETURN_STATEMENT" on text ';' at line 8
+Hit rule "STATEMENT" on text ';' at line 8
+Hit rule "STATEMENT_LIST" on text ';' at line 8
+Hit rule "FUNCTION" on text 'END' at line 9
+Hit rule "FUNCTION_LIST" on text 'END' at line 9
+Hit rule "PROGRAM" on text '' at line 10

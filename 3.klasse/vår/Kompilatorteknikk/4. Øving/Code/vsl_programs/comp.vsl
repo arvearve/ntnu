@@ -1,0 +1,23 @@
+VOID FUNC comp()
+START
+	INT a;
+	INT b;
+	INT c;
+	
+	a := 4;
+	b := 5;
+	c := 6;
+	
+	BOOL x;
+	BOOL y;
+	BOOL z;
+	BOOL w;
+	x := a > b;   // x = 0
+	y := c == c;  // y = 1
+	z := c >= a;  // z = 1
+	
+	w := (x || y) && z;  // w = 1
+	
+	PRINT "w is: ",w;
+
+END

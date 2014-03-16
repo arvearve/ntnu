@@ -1,0 +1,12 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function one VOID<=() 
+Inserting function two VOID<=() 
+Add scope, index: 2 
+Add strings ("void is "), index: 0 
+Retrieving function two
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:-4
+Remove scope, index: 1 
+Remove scope, index: 0 

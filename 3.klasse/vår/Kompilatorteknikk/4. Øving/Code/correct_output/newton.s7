@@ -1,0 +1,33 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function newton INT<=(INT) 
+Inserting function improve INT<=(INT,INT) 
+Add scope, index: 2 
+Inserting variable n INT depth:2 offset:8
+Inserting variable square_root INT depth:2 offset:-4
+Retrieving variable square_root
+Retrieving function improve
+Retrieving variable n
+Add strings ("The square root of"), index: 0 
+Retrieving variable n
+Add strings ("is"), index: 1 
+Retrieving variable square_root
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable n INT depth:2 offset:12
+Inserting variable estimate INT depth:2 offset:8
+Inserting variable next INT depth:2 offset:-4
+Retrieving variable next
+Retrieving variable estimate
+Retrieving variable estimate
+Retrieving variable estimate
+Retrieving variable n
+Retrieving variable estimate
+Retrieving variable next
+Retrieving variable estimate
+Retrieving function improve
+Retrieving variable n
+Retrieving variable next
+Retrieving variable next
+Remove scope, index: 1 
+Remove scope, index: 0 

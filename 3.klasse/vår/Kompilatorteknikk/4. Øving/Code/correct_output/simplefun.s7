@@ -1,0 +1,18 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function funcall INT<=() 
+Inserting function my_function INT<=(INT,INT) 
+Add scope, index: 2 
+Inserting variable x INT depth:2 offset:-4
+Retrieving variable x
+Retrieving function my_function
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable s INT depth:2 offset:12
+Inserting variable t INT depth:2 offset:8
+Add strings ("Parameter s is"), index: 0 
+Retrieving variable s
+Add strings ("t is "), index: 1 
+Retrieving variable t
+Remove scope, index: 1 
+Remove scope, index: 0 

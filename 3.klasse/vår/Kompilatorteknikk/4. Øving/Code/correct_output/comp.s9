@@ -1,0 +1,47 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("comp"), (nil)
+   (nil)
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+     CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+     CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("c"), depth: 2, stack_offset: -12, entry label: "c"
+     CONSTANT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("x"), depth: 2, stack_offset: -16, entry label: "x"
+     EXPRESSION
+      VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+      VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("y"), depth: 2, stack_offset: -20, entry label: "y"
+     EXPRESSION
+      VARIABLE, ("c"), depth: 2, stack_offset: -12, entry label: "c"
+      VARIABLE, ("c"), depth: 2, stack_offset: -12, entry label: "c"
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("z"), depth: 2, stack_offset: -24, entry label: "z"
+     EXPRESSION
+      VARIABLE, ("c"), depth: 2, stack_offset: -12, entry label: "c"
+      VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("w"), depth: 2, stack_offset: -28, entry label: "w"
+     EXPRESSION
+      EXPRESSION
+       VARIABLE, ("x"), depth: 2, stack_offset: -16, entry label: "x"
+       VARIABLE, ("y"), depth: 2, stack_offset: -20, entry label: "y"
+      VARIABLE, ("z"), depth: 2, stack_offset: -24, entry label: "z"
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+      VARIABLE, ("w"), depth: 2, stack_offset: -28, entry label: "w"

@@ -1,0 +1,12 @@
+ Simplify FUNCTION_LIST 
+  Simplify FUNCTION 
+   Simplify TYPE 
+   Simplify PARAMETER_LIST 
+    Simplify VARIABLE_LIST 
+     Simplify DECLARATION_STATEMENT 
+      Simplify TYPE 
+   Simplify STATEMENT_LIST 
+    Simplify STATEMENT 
+      Simplify EXPRESSION_LIST 
+       Simplify EXPRESSION () 
+        Simplify EXPRESSION (VARIABLE) 

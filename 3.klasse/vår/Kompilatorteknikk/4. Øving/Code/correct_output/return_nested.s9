@@ -1,0 +1,40 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("hello"), (nil)
+   (nil)
+   STATEMENT_LIST
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+      EXPRESSION
+       VARIABLE, ("test"), (nil)
+       EXPRESSION_LIST
+        CONSTANT
+    RETURN_STATEMENT
+     CONSTANT
+  FUNCTION, ("test"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+     CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("y"), depth: 2, stack_offset: -8, entry label: "y"
+     CONSTANT
+    IF_STATEMENT
+     CONSTANT
+     STATEMENT_LIST
+      DECLARATION_STATEMENT
+      ASSIGNMENT_STATEMENT
+       VARIABLE, ("z"), depth: 2, stack_offset: -12, entry label: "z"
+       CONSTANT
+      RETURN_STATEMENT
+       EXPRESSION
+        VARIABLE, ("z"), depth: 2, stack_offset: -12, entry label: "z"
+        VARIABLE, ("a"), depth: 2, stack_offset: 8, entry label: "a"
+      PRINT_STATEMENT
+       EXPRESSION_LIST
+        CONSTANT

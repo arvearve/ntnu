@@ -1,0 +1,87 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("f"), (nil)
+   (nil)
+   STATEMENT_LIST
+    RETURN_STATEMENT
+     CONSTANT
+  FUNCTION, ("g"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("u"), depth: 2, stack_offset: -4, entry label: "u"
+     CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("v"), depth: 2, stack_offset: -8, entry label: "v"
+     CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("w"), depth: 2, stack_offset: -12, entry label: "w"
+     EXPRESSION
+      VARIABLE, ("g"), (nil)
+      EXPRESSION_LIST
+       EXPRESSION
+        VARIABLE, ("x"), depth: 2, stack_offset: -16, entry label: "x"
+        CONSTANT
+       EXPRESSION
+        VARIABLE, ("y"), depth: 2, stack_offset: -20, entry label: "y"
+        CONSTANT
+       EXPRESSION
+        VARIABLE, ("z"), depth: 2, stack_offset: -24, entry label: "z"
+        CONSTANT
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      VARIABLE, ("u"), depth: 2, stack_offset: -4, entry label: "u"
+      VARIABLE, ("v"), depth: 2, stack_offset: -8, entry label: "v"
+      VARIABLE, ("w"), depth: 2, stack_offset: -12, entry label: "w"
+    RETURN_STATEMENT
+     CONSTANT
+  FUNCTION, ("h"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+     EXPRESSION
+      CONSTANT
+      CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+     EXPRESSION
+      CONSTANT
+      CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+     EXPRESSION
+      CONSTANT
+      CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+     EXPRESSION
+      CONSTANT
+      CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+     EXPRESSION
+      CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+     EXPRESSION
+      EXPRESSION
+       EXPRESSION
+        CONSTANT
+        CONSTANT
+       CONSTANT
+      CONSTANT
+    RETURN_STATEMENT
+     CONSTANT

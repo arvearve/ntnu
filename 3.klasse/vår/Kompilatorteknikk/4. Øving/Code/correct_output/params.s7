@@ -1,0 +1,9 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function params VOID<=(INT,FLOAT) 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:12
+Inserting variable b FLOAT depth:2 offset:8
+Retrieving variable a
+Remove scope, index: 1 
+Remove scope, index: 0 

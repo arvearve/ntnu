@@ -1,0 +1,50 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: newton
+DECLARATION: parameter/variable : 'n', offset: 8
+DECLARATION: parameter/variable : 'square_root', offset: -4
+VARIABLE: access: square_root
+EXPRESSION: Start: FUNC_CALL
+VARIABLE: access: n
+CONSTANT
+EXPRESSION: End
+CONSTANT
+VARIABLE: access: n
+CONSTANT
+VARIABLE: access: square_root
+CONSTANT
+FUNCTION: End
+FUNCTION: Start: improve
+DECLARATION: parameter/variable : 'n', offset: 12
+DECLARATION: parameter/variable : 'estimate', offset: 8
+DECLARATION: parameter/variable : 'next', offset: -4
+VARIABLE: access: next
+EXPRESSION: Start: -
+VARIABLE: access: estimate
+EXPRESSION: Start: /
+EXPRESSION: Start: -
+EXPRESSION: Start: *
+VARIABLE: access: estimate
+VARIABLE: access: estimate
+EXPRESSION: End
+VARIABLE: access: n
+EXPRESSION: End
+EXPRESSION: Start: *
+CONSTANT
+VARIABLE: access: estimate
+EXPRESSION: End
+EXPRESSION: End
+EXPRESSION: End
+EXPRESSION: Start: -
+VARIABLE: access: next
+VARIABLE: access: estimate
+EXPRESSION: End
+EXPRESSION: Start: FUNC_CALL
+VARIABLE: access: n
+VARIABLE: access: next
+EXPRESSION: End
+EXPRESSION: Start: -
+VARIABLE: access: next
+CONSTANT
+EXPRESSION: End
+FUNCTION: End
+FUNCTION_LIST: End

@@ -1,0 +1,8 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function params INT<=(INT) 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:8
+Retrieving variable a
+Remove scope, index: 1 
+Remove scope, index: 0 

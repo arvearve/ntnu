@@ -1,0 +1,54 @@
+ Simplify FUNCTION_LIST 
+  Simplify FUNCTION 
+   Simplify TYPE 
+   Simplify STATEMENT_LIST 
+    Simplify STATEMENT_LIST 
+     Simplify STATEMENT_LIST 
+      Simplify STATEMENT_LIST 
+       Simplify STATEMENT_LIST 
+        Simplify STATEMENT_LIST 
+         Simplify STATEMENT_LIST 
+          Simplify STATEMENT 
+           Simplify DECLARATION_STATEMENT 
+            Simplify TYPE 
+         Simplify STATEMENT 
+          Simplify DECLARATION_STATEMENT 
+           Simplify TYPE 
+        Simplify STATEMENT 
+          Simplify EXPRESSION (VARIABLE) 
+          Simplify EXPRESSION (CONSTANT) 
+       Simplify STATEMENT 
+         Simplify EXPRESSION (VARIABLE) 
+         Simplify EXPRESSION (UMINUS) 
+          Simplify EXPRESSION (CONSTANT) 
+      Simplify STATEMENT 
+        Simplify EXPRESSION () 
+         Simplify EXPRESSION (-) 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (VARIABLE) 
+          Simplify EXPRESSION (CONSTANT) 
+        Simplify STATEMENT_LIST 
+         Simplify STATEMENT 
+           Simplify EXPRESSION_LIST 
+            Simplify EXPRESSION (CONSTANT) 
+     Simplify STATEMENT 
+       Simplify EXPRESSION () 
+        Simplify EXPRESSION () 
+         Simplify EXPRESSION (VARIABLE) 
+       Simplify STATEMENT_LIST 
+        Simplify STATEMENT 
+          Simplify EXPRESSION () 
+           Simplify EXPRESSION (+) 
+            Simplify EXPRESSION () 
+             Simplify EXPRESSION (VARIABLE) 
+            Simplify EXPRESSION (CONSTANT) 
+          Simplify STATEMENT_LIST 
+           Simplify STATEMENT 
+             Simplify EXPRESSION_LIST 
+              Simplify EXPRESSION (CONSTANT) 
+          Simplify STATEMENT_LIST 
+           Simplify STATEMENT 
+             Simplify EXPRESSION_LIST 
+              Simplify EXPRESSION (CONSTANT) 
+    Simplify STATEMENT 
+      Simplify EXPRESSION (CONSTANT) 

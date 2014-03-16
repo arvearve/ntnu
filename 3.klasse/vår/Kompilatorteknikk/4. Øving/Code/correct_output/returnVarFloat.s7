@@ -1,0 +1,8 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function nop42V2 FLOAT<=(FLOAT) 
+Add scope, index: 2 
+Inserting variable variable FLOAT depth:2 offset:8
+Retrieving variable variable
+Remove scope, index: 1 
+Remove scope, index: 0 

@@ -1,0 +1,244 @@
+ PROGRAM
+ CLASS_LIST
+  CLASS
+   DECLARATION_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   FUNCTION_LIST
+    FUNCTION, ("construct"), (nil)
+     VARIABLE_LIST
+      DECLARATION_STATEMENT
+      DECLARATION_STATEMENT
+     STATEMENT_LIST
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+       VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+       VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"
+    FUNCTION, ("print"), (nil)
+     (nil)
+     STATEMENT_LIST
+      PRINT_STATEMENT
+       EXPRESSION_LIST
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+    FUNCTION, ("sum"), (nil)
+     (nil)
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       EXPRESSION
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+  CLASS
+   DECLARATION_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   FUNCTION_LIST
+    FUNCTION, ("construct"), (nil)
+     VARIABLE_LIST
+      DECLARATION_STATEMENT
+      DECLARATION_STATEMENT
+      DECLARATION_STATEMENT
+      DECLARATION_STATEMENT
+     STATEMENT_LIST
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+       VARIABLE, ("oa"), depth: 2, stack_offset: 24, entry label: "oa"
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+       VARIABLE, ("ob"), depth: 2, stack_offset: 20, entry label: "ob"
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"
+       EXPRESSION
+        TYPE
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"
+        VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+       VARIABLE, ("ia"), depth: 2, stack_offset: 16, entry label: "ia"
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"
+        VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+       VARIABLE, ("ib"), depth: 2, stack_offset: 12, entry label: "ib"
+    FUNCTION, ("print"), (nil)
+     (nil)
+     STATEMENT_LIST
+      PRINT_STATEMENT
+       EXPRESSION_LIST
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+          EXPRESSION
+          VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"
+         VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+          EXPRESSION
+          VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"
+         VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+    FUNCTION, ("sum"), (nil)
+     (nil)
+     STATEMENT_LIST
+      DECLARATION_STATEMENT
+      ASSIGNMENT_STATEMENT
+       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+       EXPRESSION
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+      ASSIGNMENT_STATEMENT
+       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+       EXPRESSION
+        EXPRESSION
+         VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+         EXPRESSION
+          EXPRESSION
+           EXPRESSION
+           VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"
+          VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+        EXPRESSION
+         EXPRESSION
+          EXPRESSION
+          VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"
+         VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+      RETURN_STATEMENT
+       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+ FUNCTION_LIST
+  FUNCTION, ("main"), (nil)
+   (nil)
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("o"), depth: 2, stack_offset: -4, entry label: "o"
+     EXPRESSION
+      TYPE
+    EXPRESSION
+     VARIABLE, ("o"), depth: 2, stack_offset: -4, entry label: "o"
+     VARIABLE, ("construct"), (nil)
+     EXPRESSION_LIST
+      CONSTANT
+      CONSTANT
+      CONSTANT
+      CONSTANT
+    EXPRESSION
+     VARIABLE, ("printInner"), (nil)
+     EXPRESSION_LIST
+      EXPRESSION
+       VARIABLE, ("o"), depth: 2, stack_offset: -4, entry label: "o"
+       VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"
+    EXPRESSION
+     VARIABLE, ("printOuter"), (nil)
+     EXPRESSION_LIST
+      VARIABLE, ("o"), depth: 2, stack_offset: -4, entry label: "o"
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("i"), depth: 2, stack_offset: -8, entry label: "i"
+     EXPRESSION
+      VARIABLE, ("getInnerFromOuter"), (nil)
+      EXPRESSION_LIST
+       VARIABLE, ("o"), depth: 2, stack_offset: -4, entry label: "o"
+    EXPRESSION
+     VARIABLE, ("printInner"), (nil)
+     EXPRESSION_LIST
+      VARIABLE, ("i"), depth: 2, stack_offset: -8, entry label: "i"
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("o2"), depth: 2, stack_offset: -12, entry label: "o2"
+     EXPRESSION
+      TYPE
+    EXPRESSION
+     VARIABLE, ("o2"), depth: 2, stack_offset: -12, entry label: "o2"
+     VARIABLE, ("construct"), (nil)
+     EXPRESSION_LIST
+      CONSTANT
+      CONSTANT
+      CONSTANT
+      CONSTANT
+    EXPRESSION
+     VARIABLE, ("printInner"), (nil)
+     EXPRESSION_LIST
+      EXPRESSION
+       VARIABLE, ("getInnerFromOuter"), (nil)
+       EXPRESSION_LIST
+        VARIABLE, ("o2"), depth: 2, stack_offset: -12, entry label: "o2"
+  FUNCTION, ("printInner"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      EXPRESSION
+       VARIABLE, ("i"), depth: 2, stack_offset: 8, entry label: "i"
+       VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+      EXPRESSION
+       VARIABLE, ("i"), depth: 2, stack_offset: 8, entry label: "i"
+       VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+  FUNCTION, ("printOuter"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      EXPRESSION
+       VARIABLE, ("o"), depth: 2, stack_offset: 8, entry label: "o"
+       VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+      EXPRESSION
+       VARIABLE, ("o"), depth: 2, stack_offset: 8, entry label: "o"
+       VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+      EXPRESSION
+       EXPRESSION
+        VARIABLE, ("o"), depth: 2, stack_offset: 8, entry label: "o"
+        VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"
+       VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+      EXPRESSION
+       EXPRESSION
+        VARIABLE, ("o"), depth: 2, stack_offset: 8, entry label: "o"
+        VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"
+       VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+  FUNCTION, ("getInnerFromOuter"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    RETURN_STATEMENT
+     EXPRESSION
+      VARIABLE, ("o"), depth: 2, stack_offset: 8, entry label: "o"
+      VARIABLE, ("i"), depth: 0, stack_offset: 8, entry label: "i"

@@ -1,0 +1,6 @@
+ Simplify FUNCTION_LIST 
+  Simplify FUNCTION 
+   Simplify TYPE 
+   Simplify STATEMENT_LIST 
+    Simplify STATEMENT 
+      Simplify EXPRESSION (CONSTANT) 

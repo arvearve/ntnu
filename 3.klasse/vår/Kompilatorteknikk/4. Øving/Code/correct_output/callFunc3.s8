@@ -1,0 +1,7 @@
+.data
+.INTEGER: .string "%d "
+.FLOAT: .string "%f "
+.NEWLINE: .string "\n "
+.STRING0: .string "Return value is "
+.STRING1: .string "'two was called now'"
+.globl main

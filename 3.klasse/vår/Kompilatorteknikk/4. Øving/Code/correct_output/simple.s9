@@ -1,0 +1,7 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("simple"), (nil)
+   (nil)
+   STATEMENT_LIST
+    RETURN_STATEMENT
+     CONSTANT

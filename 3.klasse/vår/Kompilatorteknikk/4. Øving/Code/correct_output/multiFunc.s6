@@ -1,0 +1,12 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: return42Func
+CONSTANT
+FUNCTION: End
+FUNCTION: Start: return41Func
+CONSTANT
+FUNCTION: End
+FUNCTION: Start: returnVarFunc
+DECLARATION: parameter/variable : 'variable', offset: 8
+VARIABLE: access: variable
+FUNCTION: End
+FUNCTION_LIST: End

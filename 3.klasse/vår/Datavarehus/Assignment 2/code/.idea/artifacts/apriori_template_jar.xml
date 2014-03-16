@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="apriori-template:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/apriori_template_jar</output-path>
+    <root id="archive" name="apriori-template.jar">
+      <element id="module-output" name="apriori-template" />
+      <element id="file-copy" path="$PROJECT_DIR$/smallDataset.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/supermarket.arff" />
+    </root>
+  </artifact>
+</component>

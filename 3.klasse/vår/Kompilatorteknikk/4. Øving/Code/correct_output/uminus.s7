@@ -1,0 +1,18 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function negatives VOID<=() 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:-4
+Inserting variable b INT depth:2 offset:-8
+Retrieving variable a
+Retrieving variable b
+Add strings ("a is"), index: 0 
+Retrieving variable a
+Add strings (" and b is "), index: 1 
+Retrieving variable b
+Add strings ("- a is"), index: 2 
+Retrieving variable a
+Add strings (" and -b is "), index: 3 
+Retrieving variable b
+Remove scope, index: 1 
+Remove scope, index: 0 

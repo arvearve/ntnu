@@ -1,0 +1,50 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: euclid
+DECLARATION: parameter/variable : 'a', offset: 12
+DECLARATION: parameter/variable : 'b', offset: 8
+EXPRESSION: Start: -
+EXPRESSION: Start: FUNC_CALL
+VARIABLE: access: a
+VARIABLE: access: b
+EXPRESSION: End
+CONSTANT
+EXPRESSION: End
+CONSTANT
+VARIABLE: access: a
+CONSTANT
+VARIABLE: access: b
+CONSTANT
+EXPRESSION: Start: FUNC_CALL
+VARIABLE: access: a
+VARIABLE: access: b
+EXPRESSION: End
+VARIABLE: access: a
+CONSTANT
+VARIABLE: access: b
+CONSTANT
+CONSTANT
+FUNCTION: End
+FUNCTION: Start: gcd
+DECLARATION: parameter/variable : 'a', offset: 12
+DECLARATION: parameter/variable : 'b', offset: 8
+DECLARATION: parameter/variable : 'g', offset: -4
+VARIABLE: access: b
+VARIABLE: access: g
+EXPRESSION: Start: FUNC_CALL
+VARIABLE: access: b
+EXPRESSION: Start: -
+VARIABLE: access: a
+EXPRESSION: Start: *
+EXPRESSION: Start: /
+VARIABLE: access: a
+VARIABLE: access: b
+EXPRESSION: End
+VARIABLE: access: b
+EXPRESSION: End
+EXPRESSION: End
+EXPRESSION: End
+VARIABLE: access: g
+VARIABLE: access: a
+VARIABLE: access: g
+FUNCTION: End
+FUNCTION_LIST: End

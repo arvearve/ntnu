@@ -1,0 +1,82 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("maxmin"), (nil)
+   (nil)
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+     EXPRESSION
+      VARIABLE, ("max"), (nil)
+      EXPRESSION_LIST
+       CONSTANT
+       CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+     EXPRESSION
+      VARIABLE, ("min"), (nil)
+      EXPRESSION_LIST
+       EXPRESSION
+        CONSTANT
+       CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("c"), depth: 2, stack_offset: -12, entry label: "c"
+     EXPRESSION
+      VARIABLE, ("max"), (nil)
+      EXPRESSION_LIST
+       CONSTANT
+       CONSTANT
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+      VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+      CONSTANT
+      VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+      CONSTANT
+      VARIABLE, ("c"), depth: 2, stack_offset: -12, entry label: "c"
+  FUNCTION, ("max"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    IF_STATEMENT
+     EXPRESSION
+      VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
+      VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
+    IF_STATEMENT
+     EXPRESSION
+      VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
+      VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
+    RETURN_STATEMENT
+     CONSTANT
+  FUNCTION, ("min"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    IF_STATEMENT
+     EXPRESSION
+      VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
+      VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
+    IF_STATEMENT
+     EXPRESSION
+      VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
+      VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
+    RETURN_STATEMENT
+     CONSTANT

@@ -1,0 +1,12 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function one VOID<=() 
+Inserting function two INT<=() 
+Add scope, index: 2 
+Add strings ("Return value is "), index: 0 
+Retrieving function two
+Remove scope, index: 1 
+Add scope, index: 2 
+Add strings ("'two was called now'"), index: 1 
+Remove scope, index: 1 
+Remove scope, index: 0 

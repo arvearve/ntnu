@@ -1,0 +1,8 @@
+VOID 
+FUNC 
+simple 
+(
+)
+START
+	RETURN 0;
+END

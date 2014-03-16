@@ -1,0 +1,28 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("funcall"), (nil)
+   (nil)
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+     EXPRESSION
+      VARIABLE, ("my_function"), (nil)
+      EXPRESSION_LIST
+       CONSTANT
+       CONSTANT
+    RETURN_STATEMENT
+     CONSTANT
+  FUNCTION, ("my_function"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+      VARIABLE, ("s"), depth: 2, stack_offset: 12, entry label: "s"
+      CONSTANT
+      VARIABLE, ("t"), depth: 2, stack_offset: 8, entry label: "t"
+    RETURN_STATEMENT
+     CONSTANT

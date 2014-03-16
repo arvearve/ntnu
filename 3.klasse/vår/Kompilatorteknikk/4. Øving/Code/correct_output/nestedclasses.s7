@@ -1,0 +1,163 @@
+Add scope, index: 0 
+Inserting class Inner
+Inserting variable a INT depth:0 offset:0 in class Inner
+Retrieving class Inner
+Inserting variable b INT depth:0 offset:4 in class Inner
+Retrieving class Inner
+Inserting method construct VOID<=(INT,INT) in class Inner
+Retrieving class Inner
+Inserting method print VOID<=() in class Inner
+Retrieving class Inner
+Inserting method sum INT<=() in class Inner
+Retrieving class Inner
+Add scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:16
+Inserting variable b INT depth:2 offset:12
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving variable a
+Retrieving field b of class Inner
+Retrieving class Inner
+Retrieving variable b
+Remove scope, index: 1 
+Add scope, index: 2 
+Add strings ("a: "), index: 0 
+Retrieving field a of class Inner
+Retrieving class Inner
+Add strings ("b: "), index: 1 
+Retrieving field b of class Inner
+Retrieving class Inner
+Remove scope, index: 1 
+Add scope, index: 2 
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving field b of class Inner
+Retrieving class Inner
+Remove scope, index: 1 
+Remove scope, index: 0 
+Inserting class Outer
+Inserting variable a INT depth:0 offset:0 in class Outer
+Retrieving class Outer
+Inserting variable b INT depth:0 offset:4 in class Outer
+Retrieving class Outer
+Inserting variable i CLASS(Inner) depth:0 offset:8 in class Outer
+Retrieving class Outer
+Inserting method construct VOID<=(INT,INT,INT,INT) in class Outer
+Retrieving class Outer
+Inserting method print VOID<=() in class Outer
+Retrieving class Outer
+Inserting method sum INT<=() in class Outer
+Retrieving class Outer
+Add scope, index: 1 
+Add scope, index: 2 
+Inserting variable oa INT depth:2 offset:24
+Inserting variable ob INT depth:2 offset:20
+Inserting variable ia INT depth:2 offset:16
+Inserting variable ib INT depth:2 offset:12
+Retrieving field a of class Outer
+Retrieving class Outer
+Retrieving variable oa
+Retrieving field b of class Outer
+Retrieving class Outer
+Retrieving variable ob
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving class Inner
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving variable ia
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving field b of class Inner
+Retrieving class Inner
+Retrieving variable ib
+Remove scope, index: 1 
+Add scope, index: 2 
+Add strings ("oa: "), index: 2 
+Retrieving field a of class Outer
+Retrieving class Outer
+Add strings ("ob: "), index: 3 
+Retrieving field b of class Outer
+Retrieving class Outer
+Add strings ("ia: "), index: 4 
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving field a of class Inner
+Retrieving class Inner
+Add strings ("ib: "), index: 5 
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving field b of class Inner
+Retrieving class Inner
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable d INT depth:2 offset:-4
+Retrieving variable d
+Retrieving field a of class Outer
+Retrieving class Outer
+Retrieving field b of class Outer
+Retrieving class Outer
+Retrieving variable d
+Retrieving variable d
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving field b of class Inner
+Retrieving class Inner
+Retrieving variable d
+Remove scope, index: 1 
+Remove scope, index: 0 
+Add scope, index: 1 
+Inserting function main VOID<=() 
+Add scope, index: 2 
+Inserting variable o CLASS(Outer) depth:2 offset:-4
+Retrieving variable o
+Retrieving class Outer
+Retrieving variable o
+Retrieving method construct of class Outer
+Retrieving class Outer
+Retrieving variable o
+Retrieving method print of class Outer
+Retrieving class Outer
+Retrieving variable o
+Retrieving method sum of class Outer
+Retrieving class Outer
+Inserting variable i2 CLASS(Inner) depth:2 offset:-8
+Retrieving variable i2
+Retrieving variable o
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving variable i2
+Retrieving method print of class Inner
+Retrieving class Inner
+Inserting variable i CLASS(Inner) depth:2 offset:-12
+Retrieving variable i
+Retrieving class Inner
+Retrieving variable i
+Retrieving method construct of class Inner
+Retrieving class Inner
+Retrieving variable o
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving variable i
+Retrieving variable o
+Retrieving method print of class Outer
+Retrieving class Outer
+Retrieving variable o
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving method print of class Inner
+Retrieving class Inner
+Retrieving variable o
+Retrieving field i of class Outer
+Retrieving class Outer
+Retrieving method sum of class Inner
+Retrieving class Inner
+Remove scope, index: 1 
+Remove scope, index: 0 

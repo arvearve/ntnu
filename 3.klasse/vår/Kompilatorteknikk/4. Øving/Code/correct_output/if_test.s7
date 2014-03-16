@@ -1,0 +1,16 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function while_test INT<=() 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:-4
+Inserting variable b INT depth:2 offset:-8
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Add strings ("A is different from 10"), index: 0 
+Retrieving variable a
+Retrieving variable b
+Add strings ("B is different from -15"), index: 1 
+Add strings ("B equals -15"), index: 2 
+Remove scope, index: 1 
+Remove scope, index: 0 

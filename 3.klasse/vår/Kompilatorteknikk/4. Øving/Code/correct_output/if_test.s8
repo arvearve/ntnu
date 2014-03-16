@@ -1,0 +1,8 @@
+.data
+.INTEGER: .string "%d "
+.FLOAT: .string "%f "
+.NEWLINE: .string "\n "
+.STRING0: .string "A is different from 10"
+.STRING1: .string "B is different from -15"
+.STRING2: .string "B equals -15"
+.globl main

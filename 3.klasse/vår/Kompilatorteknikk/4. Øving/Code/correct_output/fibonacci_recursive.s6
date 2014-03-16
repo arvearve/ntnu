@@ -1,0 +1,45 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: fibonacci_recursive
+DECLARATION: parameter/variable : 'n', offset: 8
+DECLARATION: parameter/variable : 'f', offset: -4
+VARIABLE: access: f
+EXPRESSION: Start: FUNC_CALL
+VARIABLE: access: n
+EXPRESSION: End
+CONSTANT
+VARIABLE: access: n
+CONSTANT
+VARIABLE: access: f
+CONSTANT
+FUNCTION: End
+FUNCTION: Start: fibonacci_number
+DECLARATION: parameter/variable : 'n', offset: 8
+DECLARATION: parameter/variable : 'y', offset: -4
+VARIABLE: access: y
+CONSTANT
+EXPRESSION: Start: -
+VARIABLE: access: n
+CONSTANT
+EXPRESSION: End
+EXPRESSION: Start: -
+VARIABLE: access: n
+CONSTANT
+EXPRESSION: End
+VARIABLE: access: y
+EXPRESSION: Start: +
+EXPRESSION: Start: FUNC_CALL
+EXPRESSION: Start: -
+VARIABLE: access: n
+CONSTANT
+EXPRESSION: End
+EXPRESSION: End
+EXPRESSION: Start: FUNC_CALL
+EXPRESSION: Start: -
+VARIABLE: access: n
+CONSTANT
+EXPRESSION: End
+EXPRESSION: End
+EXPRESSION: End
+VARIABLE: access: y
+FUNCTION: End
+FUNCTION_LIST: End

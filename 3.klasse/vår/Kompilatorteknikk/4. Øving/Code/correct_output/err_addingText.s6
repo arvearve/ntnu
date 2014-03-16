@@ -1,0 +1,10 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: adding
+DECLARATION: parameter/variable : 'a', offset: -4
+VARIABLE: access: a
+EXPRESSION: Start: +
+CONSTANT
+CONSTANT
+EXPRESSION: End
+FUNCTION: End
+FUNCTION_LIST: End

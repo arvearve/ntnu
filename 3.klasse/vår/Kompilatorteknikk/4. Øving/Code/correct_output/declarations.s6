@@ -1,0 +1,8 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: long
+DECLARATION: parameter/variable : 'a', offset: -4
+VARIABLE: access: a
+CONSTANT
+DECLARATION: parameter/variable : 'c', offset: -8
+VARIABLE: access: b
+Symbol b not found

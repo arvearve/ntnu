@@ -1,0 +1,227 @@
+ PROGRAM
+ CLASS_LIST
+  CLASS
+   DECLARATION_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   FUNCTION_LIST
+    FUNCTION, ("show"), (nil)
+     (nil)
+     STATEMENT_LIST
+      PRINT_STATEMENT
+       EXPRESSION_LIST
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("i"), depth: 0, stack_offset: 0, entry label: "i"
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("f"), depth: 0, stack_offset: 4, entry label: "f"
+      PRINT_STATEMENT
+       EXPRESSION_LIST
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+          EXPRESSION
+          VARIABLE, ("tc1"), depth: 0, stack_offset: 8, entry label: "tc1"
+         VARIABLE, ("i"), depth: 0, stack_offset: 0, entry label: "i"
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+          EXPRESSION
+          VARIABLE, ("tc1"), depth: 0, stack_offset: 8, entry label: "tc1"
+         VARIABLE, ("f"), depth: 0, stack_offset: 4, entry label: "f"
+    FUNCTION, ("construct"), (nil)
+     VARIABLE_LIST
+      DECLARATION_STATEMENT
+      DECLARATION_STATEMENT
+      DECLARATION_STATEMENT
+     STATEMENT_LIST
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("i"), depth: 0, stack_offset: 0, entry label: "i"
+       VARIABLE, ("i"), depth: 2, stack_offset: 20, entry label: "i"
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("f"), depth: 0, stack_offset: 4, entry label: "f"
+       VARIABLE, ("f"), depth: 2, stack_offset: 16, entry label: "f"
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("tc1"), depth: 0, stack_offset: 8, entry label: "tc1"
+       VARIABLE, ("tc1"), depth: 2, stack_offset: 12, entry label: "tc1"
+    FUNCTION, ("getThis"), (nil)
+     (nil)
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       EXPRESSION
+    FUNCTION, ("get_i"), (nil)
+     (nil)
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("i"), depth: 0, stack_offset: 0, entry label: "i"
+  CLASS
+   DECLARATION_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   FUNCTION_LIST
+    FUNCTION, ("show"), (nil)
+     (nil)
+     STATEMENT_LIST
+      PRINT_STATEMENT
+       EXPRESSION_LIST
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("i"), depth: 0, stack_offset: 0, entry label: "i"
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("f"), depth: 0, stack_offset: 4, entry label: "f"
+      PRINT_STATEMENT
+       EXPRESSION_LIST
+        CONSTANT
+      EXPRESSION
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("tc1"), depth: 0, stack_offset: 8, entry label: "tc1"
+       VARIABLE, ("show"), (nil)
+       (nil)
+    FUNCTION, ("construct"), (nil)
+     VARIABLE_LIST
+      DECLARATION_STATEMENT
+      DECLARATION_STATEMENT
+      DECLARATION_STATEMENT
+     STATEMENT_LIST
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("i"), depth: 0, stack_offset: 0, entry label: "i"
+       VARIABLE, ("i"), depth: 2, stack_offset: 20, entry label: "i"
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("f"), depth: 0, stack_offset: 4, entry label: "f"
+       VARIABLE, ("f"), depth: 2, stack_offset: 16, entry label: "f"
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("tc1"), depth: 0, stack_offset: 8, entry label: "tc1"
+       VARIABLE, ("tc1"), depth: 2, stack_offset: 12, entry label: "tc1"
+    FUNCTION, ("getTestClass"), (nil)
+     (nil)
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("tc1"), depth: 0, stack_offset: 8, entry label: "tc1"
+    FUNCTION, ("getHardClass"), (nil)
+     (nil)
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("hc1"), depth: 0, stack_offset: 12, entry label: "hc1"
+    FUNCTION, ("setHardClass"), (nil)
+     VARIABLE_LIST
+      DECLARATION_STATEMENT
+     STATEMENT_LIST
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("hc1"), depth: 0, stack_offset: 12, entry label: "hc1"
+       VARIABLE, ("h"), depth: 2, stack_offset: 12, entry label: "h"
+ FUNCTION_LIST
+  FUNCTION, ("test"), (nil)
+   (nil)
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("h"), depth: 2, stack_offset: -4, entry label: "h"
+     EXPRESSION
+      TYPE
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("h2"), depth: 2, stack_offset: -8, entry label: "h2"
+     EXPRESSION
+      TYPE
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("t"), depth: 2, stack_offset: -12, entry label: "t"
+     EXPRESSION
+      TYPE
+    EXPRESSION
+     VARIABLE, ("t"), depth: 2, stack_offset: -12, entry label: "t"
+     VARIABLE, ("construct"), (nil)
+     EXPRESSION_LIST
+      CONSTANT
+      CONSTANT
+      VARIABLE, ("t"), depth: 2, stack_offset: -12, entry label: "t"
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+    EXPRESSION
+     VARIABLE, ("t"), depth: 2, stack_offset: -12, entry label: "t"
+     VARIABLE, ("show"), (nil)
+     (nil)
+    EXPRESSION
+     VARIABLE, ("h"), depth: 2, stack_offset: -4, entry label: "h"
+     VARIABLE, ("construct"), (nil)
+     EXPRESSION_LIST
+      CONSTANT
+      CONSTANT
+      VARIABLE, ("t"), depth: 2, stack_offset: -12, entry label: "t"
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+    EXPRESSION
+     VARIABLE, ("h"), depth: 2, stack_offset: -4, entry label: "h"
+     VARIABLE, ("show"), (nil)
+     (nil)
+    EXPRESSION
+     VARIABLE, ("h2"), depth: 2, stack_offset: -8, entry label: "h2"
+     VARIABLE, ("construct"), (nil)
+     EXPRESSION_LIST
+      CONSTANT
+      CONSTANT
+      VARIABLE, ("t"), depth: 2, stack_offset: -12, entry label: "t"
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+    EXPRESSION
+     VARIABLE, ("h2"), depth: 2, stack_offset: -8, entry label: "h2"
+     VARIABLE, ("show"), (nil)
+     (nil)
+    EXPRESSION
+     VARIABLE, ("h"), depth: 2, stack_offset: -4, entry label: "h"
+     VARIABLE, ("setHardClass"), (nil)
+     EXPRESSION_LIST
+      VARIABLE, ("h2"), depth: 2, stack_offset: -8, entry label: "h2"
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+    EXPRESSION
+     EXPRESSION
+      VARIABLE, ("h"), depth: 2, stack_offset: -4, entry label: "h"
+      VARIABLE, ("hc1"), depth: 0, stack_offset: 12, entry label: "hc1"
+     VARIABLE, ("show"), (nil)
+     (nil)
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+    EXPRESSION
+     EXPRESSION
+      EXPRESSION
+       VARIABLE, ("h"), depth: 2, stack_offset: -4, entry label: "h"
+       VARIABLE, ("hc1"), depth: 0, stack_offset: 12, entry label: "hc1"
+      VARIABLE, ("tc1"), depth: 0, stack_offset: 8, entry label: "tc1"
+     VARIABLE, ("show"), (nil)
+     (nil)

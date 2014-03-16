@@ -1,0 +1,224 @@
+Add scope, index: 0 
+Inserting class Inner
+Inserting variable a INT depth:0 offset:0 in class Inner
+Retrieving class Inner
+Inserting variable b INT depth:0 offset:4 in class Inner
+Retrieving class Inner
+Inserting method print VOID<=() in class Inner
+Retrieving class Inner
+Inserting method sum INT<=() in class Inner
+Retrieving class Inner
+Add scope, index: 1 
+Add scope, index: 2 
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving field b of class Inner
+Retrieving class Inner
+Remove scope, index: 1 
+Add scope, index: 2 
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving field b of class Inner
+Retrieving class Inner
+Remove scope, index: 1 
+Remove scope, index: 0 
+Inserting class Middle
+Inserting variable a INT depth:0 offset:0 in class Middle
+Retrieving class Middle
+Inserting variable b INT depth:0 offset:4 in class Middle
+Retrieving class Middle
+Inserting variable i CLASS(Inner) depth:0 offset:8 in class Middle
+Retrieving class Middle
+Inserting method print VOID<=() in class Middle
+Retrieving class Middle
+Inserting method sumMultiply INT<=(INT) in class Middle
+Retrieving class Middle
+Add scope, index: 1 
+Add scope, index: 2 
+Retrieving field a of class Middle
+Retrieving class Middle
+Retrieving field b of class Middle
+Retrieving class Middle
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving field b of class Inner
+Retrieving class Inner
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:12
+Inserting variable d INT depth:2 offset:-4
+Inserting variable e INT depth:2 offset:-8
+Retrieving variable d
+Retrieving field a of class Middle
+Retrieving class Middle
+Retrieving field b of class Middle
+Retrieving class Middle
+Retrieving variable e
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving field b of class Inner
+Retrieving class Inner
+Retrieving variable e
+Retrieving variable d
+Retrieving variable a
+Remove scope, index: 1 
+Remove scope, index: 0 
+Inserting class Outer
+Inserting variable a INT depth:0 offset:0 in class Outer
+Retrieving class Outer
+Inserting variable b INT depth:0 offset:4 in class Outer
+Retrieving class Outer
+Inserting variable m CLASS(Middle) depth:0 offset:8 in class Outer
+Retrieving class Outer
+Inserting method print VOID<=() in class Outer
+Retrieving class Outer
+Inserting method sumMultiply INT<=(INT) in class Outer
+Retrieving class Outer
+Add scope, index: 1 
+Add scope, index: 2 
+Retrieving field a of class Outer
+Retrieving class Outer
+Retrieving field b of class Outer
+Retrieving class Outer
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving field a of class Middle
+Retrieving class Middle
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving field b of class Middle
+Retrieving class Middle
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving field b of class Inner
+Retrieving class Inner
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:12
+Inserting variable d INT depth:2 offset:-4
+Inserting variable e INT depth:2 offset:-8
+Retrieving variable d
+Retrieving field a of class Outer
+Retrieving class Outer
+Retrieving field b of class Outer
+Retrieving class Outer
+Retrieving variable e
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving field a of class Middle
+Retrieving class Middle
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving field b of class Middle
+Retrieving class Middle
+Inserting variable f INT depth:2 offset:-12
+Retrieving variable f
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving field b of class Inner
+Retrieving class Inner
+Retrieving variable e
+Retrieving variable d
+Retrieving variable f
+Retrieving variable a
+Remove scope, index: 1 
+Remove scope, index: 0 
+Add scope, index: 1 
+Inserting function main VOID<=() 
+Add scope, index: 2 
+Inserting variable i CLASS(Inner) depth:2 offset:-4
+Retrieving variable i
+Retrieving class Inner
+Retrieving variable i
+Retrieving field a of class Inner
+Retrieving class Inner
+Retrieving variable i
+Retrieving field b of class Inner
+Retrieving class Inner
+Inserting variable m CLASS(Middle) depth:2 offset:-8
+Retrieving variable m
+Retrieving class Middle
+Retrieving variable m
+Retrieving field a of class Middle
+Retrieving class Middle
+Retrieving variable m
+Retrieving field b of class Middle
+Retrieving class Middle
+Inserting variable o CLASS(Outer) depth:2 offset:-12
+Retrieving variable o
+Retrieving class Outer
+Retrieving variable o
+Retrieving field a of class Outer
+Retrieving class Outer
+Retrieving variable o
+Retrieving field b of class Outer
+Retrieving class Outer
+Retrieving variable m
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving variable i
+Retrieving variable o
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving variable m
+Retrieving variable i
+Retrieving method print of class Inner
+Retrieving class Inner
+Retrieving variable m
+Retrieving method print of class Middle
+Retrieving class Middle
+Retrieving variable o
+Retrieving method print of class Outer
+Retrieving class Outer
+Retrieving variable i
+Retrieving method sum of class Inner
+Retrieving class Inner
+Retrieving variable m
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving method sum of class Inner
+Retrieving class Inner
+Retrieving variable o
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving field i of class Middle
+Retrieving class Middle
+Retrieving method sum of class Inner
+Retrieving class Inner
+Retrieving variable m
+Retrieving method sumMultiply of class Middle
+Retrieving class Middle
+Retrieving variable o
+Retrieving field m of class Outer
+Retrieving class Outer
+Retrieving method sumMultiply of class Middle
+Retrieving class Middle
+Retrieving variable o
+Retrieving method sumMultiply of class Outer
+Retrieving class Outer
+Remove scope, index: 1 
+Remove scope, index: 0 

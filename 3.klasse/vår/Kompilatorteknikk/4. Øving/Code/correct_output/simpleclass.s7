@@ -1,0 +1,78 @@
+Add scope, index: 0 
+Inserting class Simple
+Inserting variable a INT depth:0 offset:0 in class Simple
+Retrieving class Simple
+Inserting variable b INT depth:0 offset:4 in class Simple
+Retrieving class Simple
+Inserting method construct VOID<=(INT,INT) in class Simple
+Retrieving class Simple
+Inserting method print VOID<=() in class Simple
+Retrieving class Simple
+Inserting method sum INT<=() in class Simple
+Retrieving class Simple
+Inserting method sumAndMultiply INT<=(INT) in class Simple
+Retrieving class Simple
+Add scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:16
+Inserting variable b INT depth:2 offset:12
+Retrieving field a of class Simple
+Retrieving class Simple
+Retrieving variable a
+Retrieving field b of class Simple
+Retrieving class Simple
+Retrieving variable b
+Remove scope, index: 1 
+Add scope, index: 2 
+Add strings ("a: "), index: 0 
+Retrieving field a of class Simple
+Retrieving class Simple
+Add strings ("b: "), index: 1 
+Retrieving field b of class Simple
+Retrieving class Simple
+Remove scope, index: 1 
+Add scope, index: 2 
+Retrieving field a of class Simple
+Retrieving class Simple
+Retrieving field b of class Simple
+Retrieving class Simple
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable c INT depth:2 offset:12
+Inserting variable d INT depth:2 offset:-4
+Retrieving variable d
+Retrieving field a of class Simple
+Retrieving class Simple
+Retrieving field b of class Simple
+Retrieving class Simple
+Retrieving variable d
+Retrieving variable d
+Retrieving variable c
+Retrieving variable d
+Remove scope, index: 1 
+Remove scope, index: 0 
+Add scope, index: 1 
+Inserting function main VOID<=() 
+Add scope, index: 2 
+Inserting variable s CLASS(Simple) depth:2 offset:-4
+Retrieving variable s
+Retrieving class Simple
+Retrieving variable s
+Retrieving method construct of class Simple
+Retrieving class Simple
+Retrieving variable s
+Retrieving method print of class Simple
+Retrieving class Simple
+Inserting variable b INT depth:2 offset:-8
+Retrieving variable b
+Retrieving variable s
+Retrieving method sum of class Simple
+Retrieving class Simple
+Retrieving variable b
+Retrieving variable b
+Retrieving variable s
+Retrieving method sumAndMultiply of class Simple
+Retrieving class Simple
+Retrieving variable b
+Remove scope, index: 1 
+Remove scope, index: 0 

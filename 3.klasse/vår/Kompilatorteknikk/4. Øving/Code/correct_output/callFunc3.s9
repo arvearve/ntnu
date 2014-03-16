@@ -1,0 +1,19 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("one"), (nil)
+   (nil)
+   STATEMENT_LIST
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+      EXPRESSION
+       VARIABLE, ("two"), (nil)
+       (nil)
+  FUNCTION, ("two"), (nil)
+   (nil)
+   STATEMENT_LIST
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+    RETURN_STATEMENT
+     CONSTANT

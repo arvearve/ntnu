@@ -1,0 +1,42 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: comp
+DECLARATION: parameter/variable : 'a', offset: -4
+DECLARATION: parameter/variable : 'b', offset: -8
+DECLARATION: parameter/variable : 'c', offset: -12
+VARIABLE: access: a
+CONSTANT
+VARIABLE: access: b
+CONSTANT
+VARIABLE: access: c
+CONSTANT
+DECLARATION: parameter/variable : 'x', offset: -16
+DECLARATION: parameter/variable : 'y', offset: -20
+DECLARATION: parameter/variable : 'z', offset: -24
+DECLARATION: parameter/variable : 'w', offset: -28
+VARIABLE: access: x
+EXPRESSION: Start: >
+VARIABLE: access: a
+VARIABLE: access: b
+EXPRESSION: End
+VARIABLE: access: y
+EXPRESSION: Start: ==
+VARIABLE: access: c
+VARIABLE: access: c
+EXPRESSION: End
+VARIABLE: access: z
+EXPRESSION: Start: >=
+VARIABLE: access: c
+VARIABLE: access: a
+EXPRESSION: End
+VARIABLE: access: w
+EXPRESSION: Start: &&
+EXPRESSION: Start: ||
+VARIABLE: access: x
+VARIABLE: access: y
+EXPRESSION: End
+VARIABLE: access: z
+EXPRESSION: End
+CONSTANT
+VARIABLE: access: w
+FUNCTION: End
+FUNCTION_LIST: End

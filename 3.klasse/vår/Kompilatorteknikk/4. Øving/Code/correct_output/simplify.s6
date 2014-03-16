@@ -1,0 +1,80 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: f
+CONSTANT
+FUNCTION: End
+FUNCTION: Start: g
+DECLARATION: parameter/variable : 'a', offset: 16
+DECLARATION: parameter/variable : 'b', offset: 12
+DECLARATION: parameter/variable : 'c', offset: 8
+DECLARATION: parameter/variable : 'u', offset: -4
+DECLARATION: parameter/variable : 'v', offset: -8
+DECLARATION: parameter/variable : 'w', offset: -12
+DECLARATION: parameter/variable : 'x', offset: -16
+DECLARATION: parameter/variable : 'y', offset: -20
+DECLARATION: parameter/variable : 'z', offset: -24
+VARIABLE: access: u
+CONSTANT
+VARIABLE: access: v
+CONSTANT
+VARIABLE: access: w
+EXPRESSION: Start: FUNC_CALL
+EXPRESSION: Start: +
+VARIABLE: access: x
+CONSTANT
+EXPRESSION: End
+EXPRESSION: Start: +
+VARIABLE: access: y
+CONSTANT
+EXPRESSION: End
+EXPRESSION: Start: +
+VARIABLE: access: z
+CONSTANT
+EXPRESSION: End
+EXPRESSION: End
+VARIABLE: access: u
+VARIABLE: access: v
+VARIABLE: access: w
+CONSTANT
+FUNCTION: End
+FUNCTION: Start: h
+DECLARATION: parameter/variable : 'a', offset: 12
+DECLARATION: parameter/variable : 'b', offset: 8
+DECLARATION: parameter/variable : 'x', offset: -4
+VARIABLE: access: x
+EXPRESSION: Start: +
+CONSTANT
+CONSTANT
+EXPRESSION: End
+VARIABLE: access: x
+EXPRESSION: Start: -
+CONSTANT
+CONSTANT
+EXPRESSION: End
+VARIABLE: access: x
+EXPRESSION: Start: *
+CONSTANT
+CONSTANT
+EXPRESSION: End
+VARIABLE: access: x
+EXPRESSION: Start: /
+CONSTANT
+CONSTANT
+EXPRESSION: End
+VARIABLE: access: x
+EXPRESSION: Start: UMINUS
+CONSTANT
+EXPRESSION: End
+VARIABLE: access: x
+EXPRESSION: Start: /
+EXPRESSION: Start: *
+EXPRESSION: Start: +
+CONSTANT
+CONSTANT
+EXPRESSION: End
+CONSTANT
+EXPRESSION: End
+CONSTANT
+EXPRESSION: End
+CONSTANT
+FUNCTION: End
+FUNCTION_LIST: End

@@ -1,0 +1,8 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("hello"), (nil)
+   (nil)
+   STATEMENT_LIST
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT

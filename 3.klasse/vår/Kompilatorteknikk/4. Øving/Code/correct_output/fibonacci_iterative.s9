@@ -1,0 +1,56 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("fibonacci_iterative"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+     CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("y"), depth: 2, stack_offset: -8, entry label: "y"
+     CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("f"), depth: 2, stack_offset: -12, entry label: "f"
+     CONSTANT
+    IF_STATEMENT
+     EXPRESSION
+      VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+      CONSTANT
+     STATEMENT_LIST
+      DECLARATION_STATEMENT
+      ASSIGNMENT_STATEMENT
+       VARIABLE, ("i"), depth: 2, stack_offset: -16, entry label: "i"
+       CONSTANT
+      WHILE_STATEMENT
+       EXPRESSION
+        VARIABLE, ("i"), depth: 2, stack_offset: -16, entry label: "i"
+        VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+       STATEMENT_LIST
+        ASSIGNMENT_STATEMENT
+         VARIABLE, ("f"), depth: 2, stack_offset: -12, entry label: "f"
+         EXPRESSION
+          VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+          VARIABLE, ("y"), depth: 2, stack_offset: -8, entry label: "y"
+        ASSIGNMENT_STATEMENT
+         VARIABLE, ("x"), depth: 2, stack_offset: -4, entry label: "x"
+         VARIABLE, ("y"), depth: 2, stack_offset: -8, entry label: "y"
+        ASSIGNMENT_STATEMENT
+         VARIABLE, ("y"), depth: 2, stack_offset: -8, entry label: "y"
+         VARIABLE, ("f"), depth: 2, stack_offset: -12, entry label: "f"
+        ASSIGNMENT_STATEMENT
+         VARIABLE, ("i"), depth: 2, stack_offset: -16, entry label: "i"
+         EXPRESSION
+          VARIABLE, ("i"), depth: 2, stack_offset: -16, entry label: "i"
+          CONSTANT
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+      VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+      CONSTANT
+      VARIABLE, ("f"), depth: 2, stack_offset: -12, entry label: "f"
+    RETURN_STATEMENT
+     CONSTANT

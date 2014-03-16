@@ -1,0 +1,15 @@
+Hit rule "TYPE" on text 'INT' at line 1
+Hit rule "VARIABLE" on text 'nop42V2' at line 1
+Hit rule "TYPE" on text 'INT' at line 1
+Hit rule "VARIABLE" on text 'variable' at line 1
+Hit rule "DECLARATION_STATEMENT" on text 'variable' at line 1
+Hit rule "VARIABLE_LIST" on text 'variable' at line 1
+Hit rule "PARAMETER_LIST" on text ')' at line 1
+Hit rule "CONSTANT" on text '0' at line 3
+Hit rule "EXPRESSION" on text '0' at line 3
+Hit rule "RETURN_STATEMENT" on text ';' at line 3
+Hit rule "STATEMENT" on text ';' at line 3
+Hit rule "STATEMENT_LIST" on text ';' at line 3
+Hit rule "FUNCTION" on text 'END' at line 4
+Hit rule "FUNCTION_LIST" on text 'END' at line 4
+Hit rule "PROGRAM" on text '' at line 5

@@ -1,0 +1,40 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function euclid INT<=(INT,INT) 
+Inserting function gcd INT<=(INT,INT) 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:12
+Inserting variable b INT depth:2 offset:8
+Retrieving function gcd
+Retrieving variable a
+Retrieving variable b
+Add strings ("Greatest common divisor of"), index: 0 
+Retrieving variable a
+Add strings ("and"), index: 1 
+Retrieving variable b
+Add strings ("is"), index: 2 
+Retrieving function gcd
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Add strings ("and"), index: 3 
+Retrieving variable b
+Add strings ("are relative primes"), index: 4 
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:12
+Inserting variable b INT depth:2 offset:8
+Inserting variable g INT depth:2 offset:-4
+Retrieving variable b
+Retrieving variable g
+Retrieving function gcd
+Retrieving variable b
+Retrieving variable a
+Retrieving variable a
+Retrieving variable b
+Retrieving variable b
+Retrieving variable g
+Retrieving variable a
+Retrieving variable g
+Remove scope, index: 1 
+Remove scope, index: 0 

@@ -1,0 +1,27 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: hello
+CONSTANT
+EXPRESSION: Start: FUNC_CALL
+CONSTANT
+EXPRESSION: End
+CONSTANT
+FUNCTION: End
+FUNCTION: Start: test
+DECLARATION: parameter/variable : 'a', offset: 8
+DECLARATION: parameter/variable : 'x', offset: -4
+DECLARATION: parameter/variable : 'y', offset: -8
+VARIABLE: access: x
+CONSTANT
+VARIABLE: access: y
+CONSTANT
+CONSTANT
+DECLARATION: parameter/variable : 'z', offset: -12
+VARIABLE: access: z
+CONSTANT
+EXPRESSION: Start: +
+VARIABLE: access: z
+VARIABLE: access: a
+EXPRESSION: End
+CONSTANT
+FUNCTION: End
+FUNCTION_LIST: End

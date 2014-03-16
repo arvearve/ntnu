@@ -1,0 +1,57 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("newton"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("square_root"), depth: 2, stack_offset: -4, entry label: "square_root"
+     EXPRESSION
+      VARIABLE, ("improve"), (nil)
+      EXPRESSION_LIST
+       VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+       CONSTANT
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+      VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"
+      CONSTANT
+      VARIABLE, ("square_root"), depth: 2, stack_offset: -4, entry label: "square_root"
+    RETURN_STATEMENT
+     CONSTANT
+  FUNCTION, ("improve"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("next"), depth: 2, stack_offset: -4, entry label: "next"
+     EXPRESSION
+      VARIABLE, ("estimate"), depth: 2, stack_offset: 8, entry label: "estimate"
+      EXPRESSION
+       EXPRESSION
+        EXPRESSION
+         VARIABLE, ("estimate"), depth: 2, stack_offset: 8, entry label: "estimate"
+         VARIABLE, ("estimate"), depth: 2, stack_offset: 8, entry label: "estimate"
+        VARIABLE, ("n"), depth: 2, stack_offset: 12, entry label: "n"
+       EXPRESSION
+        CONSTANT
+        VARIABLE, ("estimate"), depth: 2, stack_offset: 8, entry label: "estimate"
+    IF_STATEMENT
+     EXPRESSION
+      VARIABLE, ("next"), depth: 2, stack_offset: -4, entry label: "next"
+      VARIABLE, ("estimate"), depth: 2, stack_offset: 8, entry label: "estimate"
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       EXPRESSION
+        VARIABLE, ("improve"), (nil)
+        EXPRESSION_LIST
+         VARIABLE, ("n"), depth: 2, stack_offset: 12, entry label: "n"
+         VARIABLE, ("next"), depth: 2, stack_offset: -4, entry label: "next"
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       EXPRESSION
+        VARIABLE, ("next"), depth: 2, stack_offset: -4, entry label: "next"
+        CONSTANT

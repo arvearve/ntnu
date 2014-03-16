@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="apriori-template:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2384f902-1f34-439c-9710-18707c3fdc19" name="Default" comment="" />
     <ignored path="Assignment 2.iws" />
@@ -64,19 +69,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AprioriItemSetGeneratorAndRuleGeneration.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AprioriItemSetGeneratorAndRuleGeneration.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/ntnu/idi/dm/arm/runnables/AprioriItemSetGeneratorAndRuleGeneration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="36" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="691" max-vertical-offset="1300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractApriori.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/no/ntnu/idi/dm/arm/apriori/AbstractApriori.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="28" selection-start="4414" selection-end="4414" vertical-scroll-proportion="0.5540309" vertical-offset="1523" max-vertical-offset="2496">
+            <state line="81" column="9" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.24185249" vertical-offset="756" max-vertical-offset="1690">
               <folding />
             </state>
           </provider>
@@ -97,8 +93,8 @@
         <option value="$PROJECT_DIR$/src/no/ntnu/idi/dm/arm/apriori/FkMinus1FKMinus1.java" />
         <option value="$PROJECT_DIR$/src/no/ntnu/idi/dm/arm/apriori/BruteForceApriori.java" />
         <option value="$PROJECT_DIR$/code/src/no/ntnu/idi/dm/arm/runnables/AprioriItemSetGeneratorAndRuleGeneration.java" />
-        <option value="$PROJECT_DIR$/src/no/ntnu/idi/dm/arm/runnables/AprioriItemSetGeneratorAndRuleGeneration.java" />
         <option value="$PROJECT_DIR$/src/no/ntnu/idi/dm/arm/apriori/AbstractApriori.java" />
+        <option value="$PROJECT_DIR$/src/no/ntnu/idi/dm/arm/runnables/AprioriItemSetGeneratorAndRuleGeneration.java" />
       </list>
     </option>
   </component>
@@ -237,6 +233,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment 2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -257,6 +267,10 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/supermarket.arff" />
   </component>
   <component name="RunManager" selected="Application.Tobiaz">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -440,7 +454,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1621787" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3472222" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3472222" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -469,20 +483,108 @@
         <state line="8" column="5" selection-start="178" selection-end="205" vertical-scroll-proportion="0.19659735" vertical-offset="0" max-vertical-offset="529" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/ntnu/idi/dm/arm/runnables/AprioriItemSetGeneratorAndRuleGeneration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="36" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="691" max-vertical-offset="1300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/no/ntnu/idi/dm/arm/apriori/AbstractApriori.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="28" selection-start="4414" selection-end="4414" vertical-scroll-proportion="0.5540309" vertical-offset="1523" max-vertical-offset="2496">
+        <state line="192" column="5" selection-start="5923" selection-end="5923" vertical-scroll-proportion="0.0" vertical-offset="1848" max-vertical-offset="2496">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/ntnu/idi/dm/arm/runnables/AprioriItemSetGeneratorAndRuleGeneration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="9" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.24185249" vertical-offset="756" max-vertical-offset="1690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>apriori-template:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>apriori-template</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

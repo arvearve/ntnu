@@ -1,0 +1,54 @@
+VOID FUNC cornercases(INT a, INT b)
+START
+	IF a > b THEN
+		PRINT a," > ",b;
+	END
+	
+	IF a < b THEN
+		PRINT a," < ",b;
+	END
+	
+	IF a >= b THEN
+		PRINT a," >= ",b;
+	END
+	
+	IF a <= b THEN
+		PRINT a," <= ",b;
+	END
+	
+	IF a == b THEN
+		PRINT a," == ",b;
+	END
+	
+	IF a != b THEN
+		PRINT a,"!= ",b;
+	END
+	
+	PRINT "STATIC, 4,4";
+	
+	IF 4 > 4 THEN
+		PRINT 4," > ",4;
+	END
+	
+	IF 4 < 4 THEN
+		PRINT 4," < ",4;
+	END
+	
+	IF 4 >= 4 THEN
+		PRINT 4," >= ",4;
+	END
+	
+	IF 4 <= 4 THEN
+		PRINT 4," <= ",4;
+	END
+	
+	IF 4 == 4 THEN
+		PRINT 4," == ",4;
+	END
+	
+	IF 4 != 4 THEN
+		PRINT 4,"!= ",4;
+	END
+END
+	
+	

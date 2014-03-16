@@ -1,0 +1,18 @@
+.data
+.INTEGER: .string "%d "
+.FLOAT: .string "%f "
+.NEWLINE: .string "\n "
+.STRING0: .string " > "
+.STRING1: .string " < "
+.STRING2: .string " >= "
+.STRING3: .string " <= "
+.STRING4: .string " == "
+.STRING5: .string "!= "
+.STRING6: .string "STATIC, 4,4"
+.STRING7: .string " > "
+.STRING8: .string " < "
+.STRING9: .string " >= "
+.STRING10: .string " <= "
+.STRING11: .string " == "
+.STRING12: .string "!= "
+.globl main

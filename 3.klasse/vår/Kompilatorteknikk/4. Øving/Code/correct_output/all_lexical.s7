@@ -1,0 +1,135 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function main INT<=() 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:-4
+Inserting variable _a1 INT depth:2 offset:-8
+Inserting variable a_2 INT depth:2 offset:-12
+Inserting variable i INT depth:2 offset:-16
+Inserting variable j INT depth:2 offset:-20
+Inserting variable f FLOAT depth:2 offset:-24
+Inserting variable b BOOL depth:2 offset:-28
+Add strings ("Hello, world!"), index: 0 
+Add strings (""), index: 1 
+Add strings ("Hello, \"world\"!"), index: 2 
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable a
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings ("+"), index: 3 
+Retrieving variable a_2
+Add strings ("="), index: 4 
+Retrieving variable a
+Retrieving variable a
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings ("-"), index: 5 
+Retrieving variable a_2
+Add strings ("="), index: 6 
+Retrieving variable a
+Retrieving variable a
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings ("+ (-"), index: 7 
+Retrieving variable a_2
+Add strings (") ="), index: 8 
+Retrieving variable a
+Retrieving variable a
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings ("*"), index: 9 
+Retrieving variable a_2
+Add strings ("="), index: 10 
+Retrieving variable a
+Retrieving variable a
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings ("/"), index: 11 
+Retrieving variable a_2
+Add strings ("="), index: 12 
+Retrieving variable b
+Retrieving variable b
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings (">"), index: 13 
+Retrieving variable a_2
+Add strings ("="), index: 14 
+Retrieving variable b
+Retrieving variable b
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings ("<"), index: 15 
+Retrieving variable a_2
+Add strings ("="), index: 16 
+Retrieving variable b
+Retrieving variable b
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings (">="), index: 17 
+Retrieving variable a_2
+Add strings ("="), index: 18 
+Retrieving variable b
+Retrieving variable b
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings ("<="), index: 19 
+Retrieving variable a_2
+Add strings ("="), index: 20 
+Retrieving variable b
+Retrieving variable b
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings ("=="), index: 21 
+Retrieving variable a_2
+Add strings ("="), index: 22 
+Retrieving variable b
+Retrieving variable b
+Retrieving variable _a1
+Retrieving variable a_2
+Retrieving variable _a1
+Add strings ("!="), index: 23 
+Retrieving variable a_2
+Add strings ("="), index: 24 
+Retrieving variable b
+Retrieving variable b
+Retrieving variable b
+Retrieving variable i
+Retrieving variable i
+Retrieving variable i
+Retrieving variable i
+Retrieving variable i
+Retrieving variable i
+Retrieving variable j
+Retrieving variable j
+Retrieving variable i
+Add strings ("*"), index: 25 
+Retrieving variable j
+Add strings ("="), index: 26 
+Retrieving variable i
+Retrieving variable j
+Retrieving variable j
+Retrieving variable j
+Retrieving variable i
+Retrieving variable i
+Retrieving variable a
+Retrieving variable a
+Retrieving variable a
+Retrieving variable a
+Retrieving variable a
+Retrieving variable a
+Retrieving variable a
+Add strings ("Skip..."), index: 27 
+Retrieving variable a
+Remove scope, index: 1 
+Remove scope, index: 0 

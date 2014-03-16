@@ -1,0 +1,8 @@
+INT FUNC f(INT a, INT b) START
+INT c;
+c := a;
+RETURN g(b,c);
+END
+INT FUNC g(INT a, INT b) START
+RETURN b;
+END

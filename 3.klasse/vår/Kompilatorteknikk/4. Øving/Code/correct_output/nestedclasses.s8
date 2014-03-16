@@ -1,0 +1,11 @@
+.data
+.INTEGER: .string "%d "
+.FLOAT: .string "%f "
+.NEWLINE: .string "\n "
+.STRING0: .string "a: "
+.STRING1: .string "b: "
+.STRING2: .string "oa: "
+.STRING3: .string "ob: "
+.STRING4: .string "ia: "
+.STRING5: .string "ib: "
+.globl main

@@ -1,0 +1,40 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function f INT<=() 
+Inserting function g INT<=(INT,INT,INT) 
+Inserting function h INT<=(INT,INT) 
+Add scope, index: 2 
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:16
+Inserting variable b INT depth:2 offset:12
+Inserting variable c INT depth:2 offset:8
+Inserting variable u INT depth:2 offset:-4
+Inserting variable v INT depth:2 offset:-8
+Inserting variable w INT depth:2 offset:-12
+Inserting variable x INT depth:2 offset:-16
+Inserting variable y INT depth:2 offset:-20
+Inserting variable z INT depth:2 offset:-24
+Retrieving variable u
+Retrieving variable v
+Retrieving variable w
+Retrieving function g
+Retrieving variable x
+Retrieving variable y
+Retrieving variable z
+Retrieving variable u
+Retrieving variable v
+Retrieving variable w
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:12
+Inserting variable b INT depth:2 offset:8
+Inserting variable x INT depth:2 offset:-4
+Retrieving variable x
+Retrieving variable x
+Retrieving variable x
+Retrieving variable x
+Retrieving variable x
+Retrieving variable x
+Remove scope, index: 1 
+Remove scope, index: 0 

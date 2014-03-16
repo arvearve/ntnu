@@ -1,0 +1,20 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: funcall
+DECLARATION: parameter/variable : 'x', offset: -4
+VARIABLE: access: x
+EXPRESSION: Start: FUNC_CALL
+CONSTANT
+CONSTANT
+EXPRESSION: End
+CONSTANT
+FUNCTION: End
+FUNCTION: Start: my_function
+DECLARATION: parameter/variable : 's', offset: 12
+DECLARATION: parameter/variable : 't', offset: 8
+CONSTANT
+VARIABLE: access: s
+CONSTANT
+VARIABLE: access: t
+CONSTANT
+FUNCTION: End
+FUNCTION_LIST: End

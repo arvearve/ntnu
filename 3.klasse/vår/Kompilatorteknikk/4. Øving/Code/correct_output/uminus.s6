@@ -1,0 +1,22 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: negatives
+DECLARATION: parameter/variable : 'a', offset: -4
+DECLARATION: parameter/variable : 'b', offset: -8
+VARIABLE: access: a
+CONSTANT
+VARIABLE: access: b
+CONSTANT
+CONSTANT
+VARIABLE: access: a
+CONSTANT
+VARIABLE: access: b
+CONSTANT
+EXPRESSION: Start: UMINUS
+VARIABLE: access: a
+EXPRESSION: End
+CONSTANT
+EXPRESSION: Start: UMINUS
+VARIABLE: access: b
+EXPRESSION: End
+FUNCTION: End
+FUNCTION_LIST: End

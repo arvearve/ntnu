@@ -1,0 +1,9 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function adding VOID<=() 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:-4
+Retrieving variable a
+Add strings ("Hello?"), index: 0 
+Remove scope, index: 1 
+Remove scope, index: 0 

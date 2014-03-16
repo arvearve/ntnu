@@ -1,0 +1,21 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function hello INT<=() 
+Inserting function test INT<=(INT) 
+Add scope, index: 2 
+Add strings ("t is"), index: 0 
+Retrieving function test
+Remove scope, index: 1 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:8
+Inserting variable x INT depth:2 offset:-4
+Inserting variable y INT depth:2 offset:-8
+Retrieving variable x
+Retrieving variable y
+Inserting variable z INT depth:2 offset:-12
+Retrieving variable z
+Retrieving variable z
+Retrieving variable a
+Add strings ("This never executes"), index: 1 
+Remove scope, index: 1 
+Remove scope, index: 0 

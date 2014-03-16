@@ -1,0 +1,44 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: fibonacci_iterative
+DECLARATION: parameter/variable : 'n', offset: 8
+DECLARATION: parameter/variable : 'x', offset: -4
+DECLARATION: parameter/variable : 'y', offset: -8
+DECLARATION: parameter/variable : 'f', offset: -12
+VARIABLE: access: x
+CONSTANT
+VARIABLE: access: y
+CONSTANT
+VARIABLE: access: f
+CONSTANT
+EXPRESSION: Start: >=
+VARIABLE: access: n
+CONSTANT
+EXPRESSION: End
+DECLARATION: parameter/variable : 'i', offset: -16
+VARIABLE: access: i
+CONSTANT
+EXPRESSION: Start: <
+VARIABLE: access: i
+VARIABLE: access: n
+EXPRESSION: End
+VARIABLE: access: f
+EXPRESSION: Start: +
+VARIABLE: access: x
+VARIABLE: access: y
+EXPRESSION: End
+VARIABLE: access: x
+VARIABLE: access: y
+VARIABLE: access: y
+VARIABLE: access: f
+VARIABLE: access: i
+EXPRESSION: Start: +
+VARIABLE: access: i
+CONSTANT
+EXPRESSION: End
+CONSTANT
+VARIABLE: access: n
+CONSTANT
+VARIABLE: access: f
+CONSTANT
+FUNCTION: End
+FUNCTION_LIST: End

@@ -1,0 +1,25 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: while_test
+DECLARATION: parameter/variable : 'a', offset: -4
+DECLARATION: parameter/variable : 'b', offset: -8
+VARIABLE: access: a
+CONSTANT
+VARIABLE: access: b
+EXPRESSION: Start: UMINUS
+CONSTANT
+EXPRESSION: End
+EXPRESSION: Start: -
+VARIABLE: access: a
+CONSTANT
+EXPRESSION: End
+CONSTANT
+VARIABLE: access: a
+EXPRESSION: Start: +
+VARIABLE: access: b
+CONSTANT
+EXPRESSION: End
+CONSTANT
+CONSTANT
+CONSTANT
+FUNCTION: End
+FUNCTION_LIST: End

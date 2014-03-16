@@ -1,0 +1,31 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function comp VOID<=() 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:-4
+Inserting variable b INT depth:2 offset:-8
+Inserting variable c INT depth:2 offset:-12
+Retrieving variable a
+Retrieving variable b
+Retrieving variable c
+Inserting variable x BOOL depth:2 offset:-16
+Inserting variable y BOOL depth:2 offset:-20
+Inserting variable z BOOL depth:2 offset:-24
+Inserting variable w BOOL depth:2 offset:-28
+Retrieving variable x
+Retrieving variable a
+Retrieving variable b
+Retrieving variable y
+Retrieving variable c
+Retrieving variable c
+Retrieving variable z
+Retrieving variable c
+Retrieving variable a
+Retrieving variable w
+Retrieving variable x
+Retrieving variable y
+Retrieving variable z
+Add strings ("w is: "), index: 0 
+Retrieving variable w
+Remove scope, index: 1 
+Remove scope, index: 0 

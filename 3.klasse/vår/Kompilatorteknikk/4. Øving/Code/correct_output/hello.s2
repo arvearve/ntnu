@@ -1,0 +1,11 @@
+Hit rule "TYPE" on text 'VOID' at line 1
+Hit rule "VARIABLE" on text 'hello' at line 1
+Hit rule "CONSTANT" on text '"Hello, world!"' at line 3
+Hit rule "EXPRESSION" on text '"Hello, world!"' at line 3
+Hit rule "EXPRESSION_LIST" on text ';' at line 3
+Hit rule "PRINT_STATEMENT" on text ';' at line 3
+Hit rule "STATEMENT" on text ';' at line 3
+Hit rule "STATEMENT_LIST" on text ';' at line 3
+Hit rule "FUNCTION" on text 'END' at line 4
+Hit rule "FUNCTION_LIST" on text 'END' at line 4
+Hit rule "PROGRAM" on text '' at line 5

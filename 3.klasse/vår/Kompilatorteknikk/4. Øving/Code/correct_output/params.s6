@@ -1,0 +1,7 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: params
+DECLARATION: parameter/variable : 'a', offset: 12
+DECLARATION: parameter/variable : 'b', offset: 8
+VARIABLE: access: a
+FUNCTION: End
+FUNCTION_LIST: End

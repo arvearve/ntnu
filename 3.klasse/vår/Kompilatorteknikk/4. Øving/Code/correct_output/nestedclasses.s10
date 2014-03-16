@@ -1,0 +1,16 @@
+Type checking expression CLASS_FIELD
+Type checking expression THIS
+Type checking expression CLASS_FIELD
+Type checking expression THIS
+Type checking expression CLASS_FIELD
+Type checking expression THIS
+Type checking expression CLASS_FIELD
+Type checking expression THIS
+Type checking expression +
+Type checking expression CLASS_FIELD
+Type checking expression THIS
+Type checking expression CLASS_FIELD
+Type checking expression THIS
+Type error at:
+EXPRESSION (+)
+Exiting

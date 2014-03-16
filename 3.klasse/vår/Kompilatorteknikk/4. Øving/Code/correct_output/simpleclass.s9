@@ -1,0 +1,106 @@
+ PROGRAM
+ CLASS_LIST
+  CLASS
+   DECLARATION_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   FUNCTION_LIST
+    FUNCTION, ("construct"), (nil)
+     VARIABLE_LIST
+      DECLARATION_STATEMENT
+      DECLARATION_STATEMENT
+     STATEMENT_LIST
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+       VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"
+      ASSIGNMENT_STATEMENT
+       EXPRESSION
+        EXPRESSION
+        VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+       VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"
+    FUNCTION, ("print"), (nil)
+     (nil)
+     STATEMENT_LIST
+      PRINT_STATEMENT
+       EXPRESSION_LIST
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+        CONSTANT
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+    FUNCTION, ("sum"), (nil)
+     (nil)
+     STATEMENT_LIST
+      RETURN_STATEMENT
+       EXPRESSION
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+    FUNCTION, ("sumAndMultiply"), (nil)
+     VARIABLE_LIST
+      DECLARATION_STATEMENT
+     STATEMENT_LIST
+      DECLARATION_STATEMENT
+      ASSIGNMENT_STATEMENT
+       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+       EXPRESSION
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("a"), depth: 0, stack_offset: 0, entry label: "a"
+        EXPRESSION
+         EXPRESSION
+         VARIABLE, ("b"), depth: 0, stack_offset: 4, entry label: "b"
+      ASSIGNMENT_STATEMENT
+       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+       EXPRESSION
+        VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+        VARIABLE, ("c"), depth: 2, stack_offset: 12, entry label: "c"
+      RETURN_STATEMENT
+       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+ FUNCTION_LIST
+  FUNCTION, ("main"), (nil)
+   (nil)
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("s"), depth: 2, stack_offset: -4, entry label: "s"
+     EXPRESSION
+      TYPE
+    EXPRESSION
+     VARIABLE, ("s"), depth: 2, stack_offset: -4, entry label: "s"
+     VARIABLE, ("construct"), (nil)
+     EXPRESSION_LIST
+      CONSTANT
+      CONSTANT
+    EXPRESSION
+     VARIABLE, ("s"), depth: 2, stack_offset: -4, entry label: "s"
+     VARIABLE, ("print"), (nil)
+     (nil)
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+     EXPRESSION
+      VARIABLE, ("s"), depth: 2, stack_offset: -4, entry label: "s"
+      VARIABLE, ("sum"), (nil)
+      (nil)
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+     EXPRESSION
+      VARIABLE, ("s"), depth: 2, stack_offset: -4, entry label: "s"
+      VARIABLE, ("sumAndMultiply"), (nil)
+      EXPRESSION_LIST
+       CONSTANT
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"

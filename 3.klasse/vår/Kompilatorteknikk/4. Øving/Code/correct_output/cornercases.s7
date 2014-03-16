@@ -1,0 +1,45 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function cornercases VOID<=(INT,INT) 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:12
+Inserting variable b INT depth:2 offset:8
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Add strings (" > "), index: 0 
+Retrieving variable b
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Add strings (" < "), index: 1 
+Retrieving variable b
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Add strings (" >= "), index: 2 
+Retrieving variable b
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Add strings (" <= "), index: 3 
+Retrieving variable b
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Add strings (" == "), index: 4 
+Retrieving variable b
+Retrieving variable a
+Retrieving variable b
+Retrieving variable a
+Add strings ("!= "), index: 5 
+Retrieving variable b
+Add strings ("STATIC, 4,4"), index: 6 
+Add strings (" > "), index: 7 
+Add strings (" < "), index: 8 
+Add strings (" >= "), index: 9 
+Add strings (" <= "), index: 10 
+Add strings (" == "), index: 11 
+Add strings ("!= "), index: 12 
+Remove scope, index: 1 
+Remove scope, index: 0 

@@ -1,0 +1,9 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("params"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      VARIABLE, ("a"), depth: 2, stack_offset: 8, entry label: "a"

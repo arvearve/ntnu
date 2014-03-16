@@ -1,0 +1,25 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function precedence INT<=() 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:-4
+Inserting variable b INT depth:2 offset:-8
+Inserting variable c INT depth:2 offset:-12
+Inserting variable d INT depth:2 offset:-16
+Retrieving variable a
+Retrieving variable b
+Retrieving variable c
+Retrieving variable d
+Retrieving variable a
+Retrieving variable b
+Retrieving variable c
+Add strings ("2*(3-1) = "), index: 0 
+Retrieving variable d
+Retrieving variable d
+Retrieving variable a
+Retrieving variable b
+Retrieving variable c
+Add strings ("2*3-1 = "), index: 1 
+Retrieving variable d
+Remove scope, index: 1 
+Remove scope, index: 0 

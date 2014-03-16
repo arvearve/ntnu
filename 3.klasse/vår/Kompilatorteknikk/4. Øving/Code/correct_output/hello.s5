@@ -1,0 +1,8 @@
+ PROGRAM()()
+ FUNCTION_LIST()()
+  FUNCTION(VOID)("hello")()
+   (nil)
+   STATEMENT_LIST()()
+    PRINT_STATEMENT()()
+     EXPRESSION_LIST()()
+      CONSTANT(STRING)("Hello, world!")()

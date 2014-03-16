@@ -1,0 +1,27 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("negatives"), (nil)
+   (nil)
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+     CONSTANT
+    ASSIGNMENT_STATEMENT
+     VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+     CONSTANT
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+      VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+      CONSTANT
+      VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+    PRINT_STATEMENT
+     EXPRESSION_LIST
+      CONSTANT
+      EXPRESSION
+       VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+      CONSTANT
+      EXPRESSION
+       VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"

@@ -1,0 +1,20 @@
+INT FUNC euclid ( INT a, INT b )
+START
+    IF ( gcd ( a, b ) - 1 ) THEN
+        PRINT "Greatest common divisor of", a, "and", b, "is", gcd ( a, b );
+    ELSE
+        PRINT a, "and", b, "are relative primes";
+    END
+    RETURN 0;
+END
+
+INT FUNC gcd( INT a, INT b )
+START
+    INT g;
+    IF ( b ) THEN
+        g := gcd ( b, a - ((a/b)*b) );
+    ELSE
+        g := a;
+    END
+    RETURN g;
+END

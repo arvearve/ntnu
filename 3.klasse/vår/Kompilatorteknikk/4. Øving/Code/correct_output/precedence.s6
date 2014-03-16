@@ -1,0 +1,35 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: precedence
+DECLARATION: parameter/variable : 'a', offset: -4
+DECLARATION: parameter/variable : 'b', offset: -8
+DECLARATION: parameter/variable : 'c', offset: -12
+DECLARATION: parameter/variable : 'd', offset: -16
+VARIABLE: access: a
+CONSTANT
+VARIABLE: access: b
+CONSTANT
+VARIABLE: access: c
+CONSTANT
+VARIABLE: access: d
+EXPRESSION: Start: *
+VARIABLE: access: a
+EXPRESSION: Start: -
+VARIABLE: access: b
+VARIABLE: access: c
+EXPRESSION: End
+EXPRESSION: End
+CONSTANT
+VARIABLE: access: d
+VARIABLE: access: d
+EXPRESSION: Start: -
+EXPRESSION: Start: *
+VARIABLE: access: a
+VARIABLE: access: b
+EXPRESSION: End
+VARIABLE: access: c
+EXPRESSION: End
+CONSTANT
+VARIABLE: access: d
+CONSTANT
+FUNCTION: End
+FUNCTION_LIST: End

@@ -1,0 +1,8 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("nop42V2"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    RETURN_STATEMENT
+     VARIABLE, ("variable"), depth: 2, stack_offset: 8, entry label: "variable"

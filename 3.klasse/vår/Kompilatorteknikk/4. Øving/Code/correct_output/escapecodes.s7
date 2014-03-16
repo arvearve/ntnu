@@ -1,0 +1,19 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function escapecodes INT<=() 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:-4
+Inserting variable b INT depth:2 offset:-8
+Add strings ("Testing if printf format codes are left alone."), index: 0 
+Add strings ("\nAll stages *should* contain percent characters, but no integers."), index: 1 
+Add strings ("\nExe output *will* contain integers or crash."), index: 2 
+Retrieving variable a
+Retrieving variable b
+Add strings ("\tHello, world! %d %d"), index: 3 
+Add strings ("Adding a splash of ANSI color codes - This will only work in a color terminal"), index: 4 
+Add strings ("\t\033[31mRed"), index: 5 
+Add strings ("\t\033[32mGreen"), index: 6 
+Add strings ("\t\033[34mBlue"), index: 7 
+Add strings ("\033[0m"), index: 8 
+Remove scope, index: 1 
+Remove scope, index: 0 
