@@ -1,0 +1,4 @@
+FLOAT FUNC params (INT a)
+START
+	RETURN a;
+END

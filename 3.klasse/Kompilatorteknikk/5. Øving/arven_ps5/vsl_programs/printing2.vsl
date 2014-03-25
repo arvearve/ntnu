@@ -1,0 +1,5 @@
+VOID FUNC printing ()
+START
+    PRINT "False is ", FALSE;
+END
+

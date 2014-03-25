@@ -1,0 +1,4 @@
+INT FUNC nop42V2 (INT variable)
+START
+	RETURN variable;
+END

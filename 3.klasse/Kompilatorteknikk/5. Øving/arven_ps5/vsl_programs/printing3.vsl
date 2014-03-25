@@ -1,0 +1,5 @@
+VOID FUNC printing ()
+START
+    PRINT "22 is ", 22;
+END
+
