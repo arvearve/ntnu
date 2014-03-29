@@ -1,0 +1,14 @@
+VOID FUNC main() START
+	INT a;
+	INT b;
+	INT c;
+	a := 4;
+	b := 5;
+	c := returnFirst(a,b);
+
+	PRINT c;
+END
+
+INT FUNC returnFirst(INT first, INT second) START
+	RETURN first;
+END

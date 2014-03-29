@@ -1,0 +1,14 @@
+INT FUNC return42Func ()
+START
+	RETURN 42;
+END
+
+INT FUNC return41Func ()
+START
+	RETURN 41;
+END
+
+INT FUNC returnVarFunc (INT variable)
+START
+	RETURN variable;
+END

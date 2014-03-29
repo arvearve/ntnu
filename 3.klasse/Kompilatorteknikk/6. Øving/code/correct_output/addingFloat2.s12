@@ -1,0 +1,4 @@
+testOutput/addingFloat2.s: Assembler messages:
+testOutput/addingFloat2.s:1: Error: bad instruction `type error at:'
+testOutput/addingFloat2.s:2: Error: bad instruction `expression (+)'
+testOutput/addingFloat2.s:3: Error: bad instruction `exiting'

@@ -1,0 +1,15 @@
+VOID FUNC long ()
+START
+	INT a;
+	a := 1;
+	INT c;
+	b := 3;
+	INT d;
+	c := a;
+	FLOAT f;
+	BOOL b;
+	b := TRUE;
+	BOOL BOOOL;
+	BOOOL := FALSE;
+	f := 0.0;
+END

@@ -1,0 +1,4 @@
+testOutput/err_addingText.s: Assembler messages:
+testOutput/err_addingText.s:1: Error: bad instruction `type error at:'
+testOutput/err_addingText.s:2: Error: bad instruction `expression (+)'
+testOutput/err_addingText.s:3: Error: bad instruction `exiting'

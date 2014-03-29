@@ -1,0 +1,108 @@
+CLASS testClass HAS
+
+	INT i;
+	INT f;
+
+	testClass tc1;
+
+WITH
+
+	VOID FUNC show ()
+	START
+		PRINT "Content: i: ", THIS.i, ", f: ", THIS.f;
+		PRINT "Content tc1: i: ", THIS.tc1.i, ", f: ", THIS.tc1.f;
+	END
+
+	VOID FUNC construct (INT i, INT f, testClass tc1)
+	START
+		THIS.i := i;
+		THIS.f := f;
+		THIS.tc1 := tc1;
+	END
+
+	testClass FUNC getThis ()
+	START
+		RETURN THIS;
+	END
+	
+	INT FUNC get_i ()
+	START
+		RETURN THIS.i;
+	END
+
+END
+
+CLASS hardClass HAS
+
+	INT i;
+	INT f;
+
+	testClass tc1;
+	hardClass hc1;
+
+WITH
+
+	VOID FUNC show ()
+	START
+		PRINT "Content: i: ", THIS.i, ", f: ", THIS.f;
+		PRINT "Content tc1: ";
+		THIS.tc1.show();
+	END
+
+	VOID FUNC construct (INT i, INT f, testClass tc1)
+	START
+		THIS.i := i;
+		THIS.f := f;
+		THIS.tc1 := tc1;
+	END
+
+	testClass FUNC getTestClass ()
+	START
+		RETURN THIS.tc1;
+	END
+	
+	hardClass FUNC getHardClass ()
+	START
+		RETURN THIS.hc1;
+	END
+
+	VOID FUNC setHardClass (hardClass h)
+	START
+		THIS.hc1 := h;
+	END
+		
+END
+
+VOID FUNC test() START
+	hardClass h;
+	hardClass h2;
+	testClass t;
+	
+	h := NEW hardClass;
+	h2 := NEW hardClass;
+	t := NEW testClass;
+	
+	
+	t.construct(2, 325, t);
+	
+	PRINT "printing t";
+	t.show();
+	
+	h.construct (1, 6, t);
+	
+	PRINT "printing h";
+	h.show();
+	
+	h2.construct (7, 8, t);
+	
+	PRINT "printing h2";
+	h2.show();
+	
+	h.setHardClass(h2);
+	
+	PRINT "printing h.hc1";
+	h.hc1.show();
+	
+	PRINT "printing h.hc1.tc1";
+	h.hc1.tc1.show();
+END

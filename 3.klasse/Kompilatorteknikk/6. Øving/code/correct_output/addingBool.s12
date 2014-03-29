@@ -1,0 +1,4 @@
+testOutput/addingBool.s: Assembler messages:
+testOutput/addingBool.s:1: Error: bad instruction `type error at:'
+testOutput/addingBool.s:2: Error: bad instruction `expression (+)'
+testOutput/addingBool.s:3: Error: bad instruction `exiting'

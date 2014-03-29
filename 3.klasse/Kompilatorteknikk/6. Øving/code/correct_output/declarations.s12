@@ -1,0 +1,2 @@
+testOutput/declarations.s: Assembler messages:
+testOutput/declarations.s:1: Error: bad instruction `symbol b not found'

@@ -1,0 +1,4 @@
+testOutput/err_addingVoid.s: Assembler messages:
+testOutput/err_addingVoid.s:1: Error: bad instruction `type error at:'
+testOutput/err_addingVoid.s:2: Error: bad instruction `expression (+)'
+testOutput/err_addingVoid.s:3: Error: bad instruction `exiting'

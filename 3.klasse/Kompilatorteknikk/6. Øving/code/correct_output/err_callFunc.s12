@@ -1,0 +1,3 @@
+testOutput/err_callFunc.s: Assembler messages:
+testOutput/err_callFunc.s:15: Error: bad instruction `attempting to print something not int,float or bool'
+testOutput/err_callFunc.s:35: Error: ARM register expected -- `push {$.INTEGER}'

@@ -1,0 +1,19 @@
+INT FUNC fibonacci_recursive( INT n )
+START
+    INT f;
+    f := fibonacci_number ( n );
+    PRINT "The", n, "th fibonacci number is", f;
+    RETURN 0;    // Success!
+END
+
+INT FUNC fibonacci_number( INT n )
+START
+    INT y;
+    y := 1;
+    IF ( n-1 ) THEN
+        IF ( n-2 ) THEN
+            y := fibonacci_number(n-1) + fibonacci_number(n-2) ;
+        END
+    END
+    RETURN y;
+END

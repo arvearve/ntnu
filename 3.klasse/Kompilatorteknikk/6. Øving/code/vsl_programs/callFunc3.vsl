@@ -1,0 +1,10 @@
+VOID FUNC one ()
+START
+    PRINT "Return value is ", two();
+END
+
+INT FUNC two ()
+START
+    PRINT "'two was called now'";
+    RETURN 42;
+END
