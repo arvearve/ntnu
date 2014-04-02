@@ -21,6 +21,7 @@ class dataHolder:
         self.dataset = self.loadData(dataset)
 
     def loadData(self,file):
+        print("Loading data from {0}...".format(file))
         #Input: A file with the data.
         #Output: A dict mapping each query ID to the relevant documents, like this: dataset[queryID] = [dataInstance1, dataInstance2, ...]
         data = open(file)
@@ -41,6 +42,7 @@ class dataHolder:
                 dataset[qid].append(di)
             else:
                 dataset[qid]=[di]
+        print("done.")
         return dataset
 
 
@@ -82,16 +84,17 @@ def runRanker(trainingset, testset):
                 testPatterns.append([dataset[i], dataset[j]])
 
     #Check ANN performance before training
-    nn.countMisorderedPairs(testPatterns)
+    b = nn.countMisorderedPairs(trainingPatterns)
+    c = nn.countMisorderedPairs(testPatterns)
+    print('Before training - Training: {0} - Test: {1}'.format(b, c))
     for i in range(25):
         #Running 25 iterations, measuring testing performance after each round of training.
         #Training
         nn.train(trainingPatterns,iterations=1)
         #Check ANN performance after training.
-        b = nn.countMisorderedPairs(testPatterns)
-        print('Iteration {0}: {1}'.format(i, b))
+        b = nn.countMisorderedPairs(trainingPatterns)
+        c = nn.countMisorderedPairs(testPatterns)
+        print('Iteration {0} - Training: {1} - Test: {2}'.format(i, b, c))
     #TODO: Store the data returned by countMisorderedPairs and plot it, showing how training and testing errors develop.
-
-
 
 runRanker("train.txt","test.txt")

@@ -160,13 +160,14 @@ class NN: #Neural Network
             oa = self.propagate(A.features)
             ob = self.propagate(B.features)
 
-            winner = A
-            loser = B
             if ob>oa:
                 winner = B
                 loser = A
+            else: 
+                winner = A
+                loser = B
 
             if winner.rating > loser.rating: numRight += 1
-
-        return numRight/len(patterns)
-        #pass
+            else:  numMisses+=1
+        print("miss:{0}, right: {1}".format(numMisses, numRight))
+        return numMisses/(numRight+numMisses)
