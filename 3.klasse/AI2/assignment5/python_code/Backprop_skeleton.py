@@ -86,13 +86,34 @@ class NN: #Neural Network
 
     def computeOutputDelta(self):
         #TODO: Implement the delta function for the output layer (see exercise text)
+        oa = self.prevOutputActivation
+        ob = self.outputActivation
+        p = 1/(1+math.exp(-(oa-ob)))
+
+        self.prevDeltaOutput = logFuncDerivative(oa) * (1-p)
+        self.deltaOutput = logFuncDerivative(ob) * (1-p)
 
     def computeHiddenDelta(self):
         #TODO: Implement the delta function for the hidden layer (see exercise text)
+        deltaOab = self.prevDeltaOutput - self.deltaOutput
+
+        for i in range(self.numHidden):
+            k = self.weightsOutput[i] * deltaOab
+            self.prevDeltaHidden[i] = logFuncDerivative(self.prevHiddenActivations[i]) * k
+            self.deltaHidden[i] = logFuncDerivative(self.hiddenActivations[i]) * k
 
     def updateWeights(self):
         #TODO: Update the weights of the network using the deltas (see exercise text)
 
+        # input weights
+        for i in range(self.numInputs):
+            for j in range(self.numHidden):
+                self.weightsInput[i][j] = self.weightsInput[i][j] + self.learningRate * (self.prevDeltaHidden[j]*self.prevInputActivations[i] - self.deltaHidden[j]*self.inputActivation[i])
+
+        # output weights
+        for i in range(self.numHidden):
+            self.weightsOutput[i] = self.weightsOutput[i] + self.learningRate * (self.prevDeltaOutput*self.prevHiddenActivations[i] - self.deltaOutput*self.hiddenActivations[i])
+        
     def backpropagate(self):
         self.computeOutputDelta()
         self.computeHiddenDelta()
@@ -114,6 +135,11 @@ class NN: #Neural Network
         #-Propagate A
         #-Propagate B
         #-Backpropagate
+        for pair in patterns:
+            self.propagate(pair[0].features)
+            self.propagate(pair[1].features)
+            self.backpropagate()
+        
 
     def countMisorderedPairs(self, patterns):
         #TODO: Let the network classify all pairs of patterns. The highest output determines the winner.
@@ -126,4 +152,21 @@ class NN: #Neural Network
         #end of for
         #TODO: Calculate the ratio of correct answers:
         #errorRate = numMisses/(numRight+numMisses)
-        pass
+        numRight = 0
+        numMisses = 0
+        for pair in patterns:
+            A = pair[0]
+            B = pair[1]
+            oa = self.propagate(A.features)
+            ob = self.propagate(B.features)
+
+            winner = A
+            loser = B
+            if ob>oa:
+                winner = B
+                loser = A
+
+            if winner.rating > loser.rating: numRight += 1
+
+        return numRight/len(patterns)
+        #pass

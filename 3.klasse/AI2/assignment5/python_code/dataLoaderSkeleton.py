@@ -11,7 +11,7 @@ class dataInstance:
         self.features = features #The features of this query-site pair.
 
     def __str__(self):
-        return "Data instance - qid: "+ str(self.qid)+ ". rating: "+ str(self.rating)+ ". features: "+ str(self.features)
+        return "Datainstance - qid: "+ str(self.qid)+ ". rating: "+ str(self.rating)+ ". features: "+ str(self.features)
 
 
 #A class that holds all the data in one of our sets (the training set or the testset)
@@ -59,15 +59,27 @@ def runRanker(trainingset, testset):
     testPatterns = [] #For holding all the test patterns we will feed the network
     for qid in dhTraining.dataset.keys():
         #This iterates through every query ID in our training set
-        dataInstance=dhTraining.dataset[qid] #All data instances (query, features, rating) for query qid
+        dataset=dhTraining.dataset[qid] #All data instances (query, features, rating) for query qid
         #TODO: Store the training instances into the trainingPatterns array. Remember to store them as pairs, where the first item is rated higher than the second.
         #TODO: Hint: A good first step to get the pair ordering right, is to sort the instances based on their rating for this query. (sort by x.rating for each x in dataInstance)
+        dataset.sort(key=lambda item: item.rating, reverse=True)
+        for i in range(len(dataset)-1):
+            for j in range(i+1, len(dataset)):
+                if dataset[i].rating == dataset[j].rating:
+                    continue
+                trainingPatterns.append([dataset[i], dataset[j]])
 
     for qid in dhTesting.dataset.keys():
         #This iterates through every query ID in our test set
-        dataInstance=dhTesting.dataset[qid]
+        dataset=dhTesting.dataset[qid]
         #TODO: Store the test instances into the testPatterns array, once again as pairs.
         #TODO: Hint: The testing will be easier for you if you also now order the pairs - it will make it easy to see if the ANN agrees with your ordering.
+        dataset.sort(key=lambda item: item.rating, reverse=True)
+        for i in range(len(dataset)-1):
+            for j in range(i+1, len(dataset)):
+                if dataset[i].rating == dataset[j].rating:
+                    continue
+                testPatterns.append([dataset[i], dataset[j]])
 
     #Check ANN performance before training
     nn.countMisorderedPairs(testPatterns)
@@ -76,8 +88,8 @@ def runRanker(trainingset, testset):
         #Training
         nn.train(trainingPatterns,iterations=1)
         #Check ANN performance after training.
-        nn.countMisorderedPairs(testPatterns)
-
+        b = nn.countMisorderedPairs(testPatterns)
+        print('Iteration {0}: {1}'.format(i, b))
     #TODO: Store the data returned by countMisorderedPairs and plot it, showing how training and testing errors develop.
 
 
