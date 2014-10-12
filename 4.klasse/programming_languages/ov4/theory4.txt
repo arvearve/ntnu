@@ -1,0 +1,25 @@
+Task 1 - Theory
+===============
+
+1 a)
+----
+
+```oz
+declare
+fun lazy {MakeOnes} 1 | {MakeOnes} end
+A = {MakeOnes}
+{Nth A 5 _}
+{Browse A}
+% A shows up as 1|1|1|1|1|_
+```
+When `{Nth A 5 _}` is called, the five first five elements of the stream are "required", and get populated. The result of the call to Nth is `1`. We throw this away using `_`, because we are only interested in the side effects of peeking at the fifth element, namely that the five first elements got generated.
+
+1 b)
+----
+A list is finite, while a stream is potentially infinite (or at least unbounded in length.) The elements of a stream are lazily generated.
+A stream is a list whose tail is an unbound dataflow variable. The stream gets extended when the tail gets bound with a `new_value | unbound_data_variable`.
+
+1 c)
+----
+I do not know how to answer this.
+
